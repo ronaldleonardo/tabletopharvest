@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = [
+  {
+    title: "How to Grow Microgreens Indoors: A $13 Setup That Pays for Itself",
+    url: "/posts/how-to-grow-microgreens-indoors",
+    desc: "Grow $200 worth of microgreens from a $13 setup. No dirt, no backyard, no experience needed. The exact method I use in my kitchen.",
+    date: "2026-09-01",
+    cat: "Guides"
+  },
+  {
+    title: "Best Hydroponic System for Beginners: 4 Kits That Actually Work",
+    url: "/posts/best-hydroponic-system-for-beginners",
+    desc: "Not all hydroponic systems are beginner friendly. After testing 8 systems, these 4 are the ones that won't frustrate you.",
+    date: "2026-08-31",
+    cat: "Reviews"
+  },
+  {
+    title: "Hydroponic Nutrient Guide: What to Buy and How to Mix It",
+    url: "/posts/hydroponic-nutrient-guide",
+    desc: "Nutrients are the most confusing part of hydroponics. Here's exactly what to buy, how to mix it, and how to fix problems.",
+    date: "2026-08-31",
+    cat: "Guides"
+  },
+  {
+    title: "Hydroponics 101: How to Grow Food Without Soil",
+    url: "/posts/hydroponics-for-beginners",
+    desc: "Everything you need to know to start your first hydroponic system.",
+    date: "2026-08-30",
+    cat: "Guides"
+  },
+  {
+    title: "Best LED Grow Lights for Beginners in 2026",
+    url: "/posts/best-led-grow-lights-for-beginners",
+    desc: "Don't waste money on bad lights. Here's what actually works for indoor herbs, lettuce, and microgreens.",
+    date: "2026-08-30",
+    cat: "Reviews"
+  },
+  {
+    title: "How to Grow Lettuce Indoors Year-Round",
+    url: "/posts/grow-lettuce-indoors-year-round",
+    desc: "Fresh salads every day without a trip to the store. The complete guide that actually works.",
+    date: "2026-08-30",
+    cat: "Guides"
+  }
+];
+---
+
+<BaseLayout
+  title="Articles"
+  description="Indoor gardening guides, hydroponic tutorials, product reviews, and grow tips for beginners."
+>
+  <h1 style="margin-bottom: 2rem;">All Articles</h1>
+
+  <ul class="post-list">
+    {posts.map(post => (
+      <li class="post-card">
+        <div class="meta">{post.cat} · {post.date}</div>
+        <h2><a href={post.url}>{post.title}</a></h2>
+        <p>{post.desc}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

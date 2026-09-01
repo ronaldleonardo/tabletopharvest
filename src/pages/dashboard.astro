@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { execSync } from 'child_process';
+import { existsSync, readFileSync } from 'fs';
+
+// Read password hash (simple deterrent)
+const dashPass = (() => {
+  try {
+    return readFileSync("/root/.hermes/.dashboard-password", "utf-8").trim();
+  } catch { return "hermesadmin"; }
+})();
+const passHash = (() => {
+  try {
+    return Buffer.from(dashPass + ":dashboard").toString('base64');
+  } catch {
+    // Fallback for Node.js without Buffer
+    const str = dashPass + ":dashboard";
+    return Buffer.from ? Buffer.from(str).toString('base64') : btoa(str);
+  }
+})();
+
+// Fetch analytics from local API
+let analytics = { total: 0, top_pages: [], daily: [], referrers: [] };
+try {
+  const raw = execSync("curl -s 'http://localhost:8083/stats?days=30&key=" + passHash + "'", { timeout: 5000 }).toString().trim();
+  if (raw) analytics = JSON.parse(raw);
+} catch(e) {}
+
+let analyticsGrow = { total: 0, top_pages: [], daily: [], referrers: [] };
+try {
+  const raw = execSync("curl -s 'http://localhost:8083/stats?site=growlightdb&days=30&key=" + passHash + "'", { timeout: 5000 }).toString().trim();
+  if (raw) analyticsGrow = JSON.parse(raw);
+} catch(e) {}
+
+// Site stats
+let stats = { tabletopharvest: { pages: 0, articles: 0, status: "N/A" }, growlightdb: { pages: 0, status: "N/A" }, affiliate_links: 0, total_pages: 0 };
+try {
+  stats = JSON.parse(readFileSync("public/data/stats.json", "utf-8"));
+} catch(e) {}
+
+const topPagesAll = [...analytics.top_pages, ...analyticsGrow.top_pages]
+  .reduce((acc, p) => { acc[p.path] = (acc[p.path] || 0) + p.views; return acc; }, {});
+const sortedPages = Object.entries(topPagesAll).sort((a, b) => b[1] - a[1]).slice(0, 15);
+---
+
+<BaseLayout
+  title="Dashboard — Site Statistics"
+  description="Traffic, SEO, and affiliate statistics."
+>
+
+<div id="loginScreen" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:50vh;text-align:center;">
+  <h1 style="margin-bottom:0.5rem;">Dashboard</h1>
+  <p style="color:#6b7280;font-size:0.9rem;margin-bottom:1.5rem;">Enter password to access</p>
+  <input type="password" id="passInput" placeholder="Password" style="padding:0.6rem 1rem;border:1px solid #d1d5db;border-radius:8px;font-size:0.9rem;font-family:inherit;width:220px;text-align:center;" />
+  <button onclick="checkPass()" style="margin-top:0.75rem;background:#27ae60;color:white;padding:0.6rem 1.5rem;border:none;border-radius:9999px;font-weight:600;font-size:0.9rem;cursor:pointer;">Unlock</button>
+  <p id="passError" style="color:#ef4444;font-size:0.8rem;margin-top:0.5rem;display:none;">Wrong password</p>
+</div>
+
+<div id="dashboardContent" style="display:none;">
+  <h1 style="margin-bottom: 0.25rem;">Dashboard</h1>
+  <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 1.5rem;">
+    Last 30 days &middot; <a href="/data/stats.json" style="color: #27ae60;">stats.json</a> &middot; <a href="http://localhost:8083/export.csv" style="color: #27ae60;">export CSV</a> &middot; <a href="#" onclick="lockDashboard();return false;" style="color:#6b7280;font-size:0.8rem;">lock</a>
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 2rem;">
+    <div class="stat-card"><div class="num">{analytics.total + analyticsGrow.total}</div><div class="lbl">Page Views</div></div>
+    <div class="stat-card"><div class="num">{stats.tabletopharvest.articles}</div><div class="lbl">Articles</div></div>
+    <div class="stat-card"><div class="num">{stats.total_pages}</div><div class="lbl">Total Pages</div></div>
+    <div class="stat-card"><div class="num">{stats.affiliate_links}</div><div class="lbl">Affiliate Links</div></div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+    <div class="panel">
+      <h2>TabletopHarvest</h2>
+      <div class="site-status">
+        <span class="dot" style="background: {stats.tabletopharvest.status === 'active' ? '#27ae60' : '#ef4444'};"></span>
+        {stats.tabletopharvest.status}
+      </div>
+      <div class="big-num">{analytics.total}</div><div class="sml">page views (30d)</div>
+      <div class="big-num">{stats.tabletopharvest.pages}</div><div class="sml">pages indexed</div>
+    </div>
+    <div class="panel">
+      <h2>GrowLightDB</h2>
+      <div class="site-status">
+        <span class="dot" style="background: {stats.growlightdb.status === 'active' ? '#27ae60' : '#ef4444'};"></span>
+        {stats.growlightdb.status}
+      </div>
+      <div class="big-num">{analyticsGrow.total}</div><div class="sml">page views (30d)</div>
+      <div class="big-num">{stats.growlightdb.pages}</div><div class="sml">pages indexed</div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-bottom: 1.5rem;">
+    <h2>Top Pages</h2>
+    {sortedPages.length > 0 ? (
+      <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
+        <tr style="border-bottom:1px solid #e5e7eb;"><th style="text-align:left;padding:0.5rem 0.25rem;color:#6b7280;font-weight:600;">Page</th><th style="text-align:right;padding:0.5rem 0.25rem;color:#6b7280;font-weight:600;">Views</th></tr>
+        {sortedPages.map(([path, views]) => (
+          <tr style="border-bottom:1px solid #f3f4f6;">
+            <td style="padding:0.4rem 0.25rem;font-size:0.82rem;color:#374151;">{path}</td>
+            <td style="text-align:right;padding:0.4rem 0.25rem;font-weight:600;">{views}</td>
+          </tr>
+        ))}
+      </table>
+    ) : (
+      <p style="color:#9ca3af;font-size:0.9rem;">No traffic yet. Share your site to start getting data.</p>
+    )}
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+    <div class="panel">
+      <h2>Referrers</h2>
+      {analytics.referrers.length > 0 || analyticsGrow.referrers.length > 0 ? (
+        <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
+          <tr style="border-bottom:1px solid #e5e7eb;"><th style="text-align:left;padding:0.4rem 0.25rem;color:#6b7280;font-weight:600;">Source</th><th style="text-align:right;padding:0.4rem 0.25rem;color:#6b7280;font-weight:600;">Clicks</th></tr>
+          {[...analytics.referrers, ...analyticsGrow.referrers].slice(0, 10).map(r => (
+            <tr style="border-bottom:1px solid #f3f4f6;">
+              <td style="padding:0.35rem 0.25rem;color:#374151;">{r.source}</td>
+              <td style="text-align:right;padding:0.35rem 0.25rem;font-weight:600;">{r.clicks}</td>
+            </tr>
+          ))}
+        </table>
+      ) : (
+        <p style="color:#9ca3af;font-size:0.9rem;">No referrers yet.</p>
+      )}
+    </div>
+    <div class="panel">
+      <h2>Traffic Trend (30 days)</h2>
+      {analytics.daily.length > 0 ? (
+        <div style="font-size:0.75rem;color:#6b7280;line-height:1.6;">
+          {analytics.daily.map(d => (
+            <div style="display:flex;justify-content:space-between;padding:0.15rem 0;">
+              <span>{d.date.slice(5)}</span>
+              <span style="font-weight:600;">{'█'.repeat(Math.min(d.views * 3, 20))} {d.views}</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p style="color:#9ca3af;font-size:0.9rem;">No daily data yet.</p>
+      )}
+    </div>
+  </div>
+
+  <div class="panel" style="border-left: 3px solid #f59e0b;">
+    <h2>Next: Google Search Console</h2>
+    <p style="font-size:0.9rem;color:#6b7280;margin-bottom:0.5rem;">
+      Search Console gives you real data: keyword rankings, impressions, CTR, and clicks from Google.
+    </p>
+    <p style="font-size:0.85rem;color:#6b7280;">
+      Once verified, submit these sitemaps:
+    </p>
+    <code style="display:block;font-size:0.78rem;background:#f8f9fb;padding:0.5rem;border-radius:6px;margin:0.25rem 0;">
+      https://www.tabletopharvest.com/sitemap-index.xml<br/>
+      https://growlightdb.ronaldleonardo.com/sitemap-0.xml
+    </code>
+  </div>
+</div>
+
+<script define:vars={{ passHash }}>
+  window.checkPass = function() {
+    const input = document.getElementById('passInput').value;
+    const hash = btoa(input + ':dashboard');
+    if (hash === passHash) {
+      sessionStorage.setItem('dashboard_unlocked', '1');
+      document.getElementById('loginScreen').style.display = 'none';
+      document.getElementById('dashboardContent').style.display = '';
+      document.getElementById('passError').style.display = 'none';
+    } else {
+      document.getElementById('passError').style.display = '';
+    }
+  };
+  
+  window.lockDashboard = function() {
+    sessionStorage.removeItem('dashboard_unlocked');
+    document.getElementById('dashboardContent').style.display = 'none';
+    document.getElementById('loginScreen').style.display = '';
+    document.getElementById('passInput').value = '';
+  };
+  
+  if (sessionStorage.getItem('dashboard_unlocked') === '1') {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('dashboardContent').style.display = '';
+  }
+</script>
+
+</BaseLayout>
+
+<style>
+  .stat-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .stat-card .num { font-size: 1.6rem; font-weight: 800; color: #0d3b1e; }
+  .stat-card .lbl { font-size: 0.72rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.15rem; }
+  .panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .panel h2 { font-size: 0.95rem; margin-top: 0; margin-bottom: 0.75rem; color: #111827; }
+  .big-num { font-size: 1.5rem; font-weight: 800; color: #0d3b1e; }
+  .sml { font-size: 0.72rem; color: #6b7280; margin-bottom: 0.5rem; }
+  .site-status { font-size: 0.78rem; display: flex; align-items: center; gap: 0.35rem; margin-bottom: 0.75rem; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+</style>

@@ -1,0 +1,188 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  publishedTime?: string;
+  article?: boolean;
+  toc?: boolean;
+}
+
+const { title, description, canonical, image, publishedTime, article, toc } = Astro.props;
+const site = 'https://www.tabletopharvest.com';
+const defaultImage = '/images/og-default.svg';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="astro-dev-toolbar" content="false" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical ? `${site}${canonical}` : site} />
+  <meta property="og:image" content={image ? `${site}${image}` : `${site}${defaultImage}`} />
+  <meta property="og:type" content={article ? 'article' : 'website'} />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href={canonical ? `${site}${canonical}` : site} />
+
+  <!-- Article Schema -->
+  {article && publishedTime && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title,
+      description,
+      image: image ? `${site}${image}` : `${site}${defaultImage}`,
+      datePublished: publishedTime,
+      author: {
+        "@type": "Person",
+        name: "Mia",
+        url: site
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Tabletop Harvest",
+        logo: {
+          "@type": "ImageObject",
+          url: `${site}/images/logo.png`
+        }
+      }
+    })} />
+  )}
+
+  {article && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: []
+    })} />
+  )}
+
+  <!-- WebSite Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Tabletop Harvest",
+    url: site,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${site}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  <title>{title} | Tabletop Harvest</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/favicon-192.png" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <!-- Analytics -->
+  <script>
+    (function(){var p=window.location.pathname;var r=document.referrer||'';(new Image()).src='http://localhost:8083/track?s=tabletopharvest&p='+encodeURIComponent(p)+'&r='+encodeURIComponent(r)})();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <a href="/" class="logo">🌿 Tabletop<span>Harvest</span></a>
+      <nav id="navMenu">
+        <a href="/">Home</a>
+        <a href="/posts">Articles</a>
+        <a href="/about">About</a>
+      </nav>
+      <div class="header-right">
+        <a href="/posts" class="cta-link">Start Here</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  {article && (
+  <div class="share-section">
+    <div class="share-label">Share this guide</div>
+    <div class="share-links">
+      <a href="https://reddit.com/submit?url={encodeURIComponent(`${site}${canonical || ''}`)}&title={encodeURIComponent(title)}" target="_blank" rel="noopener" class="share-btn reddit">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m5.4 6.5c.8 0 1.4.6 1.4 1.4 0 .6-.3 1-.7 1.2.1.5.1 1 .1 1.5 0 2.7-2.5 5-5.9 5S6.7 14.8 6.7 12c0-.5 0-1 .1-1.4-.4-.3-.7-.7-.7-1.2 0-.8.6-1.4 1.4-1.4.4 0 .8.2 1.1.5 1-.7 2.4-1.2 3.9-1.3l.7-3.2.1-.1 2.3.5c.2-.4.6-.7 1.1-.7.7 0 1.2.6 1.2 1.2 0 .7-.6 1.2-1.2 1.2-.6 0-1.1-.5-1.2-1l-1.9-.4-.5 2.6c1.4.1 2.7.5 3.7 1.2.3-.3.6-.4 1-.4M8.7 10.6c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.4-1-1-1m3.8 4.5c.6-.6 1.6-.6 2.2 0 .2.2.5.2.7 0 .2-.2.2-.5 0-.7-.9-1-2.5-1-3.4 0-.4-.4-.7-.7-.4-.4 0-.7.3-.4.7.9.9.9 2.5 0 3.4-.2.2-.2.5 0 .7.2.2.5.2.7 0m.3-3.5c-.6 0-1 .5-1 1s.5 1 1 1 1-.5 1-1-.5-1-1-1m4.6 0c-.6 0-1 .5-1 1s.4 1 1 1c.5 0 1-.5 1-1s-.4-1-1-1Z"/></svg>
+        <span>Reddit</span>
+      </a>
+      <a href="https://pinterest.com/pin/create/button/?url={encodeURIComponent(`${site}${canonical || ''}`)}&description={encodeURIComponent(title)}" target="_blank" rel="noopener" class="share-btn pinterest">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2a10 10 0 0 0-10 10c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.8-2.41 1.8-2.41.86 0 1.26.63 1.26 1.41 0 .85-.55 2.15-.83 3.35-.24 1 .5 1.79 1.5 1.79 1.8 0 3.18-1.9 3.18-4.63 0-2.42-1.74-4.1-4.22-4.1-2.87 0-4.55 2.15-4.55 4.37 0 .87.34 1.8.76 2.3.08.1.09.19.07.29l-.28 1.17c-.05.18-.16.24-.34.14-1.27-.6-2.07-2.47-2.07-3.98 0-3.25 2.36-6.23 6.8-6.23 3.57 0 6.34 2.54 6.34 5.95 0 3.56-2.23 6.42-5.33 6.42-1.04 0-2.02-.54-2.36-1.18l-.64 2.44c-.23.89-.86 2-1.27 2.68Z"/></svg>
+        <span>Pinterest</span>
+      </a>
+      <a href="https://twitter.com/intent/tweet?text={encodeURIComponent(title)}&url={encodeURIComponent(`${site}${canonical || ''}`)}" target="_blank" rel="noopener" class="share-btn twitter">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://facebook.com/sharer/sharer.php?u={encodeURIComponent(`${site}${canonical || ''}`)}" target="_blank" rel="noopener" class="share-btn facebook">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+        <span>Facebook</span>
+      </a>
+      <button class="share-btn copy-btn" id="copyLinkBtn">
+        <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg>
+        <span id="copyLabel">Copy link</span>
+      </button>
+    </div>
+  </div>
+  )}
+
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <p>&copy; {new Date().getFullYear()} Tabletop Harvest. As an Amazon Associate I earn from qualifying purchases.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('navMenu');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        btn.classList.toggle('open');
+      });
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('header')) {
+          nav.classList.remove('open');
+          btn.classList.remove('open');
+        }
+      });
+    }
+
+    // Copy link button
+    const copyBtn = document.getElementById('copyLinkBtn');
+    const copyLabel = document.getElementById('copyLabel');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copyLabel.textContent = 'Copied!';
+          setTimeout(() => { copyLabel.textContent = 'Copy link'; }, 2500);
+        } catch {
+          copyLabel.textContent = 'Failed';
+          setTimeout(() => { copyLabel.textContent = 'Copy link'; }, 2000);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

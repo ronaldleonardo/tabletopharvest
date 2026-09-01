@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a6b3a"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="#0d3b1e"/>
+  <text x="600" y="280" font-size="72" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-weight="800">🌿 Tabletop</text>
+  <text x="600" y="370" font-size="72" text-anchor="middle" fill="#2ecc71" font-family="system-ui, sans-serif" font-weight="800">Harvest</text>
+  <text x="600" y="450" font-size="28" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif">Indoor Gardening &amp; Hydroponics</text>
+</svg>

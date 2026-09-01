@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "how to grow microgreens indoors",
+    "slug": "how-to-grow-microgreens-indoors",
+    "intent": "informational + commercial",
+    "products": ["microgreen seed trays", "microgreen seeds mix", "LED grow light strip", "spray bottle"],
+    "status": "done",
+    "notes": "High volume, fast ROI content. Affiliate: trays, seeds, lights."
+  },
+  {
+    "keyword": "kratky method for beginners",
+    "slug": "kratky-method-for-beginners",
+    "intent": "informational",
+    "products": ["mason jars", "net cups", "hydroton clay pebbles", "hydroponic nutrient kit"],
+    "status": "pending",
+    "notes": "Viral Reddit topic. No pump needed. Cheap setup = high conversion."
+  },
+  {
+    "keyword": "best grow lights for microgreens",
+    "slug": "best-grow-lights-for-microgreens",
+    "intent": "commercial",
+    "products": ["Barrina T5 strips", "LED panel grow light", "wire shelving"],
+    "status": "pending",
+    "notes": "Commercial intent. Links to Barrina already on site."
+  },
+  {
+    "keyword": "how to grow basil indoors",
+    "slug": "how-to-grow-basil-indoors",
+    "intent": "informational",
+    "products": ["AeroGarden", "potting mix", "basil seeds", "grow light"],
+    "status": "pending",
+    "notes": "High volume. Multiple methods = good internal link target."
+  },
+  {
+    "keyword": "best indoor herb garden kit",
+    "slug": "best-indoor-herb-garden-kits",
+    "intent": "commercial",
+    "products": ["AeroGarden Harvest", "IDOO hydroponic", "Click and Grow"],
+    "status": "pending",
+    "notes": "Commercial roundup. High affiliate value per click."
+  },
+  {
+    "keyword": "how to start seeds indoors",
+    "slug": "how-to-start-seeds-indoors",
+    "intent": "informational",
+    "products": ["seed starting trays", "heat mat", "grow light", "seed starting mix"],
+    "status": "pending",
+    "notes": "Seasonal spike in spring. Evergreen + seasonal."
+  },
+  {
+    "keyword": "aerogarden vs diy hydroponics",
+    "slug": "aerogarden-vs-diy-hydroponics",
+    "intent": "commercial comparison",
+    "products": ["AeroGarden Harvest", "DWC bucket kit", "nutrient kit"],
+    "status": "pending",
+    "notes": "Comparison = strong commercial intent, big-ticket items."
+  },
+  {
+    "keyword": "best ph meter for hydroponics",
+    "slug": "best-ph-meter-for-hydroponics",
+    "intent": "commercial",
+    "products": ["pH meter", "pH test drops", "pH Up/Down kit"],
+    "status": "pending",
+    "notes": "Under-served topic, low competition. Buyer intent high."
+  },
+  {
+    "keyword": "how to grow cherry tomatoes indoors",
+    "slug": "how-to-grow-cherry-tomatoes-indoors",
+    "intent": "informational",
+    "products": ["5 gallon bucket", "air pump", "trellis", "LED grow light"],
+    "status": "pending",
+    "notes": "High difficulty but high volume. Good for authority."
+  },
+  {
+    "keyword": "microgreens vs sprouts",
+    "slug": "microgreens-vs-sprouts",
+    "intent": "informational",
+    "products": ["sprouting jar", "microgreen trays", "seeds"],
+    "status": "pending",
+    "notes": "Beginner question, easy content, two product categories."
+  }
+]

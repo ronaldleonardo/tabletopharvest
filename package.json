@@ -1,0 +1,19 @@
+{
+  "name": "tabletopharvest",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Tabletop Harvest — Indoor gardening & hydroponics for beginners",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "python3 /root/.hermes/scripts/generate-stats.py && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.9"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
