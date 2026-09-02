@@ -80,9 +80,9 @@ const defaultImage = '/images/og-default.svg';
   })} />
 
   <title>{title} | Tabletop Harvest</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/images/favicon-192.png" />
   <link rel="stylesheet" href="/src/styles/global.css" />
   <!-- Analytics -->
@@ -183,6 +183,14 @@ const defaultImage = '/images/og-default.svg';
         }
       });
     }
+
+    // Open all external links in new tab (skip internal nav/article links)
+    document.querySelectorAll('a').forEach(function(a) {
+      if (a.hostname && a.hostname !== location.hostname && !a.getAttribute('target')) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
+    });
   </script>
 </body>
 </html>

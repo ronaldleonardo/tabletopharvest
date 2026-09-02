@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.tabletopharvest.com',
   compressHTML: true,
+  devToolbar: { enabled: false },
   integrations: [sitemap()],
   build: {
     format: 'file',
