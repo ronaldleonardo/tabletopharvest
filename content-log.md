@@ -7,4 +7,4 @@
 | - 2026-08-31: FIXED 14 broken amzn.to links → proper amazon.com/s?k search links
 - 2026-08-30: hydroponics-for-beginners — pillar guide
 - 2026-08-30: best-led-grow-lights-for-beginners — review
-- 2026-08-30: grow-lettuce-indoors-year-round — guide
+- 2026-08-30: grow-lettuce-indoors-year-round — guide- 2026-09-04: hydroponic-leaves-turning-yellow — why are my hydroponic leaves turning yellow — 4 affiliate links
