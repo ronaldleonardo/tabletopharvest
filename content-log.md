@@ -12,3 +12,4 @@
 - 2026-08-30: hydroponics-for-beginners — pillar guide
 - 2026-08-30: best-led-grow-lights-for-beginners — review
 - 2026-08-30: grow-lettuce-indoors-year-round — guide
+- 2026-09-06: best-hydroponic-system-for-small-apartment — best hydroponic system for small apartment — 6 affiliate links
