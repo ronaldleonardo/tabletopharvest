@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const { title, description, canonical, image, publishedTime, article, toc } = Astro.props;
-const site = 'https://www.tabletopharvest.com';
+const site = 'https://tabletopharvest.com';
 const defaultImage = '/images/og-default.svg';
 ---
 
@@ -84,7 +84,7 @@ const defaultImage = '/images/og-default.svg';
   <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/images/favicon-192.png" />
-  <link rel="stylesheet" href="/src/styles/global.css" />
+  <link rel="stylesheet" href="/styles/global.css" />
   <!-- Analytics -->
   <script>
     (function(){var p=window.location.pathname;var r=document.referrer||'';(new Image()).src='http://localhost:8083/track?s=tabletopharvest&p='+encodeURIComponent(p)+'&r='+encodeURIComponent(r)})();
