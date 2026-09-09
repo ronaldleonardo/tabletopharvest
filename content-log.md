@@ -1,5 +1,6 @@
 # TabletopHarvest Content Log
 
+- 2026-09-09: cheapest-way-to-start-hydroponics — cheapest way to start hydroponics — 6 affiliate links
 - 2026-09-08: hydroponic-vs-soil-cost — hydroponic vs soil growing cost comparison — 4 affiliate links
 - 2026-09-07: how-to-grow-kale-indoors — how to grow kale indoors — 4 affiliate links
 - 2026-09-06: best-hydroponic-system-for-small-apartment — best hydroponic system for small apartment — 6 affiliate links
