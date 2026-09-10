@@ -52,8 +52,8 @@
     "slug": "how-to-clean-hydroponic-algae",
     "intent": "informational",
     "products": ["hydroton", "cleaning solution", "light blocker"],
-    "status": "pending",
-    "notes": "Problem-solving, failure story: 'I ignored algae for 2 weeks, heres what happened'"
+    "status": "done",
+    "notes": "Problem-solving, failure story: 'I ignored algae for 2 weeks, heres what happened'. Published 2026-09-10."
   },
   {
     "keyword": "grow light distance from seedlings chart",

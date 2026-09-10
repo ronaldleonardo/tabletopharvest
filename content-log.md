@@ -15,4 +15,4 @@
 | - 2026-08-31: FIXED 14 broken amzn.to links → proper amazon.com/s?k search links
 - 2026-08-30: hydroponics-for-beginners — pillar guide
 - 2026-08-30: best-led-grow-lights-for-beginners — review
-- 2026-08-30: grow-lettuce-indoors-year-round — guide
+- 2026-08-30: grow-lettuce-indoors-year-round — guide- 2026-09-10: how-to-clean-hydroponic-algae — how to clean hydroponic system algae — 6 affiliate links

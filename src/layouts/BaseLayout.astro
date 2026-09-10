@@ -58,22 +58,6 @@ const defaultImage = '/images/og-default.svg';
     })} />
   )}
 
-  {article && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: title,
-      description,
-      image: image ? `${site}${image}` : `${site}${defaultImage}`,
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "USD",
-        url: site + (canonical || ""),
-        availability: "https://schema.org/InStock"
-      }
-    })} />
-  )}
-
   <!-- WebSite Schema -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
