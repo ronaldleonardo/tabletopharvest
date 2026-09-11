@@ -59,8 +59,8 @@
     "keyword": "grow light distance from seedlings chart",
     "slug": "grow-light-distance-chart",
     "intent": "informational",
-    "products": ["LED grow light", "lux meter", "timer"],
-    "status": "pending",
+    "products": ["LED grow light", "lux meter", "timer plug", "wire shelving"],
+    "status": "done",
     "notes": "Tool/guide style, easy to rank, shareable on Reddit"
   },
   {

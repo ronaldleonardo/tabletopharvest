@@ -1,15 +1,15 @@
 {
   "tabletopharvest": {
-    "pages": 11,
-    "status": "activating",
-    "articles": 5
+    "pages": 22,
+    "status": "active",
+    "articles": 16
   },
   "growlightdb": {
-    "pages": 16,
-    "status": "activating",
+    "pages": 31,
+    "status": "active",
     "articles": 0
   },
-  "affiliate_links": 16,
-  "total_pages": 27,
-  "generated_at": "2026-08-31 12:27:32"
+  "affiliate_links": 88,
+  "total_pages": 53,
+  "generated_at": "2026-09-10 18:04:40"
 }
