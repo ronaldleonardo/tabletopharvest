@@ -401,6 +401,10 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 2.5rem 1.25rem 4rem
 }
 .related-posts h3 { font-family: var(--font-sans); font-size: 1rem; margin-top: 0; margin-bottom: 1rem; color: var(--warm-500); }
 .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.gl-link { font-size: 0.85rem; padding: 0.75rem 1rem; background: var(--bg-lighter); border-radius: var(--radius-md); margin-top: 1.5rem; margin-bottom: 1.5rem; }
+.gl-link a { font-weight: 600; }
+
 .related-card {
   padding: 1rem;
   border: var(--border-light);

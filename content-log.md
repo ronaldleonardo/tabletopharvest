@@ -18,3 +18,4 @@
 - 2026-08-30: grow-lettuce-indoors-year-round — guide- 2026-09-11: grow-light-distance-chart — grow light distance from seedlings chart — 5 affiliate links
 - 2026-09-10: how-to-clean-hydroponic-algae — how to clean hydroponic system algae — 6 affiliate links
 - 2026-09-13: best-herbs-for-hydroponics-beginners — best herbs to grow hydroponically for beginners — 8 affiliate links
+- 2026-09-14: how-to-grow-basil-indoors — how to grow basil indoors — 7 affiliate links
