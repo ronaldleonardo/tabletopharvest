@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { lights, tag, categories } from '../../lib/growlight-data.mjs';
+
+export async function getStaticPaths() {
+  return lights.map(light => ({
+    params: { slug: light.id },
+    props: { light },
+  }));
+}
+
+const { light } = Astro.props;
+const badgeClass = `gl-badge-${light.best}`;
+const badgeLabel = categories.find(c => c.key === light.best)?.label || light.best;
+const link = `https://www.amazon.com/s?k=${light.search}&tag=${tag}`;
+const wattsPerDollar = Math.round(light.watts / light.price * 100) / 100;
+---
+
+<BaseLayout
+  title={`${light.name} LED Grow Light: Specs, Price, and Review`}
+  description={`${light.name} LED grow light review: ${light.watts}W, covers ${light.coverage}, ${light.chips} chips, ${light.rating} stars. Compare specs, price $${light.price}, and buy on Amazon.`}
+  canonical={`/grow-lights/${light.id}`}
+  article={true}
+>
+  <script define:vars={{ buildLight: light }}>
+    (async function(){
+      try {
+        const r = await fetch('/data/products.json');
+        const d = await r.json();
+        const live = d.products.find(p => p.id === buildLight.id);
+        if(live && live.price !== buildLight.price) {
+          const el = document.querySelector('[data-live-price]');
+          if(el) el.textContent = '$' + live.price;
+        }
+      } catch(e){}
+    })();
+  </script>
+
+  <div class="gl-slug-wrapper">
+    <a href="/grow-lights" class="gl-back">&larr; Back to all lights</a>
+
+    <div class="gl-slug-card">
+      <div>
+        <h1>{light.name} <span class="gl-badge {badgeClass}">{badgeLabel}</span></h1>
+        <p class="gl-slug-sub">{light.watts}W LED grow light with {light.chips} chips. Covers {light.coverage}.</p>
+      </div>
+
+      <div class="gl-slug-specs">
+        <div class="gl-slug-spec"><span class="gl-slug-label">Price</span><span class="gl-slug-value" data-live-price>${light.price}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Actual Wattage</span><span class="gl-slug-value">{light.watts}W</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Coverage</span><span class="gl-slug-value">{light.coverage}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">LED Chips</span><span class="gl-slug-value">{light.chips}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Dimming</span><span class="gl-slug-value">{light.dimmable ? 'Yes' : 'No'}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Noise Level</span><span class="gl-slug-value">{light.noise}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Rating</span><span class="gl-slug-value">{'★'.repeat(Math.round(light.rating))}{'☆'.repeat(5 - Math.round(light.rating))} {light.rating}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Reviews</span><span class="gl-slug-value">{light.reviews.toLocaleString()}</span></div>
+        <div class="gl-slug-spec"><span class="gl-slug-label">Efficiency</span><span class="gl-slug-value">{wattsPerDollar} W/dollar</span></div>
+      </div>
+
+      <a href={link} target="_blank" rel="nofollow sponsored" class="gl-buy-btn gl-buy-lg">Check Price on Amazon &rarr;</a>
+
+      <p class="gl-affiliate-note">We earn a commission if you click and buy through links on this site at no extra cost to you.</p>
+    </div>
+
+    <div class="gl-interlink">
+      <p><strong>New to indoor growing?</strong> Read our <a href="/posts/hydroponics-for-beginners">complete beginner guide</a> or browse our <a href="/posts">growing guides and reviews</a>.</p>
+    </div>
+  </div>
+
+  <style is:global>
+    .gl-slug-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem;
+    }
+    .gl-back {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--green-600);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .gl-back:hover { text-decoration: underline; }
+    .gl-slug-card {
+      background: var(--bg-card);
+      border: var(--border-light);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .gl-slug-card h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .gl-slug-sub { color: var(--text-dim); margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .gl-slug-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    .gl-slug-spec {
+      padding: 0.65rem 1rem;
+      background: var(--bg-hover);
+      border-radius: 8px;
+    }
+    .gl-slug-label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.1rem; }
+    .gl-slug-value { font-size: 1rem; font-weight: 600; }
+    .gl-buy-lg {
+      display: inline-block;
+      background: var(--green-600);
+      color: white;
+      padding: 0.75rem 1.8rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+    .gl-buy-lg:hover { opacity: 0.9; }
+    .gl-affiliate-note { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; }
+    .gl-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.1rem 0.5rem;
+      border-radius: 9999px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+      line-height: 1.5;
+    }
+    .gl-badge-overall { background: #d4f5e0; color: #0d3b1e; }
+    .gl-badge-value { background: #dbeafe; color: #1e40af; }
+    .gl-badge-budget { background: #fef3c7; color: #92400e; }
+    .gl-badge-starter { background: #f3e8ff; color: #6b21a8; }
+    .gl-badge-upgrade { background: #d1fae5; color: #065f46; }
+    .gl-badge-large { background: #fce7f3; color: #9d174d; }
+    .gl-badge-quality { background: #e0e7ff; color: #3730a3; }
+    .gl-badge-commercial { background: #fef9c3; color: #854d0e; }
+    .gl-badge-cheap { background: #fce7f3; color: #9d174d; }
+    .gl-badge-entry { background: #f3e8ff; color: #6b21a8; }
+    .gl-badge-economy { background: #d1fae5; color: #065f46; }
+    .gl-badge-runner-up { background: #fef3c7; color: #b45309; }
+    .gl-badge-value-alt { background: #e0e7ff; color: #3730a3; }
+    .gl-badge-mid-range { background: #fef9c3; color: #854d0e; }
+    .gl-badge-power { background: #fce7f3; color: #be185d; }
+    .gl-interlink {
+      margin: 1.5rem auto;
+      padding: 0.85rem 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--green-200);
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+    .gl-interlink a { color: var(--green-600); font-weight: 600; }
+
+    @media (max-width: 600px) {
+      .gl-slug-specs { grid-template-columns: 1fr; }
+      .gl-slug-card h1 { font-size: 1.3rem; }
+    }
+  </style>
+</BaseLayout>

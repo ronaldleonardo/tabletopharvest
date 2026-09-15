@@ -1,0 +1,337 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { lights, tag, categories } from '../../lib/growlight-data.mjs';
+
+const sortOptions = [
+  { key: "default", label: "Featured" },
+  { key: "price-asc", label: "Price: Low to High" },
+  { key: "price-desc", label: "Price: High to Low" },
+  { key: "watts-desc", label: "Wattage: High to Low" },
+  { key: "rating-desc", label: "Rating: High to Low" },
+  { key: "deal", label: "Best Deal" },
+];
+
+const totalLights = lights.length;
+const minPrice = Math.min(...lights.map(l => l.price));
+const maxWatts = Math.max(...lights.map(l => l.watts));
+const maxReviewsK = Math.round(Math.max(...lights.map(l => l.reviews)) / 1000);
+---
+
+<BaseLayout
+  title="Grow Light DB: Compare 30 LED Grow Lights"
+  description="Compare 30 LED grow lights side by side by price, wattage, coverage, and rating. Real specs, honest picks, updated prices."
+  canonical="/grow-lights"
+>
+  <script define:vars={{ buildLights: lights }}>
+    (async function(){
+      try {
+        const r = await fetch('/data/products.json');
+        const d = await r.json();
+        const live = Object.fromEntries(d.products.map(p => [p.id, p]));
+        document.querySelectorAll('[data-price-for]').forEach(el => {
+          const id = el.dataset.priceFor;
+          if(live[id] && live[id].price !== buildLights.find(l => l.id === id)?.price)
+            el.textContent = '$' + live[id].price;
+        });
+      } catch(e){}
+    })();
+  </script>
+
+  <div class="gl-wrapper">
+    <section class="gl-hero">
+      <h1>Grow Light DB</h1>
+      <p class="gl-subtitle">Compare {totalLights} LED grow lights side by side. Real specs, honest picks, best prices.</p>
+      <a href="#grid-gl" class="gl-cta">See All Lights</a>
+    </section>
+
+    <div class="gl-stats">
+      <div class="gl-stat"><div class="gl-num">{totalLights}</div><div class="gl-label">Lights Compared</div></div>
+      <div class="gl-stat"><div class="gl-num">${minPrice}</div><div class="gl-label">Price From</div></div>
+      <div class="gl-stat"><div class="gl-num">{maxWatts}W</div><div class="gl-label">Max Power</div></div>
+      <div class="gl-stat"><div class="gl-num">{maxReviewsK}K+</div><div class="gl-label">Reviews Analyzed</div></div>
+    </div>
+
+    <div class="gl-toolbar">
+      <input type="text" class="gl-search" id="gl-search" placeholder="Search by name, brand, or feature..." />
+      <div class="gl-filter-group" id="gl-filters">
+        {categories.map(cat => (
+          <button class="gl-filter-btn" data-cat={cat.key}>{cat.label}</button>
+        ))}
+      </div>
+      <select class="gl-sort" id="gl-sort">
+        {sortOptions.map(opt => (
+          <option value={opt.key}>{opt.label}</option>
+        ))}
+      </select>
+    </div>
+
+    <div class="gl-grid" id="grid-gl">
+      {lights.map(light => {
+        const badgeClass = `gl-badge-${light.best}`;
+        const badgeLabel = categories.find(c => c.key === light.best)?.label || light.best;
+        const wattsPerDollar = Math.round(light.watts / light.price * 100) / 100;
+        const link = `https://www.amazon.com/s?k=${light.search}&tag=${tag}`;
+        return (
+          <div class="gl-card" data-cat={light.best} data-price={light.price} data-watts={light.watts} data-rating={light.rating} data-deal={wattsPerDollar}>
+            <div class="gl-card-left">
+              <div class="gl-card-name">
+                <a href={`/grow-lights/${light.id}`}>{light.name}</a>
+                <span class={`gl-badge ${badgeClass}`}>{badgeLabel}</span>
+              </div>
+              <div class="gl-card-specs">
+                <span class="gl-spec"><strong>{light.watts}W</strong> actual draw</span>
+                <span class="gl-spec">Covers <strong>{light.coverage}</strong></span>
+                <span class="gl-spec">Chips: <strong>{light.chips}</strong></span>
+                <span class="gl-spec">{light.dimmable ? 'Dimmable' : 'Not dimmable'}</span>
+                <span class="gl-spec">Noise: <strong>{light.noise}</strong></span>
+              </div>
+            </div>
+            <div class="gl-card-right">
+              <div class="gl-price" data-price-for={light.id}>${light.price}</div>
+              <div class="gl-rating">
+                <span class="gl-stars">{'★'.repeat(Math.round(light.rating))}{'☆'.repeat(5 - Math.round(light.rating))}</span>
+                {' '}{light.rating} ({light.reviews.toLocaleString()})
+              </div>
+              <a href={link} target="_blank" rel="nofollow sponsored" class="gl-buy-btn">Check Price</a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <div class="gl-no-results" id="gl-noResults" style="display:none;">
+      <p>No lights match your search. Try a different filter.</p>
+    </div>
+
+    <div class="gl-interlink">
+      <p><strong>New to indoor growing?</strong> Read our <a href="/posts/hydroponics-for-beginners">complete beginner guide</a> or browse our <a href="/posts">growing guides and reviews</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('gl-search');
+    const cards = document.querySelectorAll('.gl-card');
+    const noResults = document.getElementById('gl-noResults');
+    const filterBtns = document.querySelectorAll('.gl-filter-btn');
+    const sortSelect = document.getElementById('gl-sort');
+    let activeFilter = 'all';
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.cat;
+        render();
+      });
+    });
+    filterBtns[0].classList.add('active');
+
+    searchInput.addEventListener('input', render);
+    sortSelect.addEventListener('change', render);
+
+    function render() {
+      const query = searchInput.value.toLowerCase().trim();
+      const sort = sortSelect.value;
+      let visible = Array.from(cards);
+      visible = visible.filter(card => {
+        const cat = card.dataset.cat;
+        const text = card.textContent.toLowerCase();
+        const matchesFilter = activeFilter === 'all' || cat === activeFilter;
+        const matchesSearch = !query || text.includes(query);
+        return matchesFilter && matchesSearch;
+      });
+      if (sort === 'price-asc') visible.sort((a, b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+      else if (sort === 'price-desc') visible.sort((a, b) => parseFloat(b.dataset.price) - parseFloat(a.dataset.price));
+      else if (sort === 'watts-desc') visible.sort((a, b) => parseFloat(b.dataset.watts) - parseFloat(a.dataset.watts));
+      else if (sort === 'rating-desc') visible.sort((a, b) => parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating));
+      else if (sort === 'deal') visible.sort((a, b) => parseFloat(b.dataset.deal) - parseFloat(a.dataset.deal));
+      const grid = document.getElementById('grid-gl');
+      visible.forEach(card => grid.appendChild(card));
+      cards.forEach(card => { card.style.display = visible.includes(card) ? '' : 'none'; });
+      noResults.style.display = visible.length === 0 ? '' : 'none';
+    }
+  </script>
+
+  <style is:global>
+    .gl-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    .gl-hero {
+      text-align: center;
+      padding: 2rem 0 1.5rem;
+    }
+    .gl-hero h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--green-800); margin-bottom: 0.5rem; }
+    .gl-subtitle { font-size: 1rem; color: var(--warm-500); }
+    .gl-cta {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--green-600);
+      color: white;
+      padding: 0.65rem 1.6rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .gl-cta:hover { opacity: 0.9; }
+    .gl-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 1.25rem 0;
+      border-bottom: var(--border-light);
+    }
+    .gl-stat { text-align: center; }
+    .gl-num { font-size: 1.5rem; font-weight: 800; color: var(--green-700); }
+    .gl-label { font-size: 0.75rem; color: var(--warm-500); text-transform: uppercase; letter-spacing: 0.04em; }
+    .gl-toolbar {
+      max-width: 1100px;
+      margin: 1.5rem auto 1rem;
+      padding: 0;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .gl-search {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-family: inherit;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .gl-filter-group { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .gl-filter-btn {
+      padding: 0.5rem 0.9rem;
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      background: var(--bg);
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+      color: var(--text);
+    }
+    .gl-filter-btn:hover { border-color: var(--green-500); color: var(--green-600); }
+    .gl-filter-btn.active { background: var(--green-600); color: white; border-color: var(--green-600); }
+    .gl-sort {
+      padding: 0.5rem 0.9rem;
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      background: var(--bg);
+      font-size: 0.78rem;
+      font-family: inherit;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .gl-grid {
+      max-width: 1100px;
+      margin: 1rem auto 2rem;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .gl-card {
+      background: var(--bg-card);
+      border: var(--border-light);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.75rem;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .gl-card:hover { border-color: var(--green-600); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .gl-card-name { font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .gl-card-name a { text-decoration: none; color: var(--text); }
+    .gl-card-name a:hover { color: var(--green-600); }
+    .gl-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.1rem 0.5rem;
+      border-radius: 9999px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+    .gl-badge-overall { background: #d4f5e0; color: #0d3b1e; }
+    .gl-badge-value { background: #dbeafe; color: #1e40af; }
+    .gl-badge-budget { background: #fef3c7; color: #92400e; }
+    .gl-badge-starter { background: #f3e8ff; color: #6b21a8; }
+    .gl-badge-upgrade { background: #d1fae5; color: #065f46; }
+    .gl-badge-large { background: #fce7f3; color: #9d174d; }
+    .gl-badge-quality { background: #e0e7ff; color: #3730a3; }
+    .gl-badge-commercial { background: #fef9c3; color: #854d0e; }
+    .gl-badge-cheap { background: #fce7f3; color: #9d174d; }
+    .gl-badge-entry { background: #f3e8ff; color: #6b21a8; }
+    .gl-badge-economy { background: #d1fae5; color: #065f46; }
+    .gl-badge-runner-up { background: #fef3c7; color: #b45309; }
+    .gl-badge-value-alt { background: #e0e7ff; color: #3730a3; }
+    .gl-badge-mid-range { background: #fef9c3; color: #854d0e; }
+    .gl-badge-power { background: #fce7f3; color: #be185d; }
+    .gl-card-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1rem;
+      margin-top: 0.25rem;
+    }
+    .gl-spec { font-size: 0.78rem; color: var(--text-dim); }
+    .gl-spec strong { color: var(--text); font-weight: 600; }
+    .gl-card-right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.3rem;
+    }
+    .gl-price { font-size: 1.3rem; font-weight: 800; color: var(--green-700); }
+    .gl-rating { font-size: 0.78rem; color: var(--text-dim); }
+    .gl-stars { color: #f59e0b; }
+    .gl-buy-btn {
+      display: inline-block;
+      background: var(--green-600);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.78rem;
+      transition: background 0.15s;
+    }
+    .gl-buy-btn:hover { opacity: 0.9; }
+    .gl-no-results { text-align: center; padding: 3rem; color: var(--text-dim); }
+    .gl-interlink {
+      max-width: 1100px;
+      margin: 1.5rem auto;
+      padding: 0.85rem 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--green-200);
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+    .gl-interlink a { color: var(--green-600); font-weight: 600; }
+
+    @media (max-width: 700px) {
+      .gl-card { grid-template-columns: 1fr; }
+      .gl-card-right { text-align: left; flex-direction: row; align-items: center; flex-wrap: wrap; }
+      .gl-toolbar { flex-direction: column; }
+      .gl-stats { gap: 1.5rem; }
+      .gl-hero h1 { font-size: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .gl-stats { flex-wrap: wrap; gap: 1rem; }
+    }
+  </style>
+</BaseLayout>
