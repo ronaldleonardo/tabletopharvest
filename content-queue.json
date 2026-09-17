@@ -132,7 +132,7 @@
     "slug": "aerogarden-vs-diy-hydroponics",
     "intent": "commercial comparison",
     "products": ["AeroGarden Harvest", "DWC bucket kit", "nutrient kit"],
-    "status": "pending",
+    "status": "done",
     "notes": "Comparison = strong commercial intent, big-ticket items."
   },
   {

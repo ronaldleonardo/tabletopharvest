@@ -21,3 +21,4 @@
 - 2026-09-14: how-to-grow-basil-indoors — how to grow basil indoors — 7 affiliate links
 - 2026-09-16: how-to-start-seeds-indoors — how to start seeds indoors — 3 affiliate links
 - 2026-09-15: best-indoor-herb-garden-kits — best indoor herb garden kit — 7 affiliate links
+- 2026-09-17: aerogarden-vs-diy-hydroponics — aerogarden vs diy hydroponics — 5 affiliate links
