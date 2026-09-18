@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://www.tabletopharvest.com',
+  site: 'https://tabletopharvest.com',
   compressHTML: true,
   devToolbar: { enabled: false },
   integrations: [sitemap()],

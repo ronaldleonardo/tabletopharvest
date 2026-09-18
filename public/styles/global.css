@@ -528,6 +528,43 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
   .cta-section { padding: 1.5rem; }
 }
 
+/* ── Article Tables ── */
+.article-body figure { margin: 1.5rem 0; overflow-x: auto; }
+.article-body figure figcaption { font-family: var(--font-sans); font-size: 0.85rem; color: var(--warm-500); text-align: center; padding: 0.5rem 0 0; }
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.article-body thead th {
+  background: var(--green-700) !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 0.65rem 0.85rem !important;
+  text-align: left;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.article-body thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+.article-body thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
+.article-body tbody td {
+  padding: 0.65rem 0.85rem !important;
+  border-bottom: 1px solid var(--warm-200) !important;
+}
+.article-body tbody tr:nth-child(even) td { background: var(--warm-50) !important; }
+.article-body tbody tr:first-child td { border-top: none; }
+.article-body tbody td:first-child { font-weight: 600; color: var(--warm-900) !important; }
+.article-body tbody tr:last-child td {
+  font-weight: 700;
+  background: var(--green-50) !important;
+  border-bottom: 2px solid var(--green-400) !important;
+  color: var(--green-900) !important;
+}
+.article-body tbody tr:hover td { background: var(--warm-100) !important; }
+
 @media (max-width: 380px) {
   html { font-size: 16px; }
   .hero h1 { font-size: 1.5rem; }
