@@ -140,16 +140,16 @@
     "slug": "best-ph-meter-for-hydroponics",
     "intent": "commercial",
     "products": ["pH meter", "pH test drops", "pH Up/Down kit"],
-    "status": "pending",
-    "notes": "Under-served topic, low competition. Buyer intent high."
+    "status": "done",
+    "notes": "Under-served topic, low competition. Buyer intent high. Published 2026-09-18."
   },
   {
     "keyword": "how to grow cherry tomatoes indoors",
     "slug": "how-to-grow-cherry-tomatoes-indoors",
     "intent": "informational",
     "products": ["5 gallon bucket", "air pump", "trellis", "LED grow light"],
-    "status": "pending",
-    "notes": "High difficulty but high volume. Good for authority."
+    "status": "done",
+    "notes": "High difficulty but high volume. Good for authority. Published 2026-09-19."
   },
   {
     "keyword": "microgreens vs sprouts",
