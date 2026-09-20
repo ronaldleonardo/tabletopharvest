@@ -25,3 +25,4 @@
 - 2026-09-18: best-ph-meter-for-hydroponics — best ph meter for hydroponics — 6 affiliate links
 - 2026-09-18: hydroponics-too-expensive-to-start — TH Pillar P2 (Too expensive to start)
 - 2026-09-19: how-to-grow-cherry-tomatoes-indoors — how to grow cherry tomatoes indoors — 5 affiliate links
+- 2026-09-20: microgreens-vs-sprouts - microgreens vs sprouts - 6 affiliate links (5 unique products)

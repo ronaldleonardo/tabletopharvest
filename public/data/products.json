@@ -297,7 +297,7 @@
     {
       "id": "ac-infinity-ionframe-evo8",
       "name": "AC Infinity IONFRAME EVO8",
-      "price": 600,
+      "price": 799,
       "watts": 730,
       "coverage": "4x4 ft / 5x5 ft",
       "chips": "Samsung LM301H EVO",
@@ -311,7 +311,7 @@
     {
       "id": "mars-hydro-fc-4800",
       "name": "Mars Hydro FC-4800",
-      "price": 400,
+      "price": 329.99,
       "watts": 480,
       "coverage": "4x4 ft",
       "chips": "Samsung LM301B",
@@ -339,7 +339,7 @@
     {
       "id": "migro-aray-4",
       "name": "Migro Aray 4",
-      "price": 230,
+      "price": 269,
       "watts": 240,
       "coverage": "3x3 ft",
       "chips": "Samsung LM301B",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-17"
+  "updated": "2026-09-19"
 }
