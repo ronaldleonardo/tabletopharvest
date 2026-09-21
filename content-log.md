@@ -26,3 +26,5 @@
 - 2026-09-18: hydroponics-too-expensive-to-start — TH Pillar P2 (Too expensive to start)
 - 2026-09-19: how-to-grow-cherry-tomatoes-indoors — how to grow cherry tomatoes indoors — 5 affiliate links
 - 2026-09-20: microgreens-vs-sprouts - microgreens vs sprouts - 6 affiliate links (5 unique products)
+- 2026-09-20: hydroponics-jargon-explained — TH Pillar P4 (jargon, written by evening review to close pipeline gap) — 3 affiliate links
+- 2026-09-21: how-to-grow-pea-shoots — how to grow pea shoots indoors — 6 affiliate links (2 internal, 1 GLDB)

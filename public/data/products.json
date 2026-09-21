@@ -353,7 +353,7 @@
     {
       "id": "gavita-1700e",
       "name": "Gavita 1700E",
-      "price": 500,
+      "price": 1199,
       "watts": 650,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301B",
@@ -381,7 +381,7 @@
     {
       "id": "medicgrow-fold-8",
       "name": "Medic Grow Fold-8",
-      "price": 600,
+      "price": 449.99,
       "watts": 800,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301H",
@@ -395,7 +395,7 @@
     {
       "id": "kind-led-x750",
       "name": "Kind LED X750",
-      "price": 700,
+      "price": 995,
       "watts": 750,
       "coverage": "5x5 ft",
       "chips": "Full Spectrum",
@@ -409,7 +409,7 @@
     {
       "id": "hlg-650-r-spec",
       "name": "HLG 650R RSpec",
-      "price": 700,
+      "price": 899,
       "watts": 650,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301H",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-19"
+  "updated": "2026-09-20"
 }

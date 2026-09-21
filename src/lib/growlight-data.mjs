@@ -24,11 +24,11 @@ export const lights = [
   { id: "mars-hydro-fc-4800", name: "Mars Hydro FC-4800", price: 329.99, watts: 480, coverage: "4x4 ft", chips: "Samsung LM301B", dimmable: true, noise: "All-Silent", rating: 4.6, reviews: 1200, best: "upgrade", search: "Mars+Hydro+FC-4800+LED+grow+light" },
   { id: "hlg-300l-rspec", name: "HLG 300L RSpec", price: 350, watts: 300, coverage: "3x3 ft", chips: "Samsung LM301H", dimmable: true, noise: "All-Silent", rating: 4.8, reviews: 900, best: "quality", search: "HLG+300L+RSpec+LED+grow+light" },
   { id: "migro-aray-4", name: "Migro Aray 4", price: 269, watts: 240, coverage: "3x3 ft", chips: "Samsung LM301B", dimmable: true, noise: "All-Silent", rating: 4.6, reviews: 700, best: "value-alt", search: "Migro+Aray+4+LED+grow+light" },
-  { id: "gavita-1700e", name: "Gavita 1700E", price: 500, watts: 650, coverage: "5x5 ft", chips: "Samsung LM301B", dimmable: true, noise: "All-Silent", rating: 4.7, reviews: 1100, best: "commercial", search: "Gavita+1700E+LED+grow+light" },
+  { id: "gavita-1700e", name: "Gavita 1700E", price: 1199, watts: 650, coverage: "5x5 ft", chips: "Samsung LM301B", dimmable: true, noise: "All-Silent", rating: 4.7, reviews: 1100, best: "commercial", search: "Gavita+1700E+LED+grow+light" },
   { id: "bloom-plus-xp-2500", name: "BloomPlus XP-2500", price: 160, watts: 250, coverage: "3x3 ft", chips: "Samsung LM301B", dimmable: true, noise: "All-Silent", rating: 4.4, reviews: 1400, best: "economy", search: "BloomPlus+XP-2500+LED+grow+light" },
-  { id: "medicgrow-fold-8", name: "Medic Grow Fold-8", price: 600, watts: 800, coverage: "5x5 ft", chips: "Samsung LM301H", dimmable: true, noise: "All-Silent", rating: 4.7, reviews: 500, best: "large", search: "Medic+Grow+Fold-8+LED+grow+light" },
-  { id: "kind-led-x750", name: "Kind LED X750", price: 700, watts: 750, coverage: "5x5 ft", chips: "Full Spectrum", dimmable: true, noise: "Fan 30dB", rating: 4.5, reviews: 600, best: "commercial", search: "Kind+LED+X750+LED+grow+light" },
-  { id: "hlg-650-r-spec", name: "HLG 650R RSpec", price: 700, watts: 650, coverage: "5x5 ft", chips: "Samsung LM301H", dimmable: true, noise: "All-Silent", rating: 4.8, reviews: 400, best: "quality", search: "HLG+650R+RSpec+LED+grow+light" },
+  { id: "medicgrow-fold-8", name: "Medic Grow Fold-8", price: 449.99, watts: 800, coverage: "5x5 ft", chips: "Samsung LM301H", dimmable: true, noise: "All-Silent", rating: 4.7, reviews: 500, best: "large", search: "Medic+Grow+Fold-8+LED+grow+light" },
+  { id: "kind-led-x750", name: "Kind LED X750", price: 995, watts: 750, coverage: "5x5 ft", chips: "Full Spectrum", dimmable: true, noise: "Fan 30dB", rating: 4.5, reviews: 600, best: "commercial", search: "Kind+LED+X750+LED+grow+light" },
+  { id: "hlg-650-r-spec", name: "HLG 650R RSpec", price: 899, watts: 650, coverage: "5x5 ft", chips: "Samsung LM301H", dimmable: true, noise: "All-Silent", rating: 4.8, reviews: 400, best: "quality", search: "HLG+650R+RSpec+LED+grow+light" },
 ];
 
 export const tag = "tabletopharve-20";
