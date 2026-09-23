@@ -29,3 +29,4 @@
 - 2026-09-20: hydroponics-jargon-explained — TH Pillar P4 (jargon, written by evening review to close pipeline gap) — 3 affiliate links
 - 2026-09-21: how-to-grow-pea-shoots — how to grow pea shoots indoors — 6 affiliate links (2 internal, 1 GLDB)
 - 2026-09-22: sprouting-vs-microgreen-seeds — are sprouting seeds the same as microgreen seeds — 5 affiliate links (2 internal, 1 GLDB)
+- 2026-09-23: microgreens-yield-per-tray — how many microgreens per tray harvest weight — 6 affiliate links (2 internal, 1 GLDB)
