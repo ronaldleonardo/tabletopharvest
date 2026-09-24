@@ -280,5 +280,17 @@
     ],
     "status": "done",
     "notes": "Data-style yield guide, shareable. Uses exact numbers. Published 2026-09-23, 6 affiliate links."
+  },
+  {
+    "keyword": "how to fix leggy seedlings",
+    "slug": "how-to-fix-leggy-seedlings",
+    "intent": "informational",
+    "products": [
+      "LED grow light",
+      "outlet timer plug",
+      "watt meter"
+    ],
+    "status": "done",
+    "notes": "Troubleshooting failure story, seed-starting cluster. Reddit gold (plantclinic). Published 2026-09-24, 4 affiliate links."
   }
 ]
