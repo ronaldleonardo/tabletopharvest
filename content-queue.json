@@ -292,5 +292,18 @@
     ],
     "status": "done",
     "notes": "Troubleshooting failure story, seed-starting cluster. Reddit gold (plantclinic). Published 2026-09-24, 4 affiliate links."
+  },
+  {
+    "keyword": "how to grow strawberries indoors",
+    "slug": "how-to-grow-strawberries-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "day-neutral strawberry plants",
+      "LED grow light for fruiting",
+      "hydroponic nutrient kit",
+      "DWC hydroponic kit"
+    ],
+    "status": "done",
+    "notes": "Fruit crop gap, high volume. Angle: middle-twist (no pollination = no berries). Published 2026-09-25, 4 affiliate links, 2 internal + 1 GLDB."
   }
 ]

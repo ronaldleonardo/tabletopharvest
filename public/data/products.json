@@ -269,7 +269,7 @@
     {
       "id": "spider-farmer-sf-7000",
       "name": "Spider Farmer SF7000",
-      "price": 490,
+      "price": 569.99,
       "watts": 650,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301B",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-20"
+  "updated": "2026-09-24"
 }
