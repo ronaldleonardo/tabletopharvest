@@ -305,5 +305,18 @@
     ],
     "status": "done",
     "notes": "Fruit crop gap, high volume. Angle: middle-twist (no pollination = no berries). Published 2026-09-25, 4 affiliate links, 2 internal + 1 GLDB."
+  },
+  {
+    "keyword": "how to fix root rot in hydroponics",
+    "slug": "hydroponic-root-rot-fix",
+    "intent": "informational + commercial",
+    "products": [
+      "air pump + air stone kit",
+      "hydrogen peroxide 3%",
+      "aquarium thermometer",
+      "quiet air pump"
+    ],
+    "status": "done",
+    "notes": "Troubleshooting failure story, Reddit gold. Angle: 'it's not a disease you cure, it's an environment you stop feeding'. Published 2026-09-26, 4 affiliate links, 3 internal."
   }
 ]

@@ -32,3 +32,4 @@
 - 2026-09-23: microgreens-yield-per-tray — how many microgreens per tray harvest weight — 6 affiliate links (2 internal, 1 GLDB)
 - 2026-09-24: how-to-fix-leggy-seedlings — how to fix leggy seedlings — 4 affiliate links (2 internal, 1 GLDB)
 - 2026-09-25: how-to-grow-strawberries-indoors — how to grow strawberries indoors — 4 affiliate links (2 internal, 1 GLDB)
+- 2026-09-26: hydroponic-root-rot-fix — how to fix root rot in hydroponics — 4 affiliate links (3 internal)
