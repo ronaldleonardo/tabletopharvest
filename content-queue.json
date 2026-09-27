@@ -318,5 +318,18 @@
     ],
     "status": "done",
     "notes": "Troubleshooting failure story, Reddit gold. Angle: 'it's not a disease you cure, it's an environment you stop feeding'. Published 2026-09-26, 4 affiliate links, 3 internal."
+  },
+  {
+    "keyword": "how to grow cilantro indoors (stop bolting)",
+    "slug": "how-to-grow-cilantro-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "timer plug",
+      "slow bolt cilantro seeds",
+      "hydroponic nutrient kit",
+      "pH test kit"
+    ],
+    "status": "done",
+    "notes": "Cilantro bolting failure story. Angle: hidden door 12-hour light trick + slow-bolt seed. Published 2026-09-27, 4 affiliate links, 3 internal + 1 GLDB."
   }
 ]

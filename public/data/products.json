@@ -381,7 +381,7 @@
     {
       "id": "medicgrow-fold-8",
       "name": "Medic Grow Fold-8",
-      "price": 449.99,
+      "price": 349.99,
       "watts": 800,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301H",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-24"
+  "updated": "2026-09-26"
 }
