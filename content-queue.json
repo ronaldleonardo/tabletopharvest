@@ -331,5 +331,18 @@
     ],
     "status": "done",
     "notes": "Cilantro bolting failure story. Angle: hidden door 12-hour light trick + slow-bolt seed. Published 2026-09-27, 4 affiliate links, 3 internal + 1 GLDB."
+  },
+  {
+    "keyword": "how to grow green onions indoors",
+    "slug": "how-to-grow-green-onions-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "hydroponic nutrient kit",
+      "LED grow light strip",
+      "net cups + clay pebbles",
+      "pH test kit"
+    ],
+    "status": "done",
+    "notes": "Beginner scrap-regrow crop, high search volume, Reddit gold. Angle: hidden door (plain-water hack fades after 2-3 cycles; light + nutrient keeps it going for months). Published 2026-09-28, 5 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
   }
 ]
