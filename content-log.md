@@ -35,3 +35,4 @@
 - 2026-09-26: hydroponic-root-rot-fix — how to fix root rot in hydroponics — 4 affiliate links (3 internal)
 - 2026-09-27: how-to-grow-cilantro-indoors — how to grow cilantro indoors (stop bolting) — 4 affiliate links (3 internal, 1 GLDB)
 - 2026-09-28: how-to-grow-green-onions-indoors — how to grow green onions indoors — 5 affiliate links (2 internal, 1 GLDB)
+- 2026-09-29: how-to-prevent-mold-on-microgreens — how to prevent mold on microgreens — 7 affiliate links (2 internal, 2 GLDB)

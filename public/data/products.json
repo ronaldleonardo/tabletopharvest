@@ -87,7 +87,7 @@
     {
       "id": "spider-farmer-sf-2000",
       "name": "Spider Farmer SF-2000",
-      "price": 146,
+      "price": 179.99,
       "watts": 200,
       "coverage": "3x3 ft",
       "chips": "Samsung LM301B",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-26"
+  "updated": "2026-09-28"
 }

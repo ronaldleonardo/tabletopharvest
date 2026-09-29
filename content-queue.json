@@ -344,5 +344,20 @@
     ],
     "status": "done",
     "notes": "Beginner scrap-regrow crop, high search volume, Reddit gold. Angle: hidden door (plain-water hack fades after 2-3 cycles; light + nutrient keeps it going for months). Published 2026-09-28, 5 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
+  },
+  {
+    "keyword": "how to prevent mold on microgreens",
+    "slug": "how-to-prevent-mold-on-microgreens",
+    "intent": "informational + commercial",
+    "products": [
+      "box fan",
+      "food-grade hydrogen peroxide 3%",
+      "spray mist bottle",
+      "1020 microgreen trays",
+      "coconut coir",
+      "broccoli seeds"
+    ],
+    "status": "done",
+    "notes": "Troubleshooting failure + hidden door angle: most white fuzz is root hairs, not mold; real fix is airflow not spraying. Middle twist = fan beat chemistry. Published 2026-09-29, 7 affiliate links, 2 internal + 2 GLDB. Hero image pending via prompt pack."
   }
 ]
