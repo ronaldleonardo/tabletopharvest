@@ -372,5 +372,19 @@
     ],
     "status": "done",
     "notes": "Fresh crop gap. Failure + hidden door angle: treat spinach like lettuce and it bolts bitter; fix is 12-hour light not more. Middle twist = less light, not more. Published 2026-09-30, 5 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
+  },
+  {
+    "keyword": "how to grow arugula indoors",
+    "slug": "how-to-grow-arugula-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "arugula seeds (Astro)",
+      "outlet timer plug",
+      "Barrina T5 LED strip",
+      "seed starting potting mix",
+      "leafy-green nutrient kit"
+    ],
+    "status": "done",
+    "notes": "Fresh leafy-green crop gap. Failure + hidden door angle: spiciness is a stress response, cool = mild, warm = bitter/bolts. Middle twist = temperature controls flavor, not variety. Published 2026-10-01, 7 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
   }
 ]

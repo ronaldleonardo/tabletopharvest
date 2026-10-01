@@ -283,7 +283,7 @@
     {
       "id": "ac-infinity-ionframe-evo3",
       "name": "AC Infinity IONFRAME EVO3",
-      "price": 280,
+      "price": 356.41,
       "watts": 280,
       "coverage": "3x3 ft",
       "chips": "Samsung LM301H EVO",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-09-28"
+  "updated": "2026-09-30"
 }
