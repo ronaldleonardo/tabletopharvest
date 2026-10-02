@@ -38,3 +38,4 @@
 - 2026-09-29: how-to-prevent-mold-on-microgreens — how to prevent mold on microgreens — 7 affiliate links (2 internal, 2 GLDB)
 - 2026-09-30: how-to-grow-spinach-indoors — how to grow spinach indoors — 5 affiliate links (3 internal, 1 GLDB)
 - 2026-10-01: how-to-grow-arugula-indoors — how to grow arugula indoors — 7 affiliate links (3 internal, 1 GLDB)
+- 2026-10-02: how-to-grow-bok-choy-indoors — how to grow bok choy indoors — 4 affiliate links (2 internal, 1 GLDB)
