@@ -87,7 +87,7 @@
     {
       "id": "spider-farmer-sf-2000",
       "name": "Spider Farmer SF-2000",
-      "price": 179.99,
+      "price": 145.99,
       "watts": 200,
       "coverage": "3x3 ft",
       "chips": "Samsung LM301B",
@@ -283,7 +283,7 @@
     {
       "id": "ac-infinity-ionframe-evo3",
       "name": "AC Infinity IONFRAME EVO3",
-      "price": 356.41,
+      "price": 299,
       "watts": 280,
       "coverage": "3x3 ft",
       "chips": "Samsung LM301H EVO",
@@ -353,7 +353,7 @@
     {
       "id": "gavita-1700e",
       "name": "Gavita 1700E",
-      "price": 1199,
+      "price": 699,
       "watts": 650,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301B",

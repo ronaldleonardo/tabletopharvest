@@ -39,3 +39,4 @@
 - 2026-09-30: how-to-grow-spinach-indoors — how to grow spinach indoors — 5 affiliate links (3 internal, 1 GLDB)
 - 2026-10-01: how-to-grow-arugula-indoors — how to grow arugula indoors — 7 affiliate links (3 internal, 1 GLDB)
 - 2026-10-02: how-to-grow-bok-choy-indoors — how to grow bok choy indoors — 4 affiliate links (2 internal, 1 GLDB)
+- 2026-10-03: how-long-to-run-grow-lights — how long to run grow lights for indoor plants per day — 3 affiliate links (3 internal, 1 GLDB)
