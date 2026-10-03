@@ -45,7 +45,7 @@
     {
       "id": "barrina-t5-4pack",
       "name": "Barrina T5 4-Pack",
-      "price": 40,
+      "price": 31.99,
       "watts": 40,
       "coverage": "2x4 ft shelf",
       "chips": "LED Strip",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-02"
+  "updated": "2026-10-03"
 }
