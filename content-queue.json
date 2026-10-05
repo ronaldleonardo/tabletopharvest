@@ -424,5 +424,19 @@
     ],
     "status": "done",
     "notes": "Root-crop gap closed (site had no root crops). Failure + hidden door angle: all leaves no bulb from heat, weak/too-long light, nitrogen-heavy feed. Middle twist = cool signals bulb, feed signals leaves. Published 2026-10-04, 5 affiliate links, 3 internal + 2 GLDB."
+  },
+  {
+    "keyword": "how to grow peppers indoors",
+    "slug": "how-to-grow-peppers-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "jalapeno seeds",
+      "oscillating clip fan",
+      "LED grow light strip",
+      "bloom fertilizer",
+      "timer plug"
+    ],
+    "status": "done",
+    "notes": "Fruiting crop gap. Failure + hidden door angle: peppers are self-pollinating but need a shake indoors; dead-still air = flowers but zero fruit. Middle twist = it was not nutrients, it was no breeze. Published 2026-10-05, 5 affiliate links, 3 internal + 1 GLDB."
   }
 ]
