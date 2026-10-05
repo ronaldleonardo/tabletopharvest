@@ -143,7 +143,7 @@
     {
       "id": "growers-choice-roi-e720",
       "name": "Growers Choice ROI-E720",
-      "price": 720,
+      "price": 849,
       "watts": 720,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301H",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-03"
+  "updated": "2026-10-05"
 }
