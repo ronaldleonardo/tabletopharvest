@@ -43,3 +43,4 @@
 - 2026-10-04: how-to-grow-radishes-indoors — how to grow radishes indoors — 5 affiliate links (3 internal, 2 GLDB)
 
 - 2026-10-05: how-to-grow-peppers-indoors — how to grow peppers indoors — 5 affiliate links (3 internal, 1 GLDB)
+- 2026-10-06: how-to-grow-mint-indoors — how to grow mint indoors — 8 affiliate links (4 internal, 1 GLDB)
