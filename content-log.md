@@ -44,3 +44,4 @@
 
 - 2026-10-05: how-to-grow-peppers-indoors — how to grow peppers indoors — 5 affiliate links (3 internal, 1 GLDB)
 - 2026-10-06: how-to-grow-mint-indoors — how to grow mint indoors — 8 affiliate links (4 internal, 1 GLDB)
+- 2026-10-07: how-to-get-rid-of-fungus-gnats-indoors - how to get rid of fungus gnats indoors - 6 affiliate links (3 internal, 1 GLDB). Hero: real sourced photo (John Tann, CC BY 2.0, Wikimedia Commons) because image_generate is out of credits (OpenRouter 402).
