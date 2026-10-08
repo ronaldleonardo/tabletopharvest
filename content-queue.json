@@ -468,5 +468,20 @@
     ],
     "status": "done",
     "notes": "Pest cluster gap closed (site had zero pest coverage before this). High volume, Reddit gold, no seasonality. Hidden door + failure angle: gnats are a watering problem, not a bug problem; the fix is a 4-week calendar, not a spray. Middle twist = one application kills one of four overlapping generations, label vs life cycle. Answers PAA: instant kill (none), harmful to humans (no), do they go away alone (rarely), where they come from (potting mix / fall-return plants), and hydro relevance (rare in Kratky/DWC). Published 2026-10-07, 6 affiliate links (11 instances), 3 internal + 1 GLDB."
+  },
+  {
+    "keyword": "how to get rid of spider mites on indoor plants",
+    "slug": "how-to-get-rid-of-spider-mites-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "insecticidal soap",
+      "neem oil concentrate",
+      "pump sprayer",
+      "thermo-hygrometer",
+      "small humidifier",
+      "yellow sticky traps"
+    ],
+    "status": "done",
+    "notes": "Second pest-cluster article (site had only fungus gnats). High volume, evergreen, no seasonality, Reddit gold (r/plantclinic, r/Hydroponics). Failure + hidden door angle: mites are arachnids not insects so bug spray fails; fix is 3-day spray calendar + humidity, not a stronger poison. Middle twist = it was never a bug problem, it was a 78F/30% humidity climate problem. Answers PAA: what kills instantly (nothing, eggs survive), do they go away alone (rarely), does neem work (slowly, eggs survive), how they get indoors (fall plants, new plants), harmful to humans (no bites, allergen skins). Published 2026-10-08, 6 affiliate links (10 instances), 3 internal + 1 GLDB."
   }
 ]
