@@ -17,7 +17,7 @@
     {
       "id": "mars-hydro-ts-1000",
       "name": "Mars Hydro TS-1000",
-      "price": 80,
+      "price": 89.99,
       "watts": 150,
       "coverage": "2x2 flower / 3x3 veg",
       "chips": "Samsung LM301B",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-08"
+  "updated": "2026-10-09"
 }
