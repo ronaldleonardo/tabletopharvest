@@ -483,5 +483,19 @@
     ],
     "status": "done",
     "notes": "Second pest-cluster article (site had only fungus gnats). High volume, evergreen, no seasonality, Reddit gold (r/plantclinic, r/Hydroponics). Failure + hidden door angle: mites are arachnids not insects so bug spray fails; fix is 3-day spray calendar + humidity, not a stronger poison. Middle twist = it was never a bug problem, it was a 78F/30% humidity climate problem. Answers PAA: what kills instantly (nothing, eggs survive), do they go away alone (rarely), does neem work (slowly, eggs survive), how they get indoors (fall plants, new plants), harmful to humans (no bites, allergen skins). Published 2026-10-08, 6 affiliate links (10 instances), 3 internal + 1 GLDB."
+  },
+  {
+    "keyword": "how to get rid of aphids on indoor plants",
+    "slug": "how-to-get-rid-of-aphids-indoors",
+    "intent": "informational + commercial",
+    "products": [
+      "insecticidal soap concentrate",
+      "neem oil concentrate",
+      "1 gallon pump sprayer",
+      "bypass pruning shears",
+      "yellow sticky traps"
+    ],
+    "status": "done",
+    "notes": "Third pest-cluster article (site had fungus gnats + spider mites). High volume, evergreen, no seasonality, Reddit gold (r/IndoorGarden, r/HotPeppers, r/gardening). Failure + hidden door angle: indoor aphids give live birth without mating and daughters are born already pregnant (telescoping generations), so killing the visible ones never ends it; the fix is a water blast plus soap/oil on the undersides every 3-5 days for 3 weeks, not one spray. Middle twist = not a bug problem, a birth-rate problem / assembly line. Answers PAA: what kills instantly (nothing; the water blast only relocates), does dish soap work (yes, but burns leaves, so use formulated insecticidal soap), do they go away alone (rarely indoors), are they harmful to humans (no bites or disease), why they keep coming back (live birth plus winged alates as scouts). Includes honeydew/sooty mold/ant-farming section and winged-scout warning. Published 2026-10-09, 5 affiliate links (10 instances), 3 internal (fungus gnats, spider mites, peppers) + 1 GLDB. Hero: real sourced CC0 photo from Wikimedia Commons."
   }
 ]
