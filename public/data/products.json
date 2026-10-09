@@ -143,7 +143,7 @@
     {
       "id": "growers-choice-roi-e720",
       "name": "Growers Choice ROI-E720",
-      "price": 849,
+      "price": 720,
       "watts": 720,
       "coverage": "5x5 ft",
       "chips": "Samsung LM301H",
@@ -241,7 +241,7 @@
     {
       "id": "viparspectra-p2000",
       "name": "VIPARSPECTRA P2000",
-      "price": 129.97,
+      "price": 149.99,
       "watts": 200,
       "coverage": "2.5x2.5 flower / 3.5x3.5 veg",
       "chips": "Samsung LED",
