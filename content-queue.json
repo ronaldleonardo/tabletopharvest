@@ -497,5 +497,18 @@
     ],
     "status": "done",
     "notes": "Third pest-cluster article (site had fungus gnats + spider mites). High volume, evergreen, no seasonality, Reddit gold (r/IndoorGarden, r/HotPeppers, r/gardening). Failure + hidden door angle: indoor aphids give live birth without mating and daughters are born already pregnant (telescoping generations), so killing the visible ones never ends it; the fix is a water blast plus soap/oil on the undersides every 3-5 days for 3 weeks, not one spray. Middle twist = not a bug problem, a birth-rate problem / assembly line. Answers PAA: what kills instantly (nothing; the water blast only relocates), does dish soap work (yes, but burns leaves, so use formulated insecticidal soap), do they go away alone (rarely indoors), are they harmful to humans (no bites or disease), why they keep coming back (live birth plus winged alates as scouts). Includes honeydew/sooty mold/ant-farming section and winged-scout warning. Published 2026-10-09, 5 affiliate links (10 instances), 3 internal (fungus gnats, spider mites, peppers) + 1 GLDB. Hero: real sourced CC0 photo from Wikimedia Commons."
+  },
+  {
+    "keyword": "grow light electricity cost",
+    "slug": "grow-light-electricity-cost",
+    "intent": "informational",
+    "products": [
+      "Kill A Watt watt meter",
+      "mechanical outlet timer",
+      "Barrina T5 LED strip",
+      "Spider Farmer SF-1000"
+    ],
+    "status": "done",
+    "notes": "NEW topic (queue was empty). Money/cost angle no existing post covered. Answers PAA: do grow lights use a lot of electricity (no, 100W ~ $8/mo), cost per month (formula + table), LED vs HPS (200W LED replaces 400W HPS, saves $156/yr), does it raise the bill a lot. Failure + hidden door angle: the wattage on the box is a lie both directions (fake 'equivalent' up, under-rated cheap panels down), so measure real wall draw with a $15 meter. Middle twist = the box lies, your meter does not; a bill spike is usually a heater, not the light. Published 2026-10-10, 4 affiliate links (7 instances), 5 internal + 2 GLDB. Hero: real sourced photo (Alla Varta, CC BY 4.0, Wikimedia Commons)."
   }
 ]
