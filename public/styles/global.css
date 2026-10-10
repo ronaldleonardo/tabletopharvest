@@ -573,7 +573,6 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
 
 /* ── Article Tables ── */
 .article-body figure { margin: 1.5rem 0; overflow-x: auto; }
-.article-body figure figcaption { font-family: var(--font-sans); font-size: 0.85rem; color: var(--warm-500); text-align: center; padding: 0.5rem 0 0; }
 .article-body table {
   width: 100%;
   border-collapse: collapse;
@@ -614,3 +613,4 @@ footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; marg
   main { padding: 1.25rem 0.7rem 2.5rem; }
   .hero::after { display: none; }
 }
+.img-credit { font-family: var(--font-sans); font-size: 0.75rem; color: var(--muted); margin-top: 20px; line-height: 1.5; }
