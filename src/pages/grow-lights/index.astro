@@ -18,8 +18,8 @@ const maxReviewsK = Math.round(Math.max(...lights.map(l => l.reviews)) / 1000);
 ---
 
 <BaseLayout
-  title="Grow Light DB: Compare 30 LED Grow Lights"
-  description="Compare 30 LED grow lights side by side by price, wattage, coverage, and rating. Real specs, honest picks, updated prices."
+  title={`Grow Light DB: Compare ${totalLights} LED Grow Lights`}
+  description={`Compare ${totalLights} LED grow lights side by side by price, wattage, coverage, and rating. Real specs, honest picks, updated prices.`}
   canonical="/grow-lights"
 >
   <script define:vars={{ buildLights: lights }}>
