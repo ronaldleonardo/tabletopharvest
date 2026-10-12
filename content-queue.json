@@ -510,5 +510,19 @@
     ],
     "status": "done",
     "notes": "NEW topic (queue was empty). Money/cost angle no existing post covered. Answers PAA: do grow lights use a lot of electricity (no, 100W ~ $8/mo), cost per month (formula + table), LED vs HPS (200W LED replaces 400W HPS, saves $156/yr), does it raise the bill a lot. Failure + hidden door angle: the wattage on the box is a lie both directions (fake 'equivalent' up, under-rated cheap panels down), so measure real wall draw with a $15 meter. Middle twist = the box lies, your meter does not; a bill spike is usually a heater, not the light. Published 2026-10-10, 4 affiliate links (7 instances), 5 internal + 2 GLDB. Hero: real sourced photo (Alla Varta, CC BY 4.0, Wikimedia Commons)."
+  },
+  {
+    "keyword": "hydroponic growing medium",
+    "slug": "hydroponic-growing-medium",
+    "intent": "informational",
+    "products": [
+      "rockwool cubes",
+      "expanded clay pebbles",
+      "coarse perlite",
+      "coco coir",
+      "2 inch net pots"
+    ],
+    "status": "done",
+    "notes": "Queue was empty; picked from SERP gap analysis. 4-medium side-by-side test angle. Secondary: rockwool vs clay pebbles, best growing medium for hydroponics, perlite for hydroponics, coco coir hydroponics, growing medium for kratky."
   }
 ]
