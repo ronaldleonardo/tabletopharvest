@@ -524,5 +524,20 @@
     ],
     "status": "done",
     "notes": "Queue was empty; picked from SERP gap analysis. 4-medium side-by-side test angle. Secondary: rockwool vs clay pebbles, best growing medium for hydroponics, perlite for hydroponics, coco coir hydroponics, growing medium for kratky."
+  },
+  {
+    "keyword": "how often to change hydroponic water",
+    "slug": "how-often-to-change-hydroponic-water",
+    "intent": "informational",
+    "products": [
+      "digital pH meter",
+      "EC TDS meter",
+      "aquarium air pump and air stone kit",
+      "5 gallon DWC bucket kit",
+      "3% hydrogen peroxide food grade",
+      "pH test drops"
+    ],
+    "status": "done",
+    "notes": "Queue was empty; picked from SERP gap analysis (all top results answer with a flat 'every 2 weeks'). Failure + hidden door angle: the schedule is gallons-per-plant, not a calendar; one-third top-off rule decides the change; Kratky needs zero changes. Middle twist (contradiction style): grow shops say weekly, extension sheets say 2-4 weeks, both right because they assume different water volumes; over-changing shocks plants and fights hard-water alkalinity every week. Also covers peroxide vs beneficial microbes. Published 2026-10-13, 6 affiliate links (7 instances), 10 internal + 2 GLDB. Hero: real sourced CC0 photo (Beatrice Rescazzi, Coltura idroponica, Wikimedia Commons) - no credit line owed."
   }
 ]
