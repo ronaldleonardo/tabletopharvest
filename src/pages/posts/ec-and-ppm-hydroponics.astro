@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Hydroponic EC and PPM: The Hidden Number"
+  description="Your EC meter reads 1.4. Your friend's reads 700. Same water, same plant. Here is the hidden multiplier inside every TDS pen, and the EC your lettuce wants."
+  canonical="/posts/ec-and-ppm-hydroponics"
+  publishedTime="2026-10-14"
+  article={true}
+  image="/images/hero-ec-and-ppm-hydroponics.jpg"
+>
+
+<div class="article">
+<article class="article-header">
+  <div class="meta"><span class="pill">Guides</span> · October 14, 2026 · 9 min read</div>
+  <h1>Hydroponic EC and PPM: The Hidden Number</h1>
+</article>
+<figure class="hero">
+  <img src="/images/hero-ec-and-ppm-hydroponics.jpg" alt="A plant scientist checking hydroponic onions, Bibb lettuce and radishes growing in a nutrient solution inside a growth chamber" loading="eager" width="1344" height="768" />
+</figure>
+
+<div class="toc">
+  <div class="toc-title">What You'll Learn (Click to Skip)</div>
+  <ol>
+    <li><a href="#what">What EC actually measures (and what it doesn't)</a></li>
+    <li><a href="#hidden">Why your meter says PPM when you asked for EC</a></li>
+    <li><a href="#starve">The perfect EC that still starves your plants</a></li>
+    <li><a href="#baseline">The two numbers worth writing on tape</a></li>
+    <li><a href="#chart">EC and PPM chart for the crops you grow</a></li>
+    <li><a href="#measure">How to take a reading that means something</a></li>
+    <li><a href="#choose">Three ways to handle this (and what I use)</a></li>
+    <li><a href="#honest">Here is the honest truth</a></li>
+  </ol>
+</div>
+
+<div class="article-body">
+
+<p>Aim for an EC of 1.2 to 1.8 mS/cm for lettuce, 1.0 to 1.6 for basil and herbs, 1.8 to 2.3 for spinach, and 2.0 to 4.0 for tomatoes and peppers. That is the whole hydroponic EC answer on one line. The reason it still confuses people is that almost no beginner meter shows you EC. It shows a PPM number built on a multiplier the manufacturer never prints on the box.</p>
+
+<p>My first meter read 1920. I had no idea whether that was perfect or lethal, so I did what most beginners do. I guessed. I dumped six gallons of nutrient solution down the kitchen sink in one month, and my lettuce stalled anyway.</p>
+
+<p>Here is what I did not know: 1920 was not parts per million. It was microsiemens per centimeter, which is an EC of 1.92. My lettuce wanted 1.2 to 1.8. I was closer to right than I had been in weeks, and I threw away a working reservoir because I could not read the units on my own pen.</p>
+
+<h2 id="what">1. What EC Actually Measures (and What It Doesn't)</h2>
+
+<p>EC stands for electrical conductivity. It works because of one property of dissolved salts: once they dissolve, they split into charged particles that carry current. Pure water barely conducts anything. Add nutrient salts and the water starts conducting, and it conducts more as you add more.</p>
+
+<p>So an EC reading answers exactly one question. How much dissolved salt is in this water? Nothing else. It does not tell you which salts, in what ratio, or whether the plant can absorb them. Remember that, because it becomes the twist later in this article.</p>
+
+<p>The tool itself is almost comically simple. A cheap pen has two metal electrodes in the tip. It pushes a small current between them and measures how easily the current passes. No chemistry, no optics, no film. This is also why a dead-looking reading is usually not a dead meter. A pen dropped into distilled or reverse osmosis water reads 0.0 or bounces between 0.01 and 0.05. Nothing is broken. There is simply nothing in the water to conduct.</p>
+
+<h2 id="hidden">2. Why Your Meter Says PPM When You Asked for EC</h2>
+
+<p>Here is the part that took me six weeks to find out. A TDS meter does not measure TDS. There is no sensor inside a $15 pen that can count dissolved solids. Every TDS pen on the market measures conductivity and then multiplies that number by a conversion factor baked into the firmware.</p>
+
+<p>The manufacturer picks the factor. The box usually does not tell you which one.</p>
+
+<p>There are three common factors in circulation. The 500 scale comes from a sodium chloride reference. The 700 scale comes from a potassium chloride reference. A third, the 442 scale, sits at 640 and shows up in some water testing gear. Feed the same reservoir to three pens and you get three different "PPM" numbers, all technically correct.</p>
+
+<table style="width:100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem;">
+  <thead>
+    <tr style="background: var(--warm-100);">
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">Actual EC</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">500 scale reads</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">640 scale reads</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">700 scale reads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">0.8 mS/cm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">400 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">512 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">560 ppm</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1.4 mS/cm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">700 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">896 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">980 ppm</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">2.4 mS/cm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1200 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1536 ppm</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1680 ppm</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Here is the key insight:</strong> the same reservoir is 700 ppm on my pen and 980 ppm on a pen that costs the same money. That 40% gap is not drift and not a bad unit. It is two different guesses about what your salts are made of. Which means every forum post, every YouTube video, and every nutrient bottle that tells you "run 900 ppm" is giving you a number without the unit that makes it usable.</p>
+
+<p>That is how two people can argue for an hour about whether 900 ppm is too hot for lettuce and both be right. One of them is talking about EC 1.3 and the other about EC 1.8.</p>
+
+<div class="callout">
+  <div class="callout-title">The 60-second fix for your pen</div>
+  <p>Stir a batch of nutrient water, take a reading, then divide the PPM number by your target EC. If you read 700 ppm on water you know is EC 1.4, your factor is 500. If you read 980, it is 700. Write that number on a piece of tape and stick it to the pen. Problem solved for good.</p>
+</div>
+
+<h2 id="starve">3. The Perfect EC That Still Starves Your Plants</h2>
+
+<p>I thought I had the unit thing figured out. Then my lettuce yellowed at a textbook-perfect 1.6 mS/cm.</p>
+
+<p>Not slightly faded. Old leaves going pale between the veins, new growth smaller than the last set, the whole tray slowing down. My EC was right. My nutrients were fresh. I had measured everything the internet told me to measure, twice.</p>
+
+<p><strong>This is where it gets interesting.</strong> I checked pH for the first time in two weeks. It was 7.4.</p>
+
+<p>Here is why that mattered. EC tells you how much salt is dissolved in the water. It says nothing about whether the roots can take it. Plants do not absorb iron, manganese, zinc, or boron as raw salt. Those elements have to be dissolved in a form the root membrane can pull across, and that form only exists in a narrow pH window, roughly 5.5 to 6.5 for most hydroponic crops. Above that, iron and manganese drop out of solution and land on the roots as a coating the plant cannot use.</p>
+
+<p>So my reservoir was full of the exact nutrients my lettuce needed, present in the exact concentration my meter confirmed, sitting an arm's length from the roots, and unavailable. I was feeding a plant with a locked pantry door.</p>
+
+<p>Let me be clear about the trap here, because it is the expensive one. Every guide that tells you to chase a PPM number trains you to look at the wrong dial. You can hit a perfect EC and kill a plant with a pH you never tested. The number that measures quantity cannot tell you anything about availability.</p>
+
+<p>If the leaves are yellowing, start with <a href="/posts/hydroponic-leaves-turning-yellow">the deficiency chart I use</a> before you touch your nutrient bottle. Nine times out of ten it is pH or a stale reservoir, not a missing nutrient.</p>
+
+<h2 id="baseline">4. The Two Numbers Worth Writing on Tape</h2>
+
+<p>You only need two readings to stop guessing. Both take a minute, and neither one costs money after the first test.</p>
+
+<p><strong>Number one is your source water.</strong> Test your plain tap water before you mix anything into it. If your tap reads EC 0.4, that 0.4 is baked into every reading you will ever take. Your lettuce target of 1.4 means 1.4 total on the meter, so you need to add nutrients worth 1.0 and stop. That tap water also carries calcium, magnesium and carbonate, and you paid for none of it. This is the number people skip, and it is the reason some growers swear their plants burn at 1.2 while someone else runs 2.0 without a mark.</p>
+
+<p>Hard water makes this worse. If your tap is above 0.6 or your utility uses chloramine, water quality problems will follow you into every reservoir. My full <a href="/posts/hydroponic-nutrient-guide">nutrient guide</a> covers the mixing order and what to do about source water that fights you.</p>
+
+<p><strong>Number two is the direction your reading moves.</strong> One reading is a snapshot. Two readings a few days apart are a diagnosis. Pay attention to this number and the reservoir starts telling you what to do.</p>
+
+<ul>
+  <li><strong>EC rising while the water level drops:</strong> the plant is drinking more water than salt. The solution is getting stronger on its own. Dilute with plain water.</li>
+  <li><strong>EC falling while the water level drops:</strong> the plant is eating faster than it drinks. Top up with nutrient water at a stronger mix.</li>
+  <li><strong>EC roughly flat as the water drops:</strong> the ratio is right. Just replace the volume with weak nutrient water and leave the strength alone.</li>
+</ul>
+
+<p>That third case is the one worth chasing. When the reading holds steady, the plant is taking water and nutrients in the proportion you mixed them, which means the recipe fits the crop. This is also why I now handle my top-offs by volume instead of by calendar. My <a href="/posts/how-often-to-change-hydroponic-water">reservoir change schedule</a> covers the one-third rule that replaced my Sunday ritual.</p>
+
+<h2 id="chart">5. EC and PPM Chart for the Crops You Grow</h2>
+
+<p>These numbers come from the Oklahoma State University extension guide for soilless crops, which is one of the few sources that publishes EC rather than a mystery PPM figure. I converted both PPM columns so you can find your own pen's scale on the same row.</p>
+
+<table style="width:100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem;">
+  <thead>
+    <tr style="background: var(--warm-100);">
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">Crop</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">EC (mS/cm)</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">500 scale</th>
+      <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--warm-200);">700 scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Lettuce</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1.2 to 1.8</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">600 to 900</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">840 to 1260</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Basil, sage, herbs</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1.0 to 1.6</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">500 to 800</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">700 to 1120</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Spinach, pak choi</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1.8 to 2.3</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">900 to 1150</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1260 to 1610</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Peppers</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">0.8 to 1.8</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">400 to 900</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">560 to 1260</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Tomato</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">2.0 to 4.0</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1000 to 2000</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1400 to 2800</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Strawberry</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1.8 to 2.2</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">900 to 1100</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">1260 to 1540</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Seedlings, first 2 weeks</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">0.4 to 0.6</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">200 to 300</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">280 to 420</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">Microgreens</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">None. Water only</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">-</td>
+      <td style="padding: 0.5rem; border: 1px solid var(--warm-200);">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Three things in that table are worth more than the numbers themselves.</p>
+
+<p><strong>Seedlings want a quarter of what you think.</strong> A full-strength reservoir drowns a two-week-old plant. Start at 0.4 and walk it up. If you are running a jar of basil on a shelf, that chart is the difference between a plant that stalls and a plant that never notices.</p>
+
+<p><strong>Microgreens need zero nutrients.</strong> They live on the energy stored in the seed for the entire 10 to 14 days they are on your shelf. If you are adding anything to their water, you are buying nutrients for a plant that cannot drink them yet. My <a href="/posts/how-to-grow-microgreens-indoors">microgreens guide</a> covers the water-only routine.</p>
+
+<p><strong>Fruiting crops are a different sport.</strong> A tomato or a pepper at 2.0 to 4.0 mS/cm will burn a lettuce grown in the same bucket. If you run one reservoir, run it at lettuce strength and accept slower fruit, or split into two reservoirs. My <a href="/posts/how-to-grow-peppers-indoors">indoor peppers guide</a> is where that decision actually starts to matter.</p>
+
+<h2 id="measure">6. How to Take a Reading That Means Something</h2>
+
+<p>Five things decide whether the number on the screen is worth anything.</p>
+
+<p><strong>Calibrate first.</strong> A pen that has never been calibrated is a random number generator with a screen. Buy a bottle of 1413 µS/cm reference solution, which is EC 1.413, and dial the pen to it. Once a month is enough for a home setup, more often if you use it daily.</p>
+
+<p><strong>Stir, then wait.</strong> Readings need 30 to 60 seconds to stabilize, and they will not stabilize at all if you just poured in nutrients and did not mix. Undissolved salt sitting on the bottom is invisible to the probe.</p>
+
+<p><strong>Watch the water temperature.</strong> Conductivity rises with heat, about 2% per degree Celsius. Water drawn cold from the tap reads low, and a reservoir sitting under a grow light reads high. Good meters compensate for this automatically. Cheap pens usually do not, so measure at the same point in the day to compare fairly.</p>
+
+<p><strong>Rinse between readings.</strong> Dip the probe in distilled water and shake it dry. A drop of last week's concentrated solution in the cap is enough to skew the next reading.</p>
+
+<p><strong>Store the probe wet.</strong> A dry electrode drifts and eventually dies. Most budget pens come with a cap you are meant to keep a little water in. Mine came with nothing, which is why my second pen lasted longer than my first.</p>
+
+<h2 id="choose">7. Three Ways to Handle This (and What I Use)</h2>
+
+<p>You do not need a lab. There are three honest levels here, and the middle one is where almost everyone should land.</p>
+
+<p><strong>Option A: skip the meters and run fresh.</strong> Mix a quarter-strength solution, change it on a schedule, and never look at a number. It works, it is free, and it is what a <a href="/posts/kratky-method-for-beginners">Kratky jar</a> is built for. The cost is that you are flying blind on pH, which is the thing that actually broke my grow.</p>
+
+<p><strong>Option B: a pH pen and an EC pen.</strong> This is what I use. Two small tools that fit in a drawer, and together they tell you the only two things a home reservoir needs to know. If you are buying one, buy the pH pen first, since a locked-out nutrient at perfect EC is the failure that costs you a crop.</p>
+
+<p><strong>Option C: a controller that doses for you.</strong> A few hundred dollars, logs everything, corrects drift while you are at work. Genuinely useful if you travel or run multiple reservoirs. Overkill for four heads of lettuce, and one more pump that can fail while you are away.</p>
+
+<p>The gear I actually keep on the shelf: a budget <a href="https://www.amazon.com/s?k=EC+TDS+meter+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">EC and TDS meter</a> for strength, a <a href="https://www.amazon.com/s?k=digital+pH+meter+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">digital pH meter</a> for availability, and a bottle of <a href="https://www.amazon.com/s?k=EC+calibration+solution+1413+us+cm&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">1413 µS/cm calibration solution</a> so both of them keep telling the truth. The three together cost less than a single bottle of premium nutrients, and they last years.</p>
+
+<p>For the reservoir itself, a basic <a href="https://www.amazon.com/s?k=hydroponic+nutrient+kit+masterblend&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">hydroponic nutrient kit</a> is all you need to hit any row in that chart. Skip the additives until the basics hold steady for a full grow.</p>
+
+<p>And if your readings keep drifting no matter what you do, check the medium before you blame the water. Rockwool fresh out of the bag runs alkaline and can push your reservoir up for the first week, which I ran into during my <a href="/posts/hydroponic-growing-medium">growing medium test</a>. The fix is a pre-soak, not more pH down.</p>
+
+<h2 id="honest">8. Here Is the Honest Truth</h2>
+
+<p><strong>Here is the honest truth</strong> about the EC pen: a budget one drifts, has no temperature compensation, and goes blind if you let the electrode dry out. Mine has been wrong by a full 0.3 mS/cm more than once, which is the entire difference between lettuce strength and spinach strength. Calibration fixes it for ninety seconds of work, but the pen will lie to you in the meantime and you will not know.</p>
+
+<p>The bigger honest truth is that if you are growing lettuce or herbs in a Kratky jar on a windowsill, you can skip the EC meter entirely. Buy the pH pen, keep it calibrated, and spend the difference on seeds. Concentration matters most for fruiting crops and for anyone running a reservoir large enough to drift. That is where the meter earns its place on the shelf.</p>
+
+<p>If you will not calibrate anything, get <a href="https://www.amazon.com/s?k=pH+test+drops+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">pH test drops</a> instead. They cannot drift, they cost the price of a coffee, and a color you can actually read beats a precise number you cannot trust.</p>
+
+<p>Here is the part that matters. The unit on the screen was never the problem. The problem was that I trusted a single number to tell me everything, when the reservoir was sending me three. Quantity, availability, and direction. Get those three and you stop guessing, whatever scale your pen happens to use.</p>
+
+<p><strong>Your next move:</strong> test your tap water today and write that number on a piece of tape. Then take one reading, wait three days, read it again, and look at which way it moved. That is a real diagnosis, and it costs nothing. If you need a pen to start, the <a href="https://www.amazon.com/s?k=EC+TDS+meter+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">EC and TDS meter</a> I use was $16 when I last checked and it bounces between $13 and $20. Anything under $20 is a solid deal, and it comes with the calibration bottle most listings leave out.</p>
+
+</div>
+
+<div class="related-posts">
+  <h3>Read Next</h3>
+  <div class="related-grid">
+    <a href="/posts/hydroponic-nutrient-guide" class="related-card">
+      <div class="cat">Guides</div>
+      <div class="title">Hydroponic Nutrient Guide: What to Buy and How to Mix It</div>
+    </a>
+    <a href="/posts/hydroponic-leaves-turning-yellow" class="related-card">
+      <div class="cat">Troubleshooting</div>
+      <div class="title">Why Are My Hydroponic Leaves Turning Yellow</div>
+    </a>
+    <a href="/posts/best-ph-meter-for-hydroponics" class="related-card">
+      <div class="cat">Reviews</div>
+      <div class="title">Best pH Meter for Hydroponics</div>
+    </a>
+  </div>
+</div>
+
+<p class="gl-link">Need the right grow light? <a href="/grow-lights" target="_blank" rel="nofollow">Compare 30+ grow lights side by side at GrowLightDB</a> - real specs, real prices.</p>
+
+<div class="disclaimer">
+  This article contains affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you. I only recommend products I've personally tested and use in my own setup.
+</div>
+
+</div>
+</BaseLayout>
