@@ -587,7 +587,47 @@
       "air pump and air stone",
       "net cups"
     ],
+    "status": "done",
+    "notes": "Comparison framework (X vs Y). Both already covered separately, so this is a clean internal-link hub. Published 2026-10-19 (queued run left the file + listings live but did not flip the queue/log; corrected 2026-10-20)."
+  },
+  {
+    "keyword": "tap water for hydroponics",
+    "slug": "tap-water-for-hydroponics",
+    "intent": "informational",
+    "products": [
+      "EC TDS meter",
+      "chlorine test strips",
+      "Campden tablets potassium metabisulfite",
+      "aquarium water conditioner chloramine remover",
+      "countertop reverse osmosis system",
+      "cal-mag supplement hydroponics"
+    ],
+    "status": "done",
+    "notes": "Queue was empty after DWC-vs-Kratky; picked from SERP gap analysis. Site had EC/PPM, pH, water change and water temp but zero coverage of the water source itself. Hidden door + failure angle: your tap water is the first ingredient, not the bowl, and the only number that decides if you need RO is the ppm baseline on your city's free water quality report. Middle twist (contradiction): the overnight off-gas trick works on chlorine but chloramine never off-gasses, so both internet camps are right about different cities; EPA says more than 1 in 5 Americans is on chloramine. Covers ppm budget math (baseline eats 7 to 63 percent of an 800 ppm mix), water softener sodium swap, why a carbon pitcher fails on chloramine, Campden tablet dose (1 per 20 gallons), rain water, well water, decision table by baseline. Answers PAA: can you use tap water, how long to let it sit, how to remove chloramine, what ppm is too high, does a softener hurt, is RO necessary, is bottled water ok. Published 2026-10-20, 6 affiliate links (7 instances), 7 internal unique (12 instances) + 2 GLDB, 3 inbound links added from ec-and-ppm, how-to-lower-ph and how-often-to-change. Hero: real sourced CC0 photo (Pixelmaniac pictures, water running out of a faucet, Wikimedia Commons), no credit line owed. Title 39 chars renders 58. Meta 151. All 8 self-review questions pass."
+  },
+  {
+    "keyword": "best grow tent for beginners",
+    "slug": "best-grow-tent-for-beginners",
+    "intent": "commercial",
+    "products": [
+      "2x2 grow tent",
+      "4x4 grow tent",
+      "inline duct fan and carbon filter",
+      "oscillating clip fan"
+    ],
     "status": "pending",
-    "notes": "Comparison framework (X vs Y). Both already covered separately, so this is a clean internal-link hub."
+    "notes": "SERP gap from the 2026-10-20 run: the site has 61 posts and zero coverage of tents or airflow, while the light and water clusters are dense. Commercial intent, big-ticket items, and a clean internal-link hub for the light, humidity and pest articles (mites and gnats both live or die on airflow)."
+  },
+  {
+    "keyword": "how to hand pollinate indoor vegetables",
+    "slug": "hand-pollinate-indoor-vegetables",
+    "intent": "informational",
+    "products": [
+      "electric toothbrush",
+      "small paintbrush",
+      "oscillating clip fan"
+    ],
+    "status": "pending",
+    "notes": "Gap found while writing the peppers and strawberries articles: both mention shaking or brushing in one line and neither explains it. A dedicated guide covers tomatoes, peppers, strawberries and squash indoors, and becomes the hub the two crop articles link into. Answers PAA on whether indoor plants need pollination, how often to do it, and whether a fan is enough."
   }
 ]

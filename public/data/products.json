@@ -31,7 +31,7 @@
     {
       "id": "viparspectra-xs1500",
       "name": "Viparspectra XS1500 Pro",
-      "price": 100,
+      "price": 89.99,
       "watts": 150,
       "coverage": "2x2 flower / 3x3 veg",
       "chips": "Samsung LM301H",
@@ -45,7 +45,7 @@
     {
       "id": "barrina-t5-4pack",
       "name": "Barrina T5 4-Pack",
-      "price": 31.99,
+      "price": 28.79,
       "watts": 40,
       "coverage": "2x4 ft shelf",
       "chips": "LED Strip",
@@ -59,7 +59,7 @@
     {
       "id": "aerogarden-harvest",
       "name": "AeroGarden Harvest",
-      "price": 80,
+      "price": 71.99,
       "watts": 20,
       "coverage": "Countertop",
       "chips": "LED",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

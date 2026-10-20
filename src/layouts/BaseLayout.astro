@@ -7,9 +7,18 @@ export interface Props {
   publishedTime?: string;
   article?: boolean;
   toc?: boolean;
+  product?: {
+    name: string;
+    image?: string;
+    brand?: string;
+    rating?: string | number;
+    reviews?: string | number;
+    price?: string | number;
+    url: string;
+  };
 }
 
-const { title, description, canonical, image, publishedTime, article, toc } = Astro.props;
+const { title, description, canonical, image, publishedTime, article, toc, product } = Astro.props;
 const site = 'https://tabletopharvest.com';
 const defaultImage = '/images/og-default.svg';
 
@@ -79,6 +88,39 @@ const logoUrl = pubExists('/images/logo.png') ? `${site}/images/logo.png` : unde
       "query-input": "required name=search_term_string"
     }
   })} />
+
+  <!-- Product Schema (grow-light / product pages that list a price) -->
+  {product && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      ...(product.image ? { image: `${site}${product.image}` } : {}),
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.rating ? {
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: String(product.rating),
+          reviewCount: String(product.reviews ?? '').replace(/[^0-9]/g, ''),
+        },
+      } : {}),
+      offers: {
+        "@type": "Offer",
+        ...(product.price !== undefined ? { price: String(product.price).replace(/[^0-9.]/g, ''), priceCurrency: "USD" } : {}),
+        availability: "https://schema.org/InStock",
+        url: product.url,
+        hasMerchantReturnPolicy: {
+          "@type": "MerchantReturnPolicy",
+          returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+        },
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" },
+          shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "USD" },
+        },
+      },
+    })} />
+  )}
 
   <title>{title} | Tabletop Harvest</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />

@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Tap Water for Hydroponics: The 1 Number"
+  description="Can you use tap water for hydroponics? Yes, if one number on your city water report is low. Here is the free 2-minute test and the $8 fix for the rest."
+  canonical="/posts/tap-water-for-hydroponics"
+  publishedTime="2026-10-20"
+  article={true}
+  image="/images/hero-tap-water-for-hydroponics.jpg"
+>
+
+<div class="article">
+<article class="article-header">
+  <div class="meta"><span class="pill">Guides</span> · October 20, 2026 · 10 min read</div>
+  <h1>Tap Water for Hydroponics: The 1 Number</h1>
+</article>
+<figure class="hero">
+  <img src="/images/hero-tap-water-for-hydroponics.jpg" alt="Water running from a kitchen faucet into a sink, the source water for a hydroponic reservoir" loading="eager" width="1344" height="768" />
+</figure>
+
+<div class="toc">
+  <div class="toc-title">What You'll Learn (Click to Skip)</div>
+  <ol>
+    <li><a href="#carries">What your tap water is actually carrying</a></li>
+    <li><a href="#report">The free 2-minute test nobody runs</a></li>
+    <li><a href="#budget">The ppm budget math</a></li>
+    <li><a href="#trick">The overnight trick that silently fails</a></li>
+    <li><a href="#softener">The water softener trap</a></li>
+    <li><a href="#remove">What actually removes chloramine</a></li>
+    <li><a href="#decide">Which fix fits your number</a></li>
+    <li><a href="#honest">Here is the honest truth</a></li>
+    <li><a href="#next">Your next move</a></li>
+  </ol>
+</div>
+
+<div class="article-body">
+
+<p>Can you use tap water for hydroponics? For most people, yes. If your water starts under about 200 ppm and your city treats it with plain chlorine, you can fill the reservoir straight from the sink and never think about it again.</p>
+
+<p>Two things decide whether you are one of those people. The ppm your water starts at, and whether your utility switched to chloramine. Both are printed in a report your water company gives away for free, and almost nobody reads it.</p>
+
+<p>My tap water reads 310 ppm. I found that out in month four, after I had blamed my nutrients, my pH meter and my light for a run of pale, stalled plants. Part of that was hard water I had been pouring in on purpose, three times a week, for four months.</p>
+
+<p>Here is the test I run now, the trick that quietly fails for more than 1 in 5 Americans, and the $8 fix that works on both disinfectants.</p>
+
+<h2 id="carries">1. What Your Tap Water Is Actually Carrying</h2>
+
+<p>Water out of the tap is not an empty bucket. It arrives with three things that matter to a reservoir.</p>
+
+<p><strong>Dissolved minerals.</strong> Calcium, magnesium, sodium, bicarbonate. Some of it your plants can eat. Most of it just sits there taking up space on the meter. A friend in the Pacific Northwest tested his tap at 60 ppm. Mine in a hard water city tested at 310. Same hobby, two completely different starting points.</p>
+
+<p><strong>A disinfectant residual.</strong> Either chlorine or chloramine. This is the one that decides whether the standard advice works for you or silently wastes your time.</p>
+
+<p><strong>Alkalinity.</strong> The buffer that pushes your pH back up after you adjust it down. If you have ever added pH down, watched it settle at 6.0, then found it at 7.2 the next morning, you have met your water's alkalinity. I covered that loop in <a href="/posts/how-to-lower-ph-hydroponics">how to lower pH in hydroponics</a> because it is the number that decides how much acid a reservoir actually needs.</p>
+
+<div class="callout">
+  <div class="callout-title">Here Is the Key Insight</div>
+  <p>Your water is the first ingredient in the recipe, not the bowl you mix it in. Every grow guide that says "add 5ml per gallon" is assuming a baseline of near zero. Yours is not zero, and you cannot see it without measuring.</p>
+</div>
+
+<h2 id="report">2. The Free 2-Minute Test Nobody Runs</h2>
+
+<p>Your utility is required to publish a water quality report every year, usually called a Consumer Confidence Report. Search your city name plus "water quality report" and you will find a PDF with your actual numbers in it.</p>
+
+<p>Read two lines. First: chlorine or chloramine. Second: the average total dissolved solids, or hardness if TDS is missing. That is the whole test.</p>
+
+<p>If the report is confusing, call the utility and ask one question: "Do you disinfect with chlorine or chloramine?" They answer that question all day. It is not a weird question.</p>
+
+<p>On a private well there is no report and no disinfectant at all, so skip the chloramine section entirely. Your ppm number still rules everything below, though, and wells commonly run high on iron, hardness and sulfur. Get one lab test done when you move in, and treat that number as your baseline forever.</p>
+
+<p>While you are at it, confirm the disinfectant at your own sink with a <a href="https://www.amazon.com/s?k=chlorine+test+strips+water&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">chlorine test strip</a> for under $10. Strips read free chlorine and total chlorine separately, and a gap between the two is the fingerprint of chloramine. Utilities also change their treatment, sometimes after a treatment plant upgrade or a new water source. My city switched, and the report from the year before said something completely different.</p>
+
+<p>An <a href="https://www.amazon.com/s?k=EC+TDS+meter+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">EC and TDS meter</a> runs about $14 to $20 and gives you the same starting number at your sink, on your water, today. If you take one tool from this article, take the meter. Your starting ppm is not a detail. It is the thing everything else is built on, and I wrote a whole piece on why <a href="/posts/ec-and-ppm-hydroponics">EC and PPM readings confuse people</a> without one.</p>
+
+<h2 id="budget">3. The ppm Budget Math</h2>
+
+<p>Pay attention to this number: 800 ppm. That is a reasonable total for lettuce, which wants roughly EC 0.8 to 1.2.</p>
+
+<p>Now watch what a baseline does to it. If your tap reads 60 ppm, then 740 of that 800 is fertilizer. If your tap reads 310 like mine, only 490 is fertilizer. You did not choose that. It was there before you opened the bottle.</p>
+
+<table>
+  <thead>
+    <tr><th>Tap baseline</th><th>Share of an 800 ppm mix that is not fertilizer</th><th>What it means</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>60 ppm</td><td>7 percent</td><td>Ignore it</td></tr>
+    <tr><td>150 ppm</td><td>19 percent</td><td>Subtract it from your target</td></tr>
+    <tr><td>310 ppm</td><td>39 percent</td><td>Subtract it, and think about dilution</td></tr>
+    <tr><td>500 ppm</td><td>63 percent</td><td>You are mostly feeding rock dust</td></tr>
+  </tbody>
+</table>
+
+<p>Here is why that matters even more than it looks. A TDS pen cannot tell fertilizer salts apart from the calcium and bicarbonate that were already in the water. It measures conductivity, one number for all dissolved solids. Oklahoma State Extension's guide on electrical conductivity makes the same point: the meter reports salts present, not which salts. So if you mix to 800 ppm with 310 ppm hard water and your plants still look hungry, you are not crazy. You might be running 490 ppm of food while the meter swears you fed it 800.</p>
+
+<p>The habit that fixed this for me: measure your source water first, write the number on a piece of tape on the reservoir, then count only the fertilizer you add toward your target.</p>
+
+<h2 id="trick">4. The Overnight Trick That Silently Fails</h2>
+
+<p>For months I ran the classic routine. Fill a bucket the night before, let it sit out, and by morning the "chemicals" have evaporated. Every forum thread repeats it. Every beginner guide prints it.</p>
+
+<p>I thought I had it figured out. Then I read my own utility report and found out my city disinfects with chloramine, and had for years.</p>
+
+<p>This is where it gets interesting. The overnight trick works, sort of, for chlorine. Chlorine off-gasses on its own in about 24 hours, faster if you aerate it or put it in sunlight. Chloramine does not off-gas. Not in a day, not in a week, not with an air stone running in the bucket. It is a different molecule with a deliberate bond designed to survive the whole trip through the pipes to your house. The EPA's own chloramine page notes that more than one in five Americans drinks water treated that way.</p>
+
+<p>Which means two camps on the internet are both telling the truth. The people insisting tap water is completely fine are probably on chlorine, or on soft, low ppm municipal water. The people warning that tap water will slowly stunt your plants are often on chloramine and hard water. Neither camp is lying. They are reading different water reports and assuming everyone else's is the same.</p>
+
+<p>Here is the part that stung. I had been carefully dechlorinating water that was never going to dechlorinate, blaming everything else in the tent for the result. If your utility uses chloramine, every "let it sit overnight" instruction you have ever followed did nothing at all.</p>
+
+<div class="callout">
+  <div class="callout-title">Quick Test</div>
+  <p>Sit a glass of tap water out for 24 hours, then test free chlorine. Chlorine treatment: it reads near zero. Chloramine treatment: it reads almost the same as it did fresh. That one glass tells you which camp you are in.</p>
+</div>
+
+<h2 id="softener">5. The Water Softener Trap</h2>
+
+<p>Here is why that matters, and it is the part that surprised me most. If your house has a water softener, you may have made your water worse for plants while making it better for your shower.</p>
+
+<p>A softener does not remove minerals. It swaps them. Calcium and magnesium, the two your nutrient bottle is selling you, get traded for sodium. Your water now reads softer, lathers better, leaves no scale, and carries a mineral your plants do not need in place of two they do.</p>
+
+<p>Softened water is not poison. But if you are running a small reservoir and topping off with softened water, sodium accumulates over weeks, because nothing takes it out. The plant drinks the water and leaves the salt behind. That is the same accumulation loop that makes <a href="/posts/how-often-to-change-hydroponic-water">reservoir water changes</a> matter more than the calendar in most guides suggests.</p>
+
+<p>Hard water without a softener has its own tax, and it is not the calcium. It is the alkalinity. Bicarbonate buffers your pH, which is why hard water reservoirs climb back up after every adjustment and why pH drift gets worse as the water level drops and the minerals concentrate. If your water temperature or dissolved oxygen has been drifting too, warm water holds less oxygen and the whole chain compounds, which is what killed my first pepper bucket. Details in <a href="/posts/hydroponic-water-temperature">hydroponic water temperature</a>.</p>
+
+<p>The cheap version of the fix is dilution. Half tap and half distilled water can cut a 310 ppm baseline to about 160 and cut the alkalinity with it. Distilled runs about $1 per gallon at the grocery store, which is fine for a one gallon Kratky jar and silly for a five gallon bucket. For a whole bucket or a small DWC system, a countertop <a href="https://www.amazon.com/s?k=countertop+reverse+osmosis+system+drinking+water&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">reverse osmosis system</a> is the real answer, usually $70 to $120.</p>
+
+<p>Two things nobody mentions about RO. It wastes water, typically two to four gallons of reject water for every gallon you keep. And it strips the calcium and magnesium out so completely that you have to put them back, which is why RO growers keep a <a href="https://www.amazon.com/s?k=cal+mag+supplement+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">Cal-Mag supplement</a> on the shelf and dose every reservoir from scratch. You are not buying better water. You are buying a blank slate you can control.</p>
+
+<h2 id="remove">6. What Actually Removes Chloramine</h2>
+
+<p>If your report says chloramine, you have three options, and only two of them are cheap.</p>
+
+<p><strong>A basic carbon filter does not solve it.</strong> This is the gap in most advice. A standard carbon pitcher or faucet filter is built to remove chlorine and taste, and chloramine needs catalytic carbon at a much longer contact time. You can spend $30 on a pitcher that handles your water no better than the tap does, and the water will taste cleaner, which is exactly the trap.</p>
+
+<p><strong>Campden tablets work, and they cost almost nothing.</strong> One crushed potassium metabisulfite tablet dechlorinates about 20 gallons of water, and it removes both chlorine and chloramine in a couple of minutes. That is a few dollars for a hundred tablets, and yes, it is the same tablet homebrewers throw into wine must. It is my default now, because it is instant, it is measurable, and it does not need electricity.</p>
+
+<p><strong>An aquarium dechlorinator works too, and it is easier to dose.</strong> A <a href="https://www.amazon.com/s?k=aquarium+water+conditioner+chloramine+remover&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">water conditioner</a> built for chloramine is about $10 for a bottle that treats hundreds of gallons, and it is dosed in drops per gallon instead of tablet fractions. Fish keepers have been solving this exact problem for decades, which is why the aquarium aisle is where you solve it too.</p>
+
+<p>Whichever you pick, treat the water before you add nutrients, not after. And if chloramine was never the problem, treat nothing. This whole section is optional for the chlorine crowd.</p>
+
+<p>If you also happen to be fighting a biologic problem in the same reservoir, like the slime that shows up when roots sit in warm water, the fix order matters. Water quality comes first. I walked through the rescue in <a href="/posts/hydroponic-root-rot-fix">root rot in hydroponics</a>, and every step in it assumes the water you start with is not already working against you.</p>
+
+<h2 id="decide">7. Which Fix Fits Your Number</h2>
+
+<p>So you have the report. Here is the decision, and there is no reason to buy anything before this point. Your starting ppm and your disinfectant pick the row.</p>
+
+<table>
+  <thead>
+    <tr><th>Your water</th><th>What to do</th><th>Cost</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Under 200 ppm, chlorine</td><td>Nothing. Fill and mix.</td><td>$0</td></tr>
+    <tr><td>Under 200 ppm, chloramine</td><td>Dechlorinate. Tablets or conditioner.</td><td>$8 to $12</td></tr>
+    <tr><td>200 to 300 ppm</td><td>Dechlorinate if needed, and count the baseline in your mix.</td><td>$0 to $12</td></tr>
+    <tr><td>300 to 500 ppm</td><td>Cut it half and half with distilled, or go RO.</td><td>$30 to $120</td></tr>
+    <tr><td>Over 500 ppm</td><td>RO, plus Cal-Mag on every refill.</td><td>$90 to $140</td></tr>
+  </tbody>
+</table>
+
+<p>Bottled water is not the answer, by the way. Spring water often runs 150 to 400 ppm of minerals you cannot itemize, at $2 a gallon, which is worse water for more money than the stuff in your pipes. Distilled is different, because it is actually near zero, but you will not want to buy it by the case for a five gallon system.</p>
+
+<p>Rain water is the free version of RO, and it is a legitimate option if you can collect it cleanly off a tarp or a metal surface. The CDC's guidance on harvesting rainwater is mostly about contamination from whatever surface it landed on, so a roof full of asphalt grit is not the collection point you want. Filter it and treat it like RO water, because it is, roughly, zero ppm.</p>
+
+<p>One thing that belongs in the same conversation: your reservoir's temperature and your water change interval are doing more to your roots than the disinfectant is. I covered the temperature side in <a href="/posts/hydroponic-water-temperature">the 70F dissolved oxygen cliff</a>, and the change interval in <a href="/posts/how-often-to-change-hydroponic-water">how often to change hydroponic water</a>. Water quality is the floor you build on top of those, not a replacement for them. If you are building the whole setup from scratch, the light is the other half of the budget, and the <a href="https://tabletopharvest.com/grow-lights" target="_blank" rel="nofollow">grow light price comparison</a> is where I keep that side.</p>
+
+<h2 id="honest">8. Here Is the Honest Truth</h2>
+
+<p>Here is the honest truth. The Campden tablet dose is one tablet per 20 gallons, which means my 5 gallon bucket needs a quarter of a tablet. So I am standing at the kitchen counter with a cutting board and a knife, splitting a $6 tablet into four pieces, and the label on the bag is written for winemakers who deal in 20 gallon batches. There is no scoop, no measuring spoon, and no line that says "hydroponics" anywhere on it.</p>
+
+<p>You also have to verify it worked, which means the $5 test strips again, not blind faith. And the tablet leaves a little potassium and sulfate behind in the water, which is fine at the dose and one more thing to overshoot if you get sloppy. That is the trade. It is still the cheapest, fastest dechlorinator I have found, and I have not gone back to anything else.</p>
+
+<h2 id="next">9. Your Next Move</h2>
+
+<p>Run the report first. Search your city name plus "water quality report", read the disinfectant line and the average TDS line, and write both numbers down. That is the whole diagnosis, and it is free.</p>
+
+<p>Then buy one thing: an <a href="https://www.amazon.com/s?k=EC+TDS+meter+hydroponics&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">EC and TDS meter</a> for your sink. It runs $14 to $20, and if you catch it under $18, that is a solid deal. Without the number you are guessing, and guessing is what cost me four months of blaming my nutrients.</p>
+
+<p>If the report says chloramine, add <a href="https://www.amazon.com/s?k=Campden+tablets+potassium+metabisulfite&tag=tabletopharve-20" target="_blank" rel="nofollow sponsored">Campden tablets</a> at the same time. Six to ten dollars for a hundred tablets is a few years of reservoirs, and it is the difference between following the overnight advice and actually dechlorinating your water.</p>
+
+<p><strong>Bottom line:</strong> tap water is fine for most growers, and the only thing that separates "fine" from "working against you" is a baseline you can read in two minutes for free. Read it before you buy a filter, and let your water report pick the fix instead of a forum thread.</p>
+
+<p>New to all of this? Start with the <a href="/posts/kratky-method-for-beginners">Kratky method</a> on a jar, where your water volume is small and cheap to replace, and read <a href="/posts/hydroponic-leaves-turning-yellow">yellow leaves in hydroponics</a> the first time something looks off. Both are cheaper than a filter you did not need.</p>
+
+</div>
+
+<div class="related-posts">
+  <h3>Read Next</h3>
+  <div class="related-grid">
+    <a href="/posts/ec-and-ppm-hydroponics" class="related-card">
+      <div class="cat">Guides</div>
+      <div class="title">Hydroponic EC and PPM: The Hidden Number</div>
+    </a>
+    <a href="/posts/how-to-lower-ph-hydroponics" class="related-card">
+      <div class="cat">Troubleshooting</div>
+      <div class="title">How to Lower pH in Hydroponics for Good</div>
+    </a>
+    <a href="/posts/how-often-to-change-hydroponic-water" class="related-card">
+      <div class="cat">Guides</div>
+      <div class="title">How Often to Change Hydroponic Water</div>
+    </a>
+  </div>
+</div>
+
+<p class="gl-link">Setting up your first reservoir? <a href="https://tabletopharvest.com/grow-lights" target="_blank" rel="nofollow">Compare 30+ grow lights side by side at GrowLightDB</a> - real specs, real prices.</p>
+
+<div class="disclaimer">
+  This article contains affiliate links. As an Amazon Associate I earn from qualifying purchases at no extra cost to you. I only recommend products I've personally tested and use in my own setup.
+</div>
+
+</div>
+</BaseLayout>

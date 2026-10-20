@@ -14,6 +14,28 @@ const badgeClass = `gl-badge-${light.best}`;
 const badgeLabel = categories.find(c => c.key === light.best)?.label || light.best;
 const link = `https://www.amazon.com/s?k=${light.search}&tag=${tag}`;
 const wattsPerDollar = Math.round(light.watts / light.price * 100) / 100;
+
+// Brand for Product schema: take leading tokens up to the first model-code token,
+// max two tokens. A couple of names need an explicit override.
+const BRAND_OVERRIDE = { "aerogarden-harvest": "AeroGarden", "phlizon-cree-cob": "Phlizon" };
+function brandOf(l) {
+  if (BRAND_OVERRIDE[l.id]) return BRAND_OVERRIDE[l.id];
+  const out = [];
+  for (const tok of String(l.name).split(" ")) {
+    if (/\d/.test(tok) && out.length) break;
+    out.push(tok);
+    if (out.length === 2) break;
+  }
+  return out.join(" ") || l.name;
+}
+const productData = {
+  name: light.name,
+  brand: brandOf(light),
+  rating: light.rating,
+  reviews: light.reviews,
+  price: light.price,
+  url: link,
+};
 ---
 
 <BaseLayout
@@ -21,6 +43,7 @@ const wattsPerDollar = Math.round(light.watts / light.price * 100) / 100;
   description={`${light.name} LED grow light review: ${light.watts}W, covers ${light.coverage}, ${light.chips} chips, ${light.rating} stars. Compare specs, price $${light.price}, and buy on Amazon.`}
   canonical={`/grow-lights/${light.id}`}
   article={true}
+  product={productData}
 >
   <script define:vars={{ buildLight: light }}>
     (async function(){
