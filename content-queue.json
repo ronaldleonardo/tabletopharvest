@@ -627,7 +627,19 @@
       "small paintbrush",
       "oscillating clip fan"
     ],
-    "status": "pending",
+    "status": "done",
     "notes": "Gap found while writing the peppers and strawberries articles: both mention shaking or brushing in one line and neither explains it. A dedicated guide covers tomatoes, peppers, strawberries and squash indoors, and becomes the hub the two crop articles link into. Answers PAA on whether indoor plants need pollination, how often to do it, and whether a fan is enough."
+  },
+  {
+    "keyword": "how to grow cucumbers indoors",
+    "slug": "how-to-grow-cucumbers-indoors",
+    "intent": "informational",
+    "products": [
+      "parthenocarpic cucumber seeds",
+      "trellis netting",
+      "self-watering pot"
+    ],
+    "status": "pending",
+    "notes": "Natural cluster follow-up to hand-pollinate-indoor-vegetables, which already tells readers to buy a parthenocarpic variety and skip pollination. That article answers the variety question but nothing else, so this one covers the full grow: vertical space, container size (5 gallon minimum), the difference between parthenocarpic greenhouse types and field types, feeding once fruit sets, and the bitter-cucumber cause. Real gap: most indoor cucumber guides assume a garden bed and never mention that pollination can be skipped entirely. Internal links: hand-pollinate-indoor-vegetables, how-to-grow-cherry-tomatoes-indoors, grow-light-distance-chart, /grow-lights."
   }
 ]
