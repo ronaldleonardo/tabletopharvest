@@ -241,7 +241,7 @@
     {
       "id": "viparspectra-p2000",
       "name": "VIPARSPECTRA P2000",
-      "price": 149.99,
+      "price": 129.97,
       "watts": 200,
       "coverage": "2.5x2.5 flower / 3.5x3.5 veg",
       "chips": "Samsung LED",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-21"
+  "updated": "2026-10-22"
 }
