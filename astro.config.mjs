@@ -5,7 +5,7 @@ export default defineConfig({
   site: 'https://tabletopharvest.com',
   compressHTML: true,
   devToolbar: { enabled: false },
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/dashboard') })],
   build: {
     format: 'file',
   },

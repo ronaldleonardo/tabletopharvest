@@ -639,7 +639,43 @@
       "trellis netting",
       "self-watering pot"
     ],
-    "status": "pending",
+    "status": "done",
     "notes": "Natural cluster follow-up to hand-pollinate-indoor-vegetables, which already tells readers to buy a parthenocarpic variety and skip pollination. That article answers the variety question but nothing else, so this one covers the full grow: vertical space, container size (5 gallon minimum), the difference between parthenocarpic greenhouse types and field types, feeding once fruit sets, and the bitter-cucumber cause. Real gap: most indoor cucumber guides assume a garden bed and never mention that pollination can be skipped entirely. Internal links: hand-pollinate-indoor-vegetables, how-to-grow-cherry-tomatoes-indoors, grow-light-distance-chart, /grow-lights."
+  },
+  {
+    "keyword": "best cucumber varieties for indoor growing",
+    "slug": "best-cucumber-varieties-for-indoor-growing",
+    "intent": "commercial",
+    "products": [
+      "parthenocarpic cucumber seeds Diva",
+      "Beit Alpha cucumber seeds",
+      "Socrates F1 cucumber seeds"
+    ],
+    "status": "pending",
+    "notes": "Commercial follow-up to how-to-grow-cucumbers-indoors, which tells readers to buy parthenocarpic seed but never names a variety. Reader intent is 'which packet do I order'. Cover parthenocarpic vs gynoecious vs monoecious in one comparison table with seed counts and price per pack, name real varieties that show up in grower threads and catalogs (Diva, Socrates F1, Green Light, Party Time, Merlin, Beit Alpha types), bush vs vining habit for a shelf, days to first fruit, and the trap of buying a 'burpless' or 'seedless' supermarket type that is not actually parthenocarpic. Internal links: how-to-grow-cucumbers-indoors, hand-pollinate-indoor-vegetables, /grow-lights."
+  },
+  {
+    "keyword": "cucumber leaves turning yellow indoors",
+    "slug": "cucumber-leaves-turning-yellow-indoors",
+    "intent": "informational",
+    "products": [
+      "EC TDS meter",
+      "magnesium sulfate epsom salt",
+      "5 gallon fabric pot"
+    ],
+    "status": "pending",
+    "notes": "Troubleshooting cluster member alongside hydroponic-leaves-turning-yellow (which covers hydroponics generally and never mentions cucurbits). Indoor cucumber yellowing has its own order of causes: lower leaves yellowing first is normal ageing on a vining plant, while interveinal yellow on new growth is magnesium or iron, and yellow with wilting at midday is root-zone heat in a dark pot under a light. Also cover nitrogen burn vs nitrogen hunger on a heavy feeder and the 5-gallon root-bound case. Internal links: hydroponic-leaves-turning-yellow, how-to-grow-cucumbers-indoors, hydroponic-nutrient-guide."
+  },
+  {
+    "keyword": "how to prune cucumber plants indoors",
+    "slug": "how-to-prune-cucumber-plants-indoors",
+    "intent": "informational",
+    "products": [
+      "pruning shears",
+      "trellis netting",
+      "plant clips"
+    ],
+    "status": "pending",
+    "notes": "Third cluster member, the maintenance step how-to-grow-cucumbers-indoors points at but does not teach. Cover removing the first 4 to 6 side shoots on a vining type, taking lower leaves off as the vine climbs, the difference between a bush variety (leave it alone) and a vining one (prune to one leader), and how airflow on the lower canopy is the actual powdery mildew fix. Numbers: vine height 6 feet and up, leaf removal below the lowest fruit, 14 hour light schedule. Internal links: how-to-grow-cucumbers-indoors, best-grow-tent-for-beginners, grow-light-distance-chart."
   }
 ]

@@ -16,9 +16,10 @@ export interface Props {
     price?: string | number;
     url: string;
   };
+  noindex?: boolean;
 }
 
-const { title, description, canonical, image, publishedTime, article, toc, product } = Astro.props;
+const { title, description, canonical, image, publishedTime, article, toc, product, noindex } = Astro.props;
 const site = 'https://tabletopharvest.com';
 const defaultImage = '/images/og-default.svg';
 
@@ -38,6 +39,7 @@ const logoUrl = pubExists('/images/logo.png') ? `${site}/images/logo.png` : unde
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
   <meta name="astro-dev-toolbar" content="false" />
 
   <!-- Analytics Tracking Pixel -->
