@@ -1,681 +1,681 @@
 [
-  {
-    "keyword": "why are my hydroponic leaves turning yellow",
-    "slug": "hydroponic-leaves-turning-yellow",
-    "intent": "informational",
-    "products": [
-      "pH test kit",
-      "calmag supplement",
-      "nutrient kit"
-    ],
-    "status": "done",
-    "notes": "High search volume, Reddit gold. Diagnosis-style article."
-  },
-  {
-    "keyword": "hydroponic system not working troubleshooting",
-    "slug": "hydroponic-troubleshooting-guide",
-    "intent": "informational",
-    "products": [
-      "air pump",
-      "pH meter",
-      "net cups"
-    ],
-    "status": "done",
-    "notes": "Failure story angle: 'I killed 3 batches before figuring this out'. Published 2026-09-05."
-  },
-  {
-    "keyword": "best hydroponic system for small apartment",
-    "slug": "best-hydroponic-system-for-small-apartment",
-    "intent": "commercial",
-    "products": [
-      "AeroGarden",
-      "IDOO system",
-      "small LED light"
-    ],
-    "status": "done",
-    "notes": "Niche-specific buyer intent"
-  },
-  {
-    "keyword": "how to grow kale indoors",
-    "slug": "how-to-grow-kale-indoors",
-    "intent": "informational",
-    "products": [
-      "DWC bucket",
-      "grow light",
-      "kale seeds"
-    ],
-    "status": "done",
-    "notes": "Published 2026-09-07. Failure story angle with temp twist."
-  },
-  {
-    "keyword": "hydroponic vs soil growing cost comparison",
-    "slug": "hydroponic-vs-soil-cost",
-    "intent": "commercial comparison",
-    "products": [
-      "starter kit",
-      "nutrients",
-      "LED grow light"
-    ],
-    "status": "done",
-    "notes": "Comparison article, high affiliate potential"
-  },
-  {
-    "keyword": "cheapest way to start hydroponics",
-    "slug": "cheapest-way-to-start-hydroponics",
-    "intent": "commercial",
-    "products": [
-      "mason jar",
-      "clay pebbles",
-      "seeds"
-    ],
-    "status": "done",
-    "notes": "Budget-focused, high conversion. Published 2026-09-09."
-  },
-  {
-    "keyword": "how to clean hydroponic system algae",
-    "slug": "how-to-clean-hydroponic-algae",
-    "intent": "informational",
-    "products": [
-      "hydroton",
-      "cleaning solution",
-      "light blocker"
-    ],
-    "status": "done",
-    "notes": "Problem-solving, failure story: 'I ignored algae for 2 weeks, heres what happened'. Published 2026-09-10."
-  },
-  {
-    "keyword": "grow light distance from seedlings chart",
-    "slug": "grow-light-distance-chart",
-    "intent": "informational",
-    "products": [
-      "LED grow light",
-      "lux meter",
-      "timer plug",
-      "wire shelving"
-    ],
-    "status": "done",
-    "notes": "Tool/guide style, easy to rank, shareable on Reddit"
-  },
-  {
-    "keyword": "best herbs to grow hydroponically for beginners",
-    "slug": "best-herbs-for-hydroponics-beginners",
-    "intent": "informational",
-    "products": [
-      "basil seeds",
-      "mint seeds",
-      "starter kit"
-    ],
-    "status": "done",
-    "notes": "Beginner-friendly, high affiliate opportunities. Published 2026-09-13."
-  },
-  {
-    "keyword": "hydroponic lettuce not growing causes",
-    "slug": "hydroponic-lettuce-not-growing",
-    "intent": "informational",
-    "products": [
-      "nutrient kit",
-      "pH meter",
-      "grow light"
-    ],
-    "status": "done",
-    "notes": "Problem-solving, failure story: 'My lettuce stayed tiny for 3 weeks. Here's why.'"
-  },
-  {
-    "keyword": "how to grow microgreens indoors",
-    "slug": "how-to-grow-microgreens-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "microgreen seed trays",
-      "microgreen seeds mix",
-      "LED grow light strip",
-      "spray bottle"
-    ],
-    "status": "done",
-    "notes": "High volume, fast ROI content. Affiliate: trays, seeds, lights."
-  },
-  {
-    "keyword": "kratky method for beginners",
-    "slug": "kratky-method-for-beginners",
-    "intent": "informational",
-    "products": [
-      "mason jars",
-      "net cups",
-      "hydroton clay pebbles",
-      "hydroponic nutrient kit"
-    ],
-    "status": "done",
-    "notes": "Viral Reddit topic. No pump needed. Cheap setup = high conversion."
-  },
-  {
-    "keyword": "best grow lights for microgreens",
-    "slug": "best-grow-lights-for-microgreens",
-    "intent": "commercial",
-    "products": [
-      "Barrina T5 strips",
-      "LED panel grow light",
-      "wire shelving"
-    ],
-    "status": "done",
-    "notes": "Commercial intent. Links to Barrina already on site."
-  },
-  {
-    "keyword": "how to grow basil indoors",
-    "slug": "how-to-grow-basil-indoors",
-    "intent": "informational",
-    "products": [
-      "AeroGarden",
-      "potting mix",
-      "basil seeds",
-      "grow light"
-    ],
-    "status": "done",
-    "notes": "Published 2026-09-14. 7 affiliate links, TH voice, secret basil tip."
-  },
-  {
-    "keyword": "best indoor herb garden kit",
-    "slug": "best-indoor-herb-garden-kits",
-    "intent": "commercial",
-    "products": [
-      "AeroGarden Harvest",
-      "IDOO hydroponic",
-      "Click and Grow"
-    ],
-    "status": "done",
-    "notes": "Commercial roundup. Published 2026-09-15. 7 affiliate links."
-  },
-  {
-    "keyword": "how to start seeds indoors",
-    "slug": "how-to-start-seeds-indoors",
-    "intent": "informational",
-    "products": [
-      "seed starting trays",
-      "heat mat",
-      "grow light",
-      "seed starting mix"
-    ],
-    "status": "done",
-    "notes": "Seasonal spike in spring. Evergreen + seasonal. Published 2026-09-16."
-  },
-  {
-    "keyword": "aerogarden vs diy hydroponics",
-    "slug": "aerogarden-vs-diy-hydroponics",
-    "intent": "commercial comparison",
-    "products": [
-      "AeroGarden Harvest",
-      "DWC bucket kit",
-      "nutrient kit"
-    ],
-    "status": "done",
-    "notes": "Comparison = strong commercial intent, big-ticket items."
-  },
-  {
-    "keyword": "best ph meter for hydroponics",
-    "slug": "best-ph-meter-for-hydroponics",
-    "intent": "commercial",
-    "products": [
-      "pH meter",
-      "pH test drops",
-      "pH Up/Down kit"
-    ],
-    "status": "done",
-    "notes": "Under-served topic, low competition. Buyer intent high. Published 2026-09-18."
-  },
-  {
-    "keyword": "how to grow cherry tomatoes indoors",
-    "slug": "how-to-grow-cherry-tomatoes-indoors",
-    "intent": "informational",
-    "products": [
-      "5 gallon bucket",
-      "air pump",
-      "trellis",
-      "LED grow light"
-    ],
-    "status": "done",
-    "notes": "High difficulty but high volume. Good for authority. Published 2026-09-19."
-  },
-  {
-    "keyword": "microgreens vs sprouts",
-    "slug": "microgreens-vs-sprouts",
-    "intent": "informational",
-    "products": [
-      "sprouting jar",
-      "microgreen trays",
-      "seeds"
-    ],
-    "status": "done",
-    "notes": "Beginner question, easy content, two product categories. Published 2026-09-20, comparison + safety angle."
-  },
-  {
-    "keyword": "how to grow pea shoots indoors",
-    "slug": "how-to-grow-pea-shoots",
-    "intent": "informational",
-    "products": [
-      "pea seed trays",
-      "black oil sunflower/pea seeds",
-      "grow light"
-    ],
-    "status": "done",
-    "notes": "Popular microgreen, cheap seeds, high search. Good extend of microgreens cluster."
-  },
-  {
-    "keyword": "are sprouting seeds the same as microgreen seeds",
-    "slug": "sprouting-vs-microgreen-seeds",
-    "intent": "informational",
-    "products": [
-      "sprouting seeds",
-      "microgreen seeds",
-      "trays"
-    ],
-    "status": "done",
-    "notes": "Real PAA/comment question from competitor research. High intent, easy win."
-  },
-  {
-    "keyword": "how many microgreens per tray harvest weight",
-    "slug": "microgreens-yield-per-tray",
-    "intent": "informational",
-    "products": [
-      "1020 trays",
-      "microgreen seeds",
-      "scale"
-    ],
-    "status": "done",
-    "notes": "Data-style yield guide, shareable. Uses exact numbers. Published 2026-09-23, 6 affiliate links."
-  },
-  {
-    "keyword": "how to fix leggy seedlings",
-    "slug": "how-to-fix-leggy-seedlings",
-    "intent": "informational",
-    "products": [
-      "LED grow light",
-      "outlet timer plug",
-      "watt meter"
-    ],
-    "status": "done",
-    "notes": "Troubleshooting failure story, seed-starting cluster. Reddit gold (plantclinic). Published 2026-09-24, 4 affiliate links."
-  },
-  {
-    "keyword": "how to grow strawberries indoors",
-    "slug": "how-to-grow-strawberries-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "day-neutral strawberry plants",
-      "LED grow light for fruiting",
-      "hydroponic nutrient kit",
-      "DWC hydroponic kit"
-    ],
-    "status": "done",
-    "notes": "Fruit crop gap, high volume. Angle: middle-twist (no pollination = no berries). Published 2026-09-25, 4 affiliate links, 2 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to fix root rot in hydroponics",
-    "slug": "hydroponic-root-rot-fix",
-    "intent": "informational + commercial",
-    "products": [
-      "air pump + air stone kit",
-      "hydrogen peroxide 3%",
-      "aquarium thermometer",
-      "quiet air pump"
-    ],
-    "status": "done",
-    "notes": "Troubleshooting failure story, Reddit gold. Angle: 'it's not a disease you cure, it's an environment you stop feeding'. Published 2026-09-26, 4 affiliate links, 3 internal."
-  },
-  {
-    "keyword": "how to grow cilantro indoors (stop bolting)",
-    "slug": "how-to-grow-cilantro-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "timer plug",
-      "slow bolt cilantro seeds",
-      "hydroponic nutrient kit",
-      "pH test kit"
-    ],
-    "status": "done",
-    "notes": "Cilantro bolting failure story. Angle: hidden door 12-hour light trick + slow-bolt seed. Published 2026-09-27, 4 affiliate links, 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to grow green onions indoors",
-    "slug": "how-to-grow-green-onions-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "hydroponic nutrient kit",
-      "LED grow light strip",
-      "net cups + clay pebbles",
-      "pH test kit"
-    ],
-    "status": "done",
-    "notes": "Beginner scrap-regrow crop, high search volume, Reddit gold. Angle: hidden door (plain-water hack fades after 2-3 cycles; light + nutrient keeps it going for months). Published 2026-09-28, 5 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
-  },
-  {
-    "keyword": "how to prevent mold on microgreens",
-    "slug": "how-to-prevent-mold-on-microgreens",
-    "intent": "informational + commercial",
-    "products": [
-      "box fan",
-      "food-grade hydrogen peroxide 3%",
-      "spray mist bottle",
-      "1020 microgreen trays",
-      "coconut coir",
-      "broccoli seeds"
-    ],
-    "status": "done",
-    "notes": "Troubleshooting failure + hidden door angle: most white fuzz is root hairs, not mold; real fix is airflow not spraying. Middle twist = fan beat chemistry. Published 2026-09-29, 7 affiliate links, 2 internal + 2 GLDB. Hero image pending via prompt pack."
-  },
-  {
-    "keyword": "how to grow spinach indoors",
-    "slug": "how-to-grow-spinach-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "slow bolt spinach seeds",
-      "LED grow light strip",
-      "outlet timer plug",
-      "hydroponic nutrient kit"
-    ],
-    "status": "done",
-    "notes": "Fresh crop gap. Failure + hidden door angle: treat spinach like lettuce and it bolts bitter; fix is 12-hour light not more. Middle twist = less light, not more. Published 2026-09-30, 5 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
-  },
-  {
-    "keyword": "how to grow arugula indoors",
-    "slug": "how-to-grow-arugula-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "arugula seeds (Astro)",
-      "outlet timer plug",
-      "Barrina T5 LED strip",
-      "seed starting potting mix",
-      "leafy-green nutrient kit"
-    ],
-    "status": "done",
-    "notes": "Fresh leafy-green crop gap. Failure + hidden door angle: spiciness is a stress response, cool = mild, warm = bitter/bolts. Middle twist = temperature controls flavor, not variety. Published 2026-10-01, 7 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
-  },
-  {
-    "keyword": "how to grow bok choy indoors",
-    "slug": "how-to-grow-bok-choy-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "bok choy seeds (Little Shanghai)",
-      "LED grow light strip",
-      "leafy-green hydroponic nutrient kit",
-      "pH test kit"
-    ],
-    "status": "done",
-    "notes": "Cool-weather brassica gap, completes leafy-green cluster. Failure + hidden door angle: bolts on heat not light, fix is under-70F spot + cut-and-come-again harvest = weeks of yield. Published 2026-10-02, 4 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
-  },
-  {
-    "keyword": "how long to run grow lights for indoor plants per day",
-    "slug": "how-long-to-run-grow-lights",
-    "intent": "informational",
-    "products": [
-      "mechanical outlet timer",
-      "digital outlet timer",
-      "LED grow light strip"
-    ],
-    "status": "done",
-    "notes": "Fills hours gap (site had distance chart, no hours guide). Hidden door angle: plants grow in the dark, 24/7 stunts growth. Middle twist = more hours made microgreens worse. Published 2026-10-03, 3 affiliate links, 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to grow radishes indoors",
-    "slug": "how-to-grow-radishes-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "cherry belle radish seeds",
-      "cool LED grow light strip",
-      "bloom fertilizer low nitrogen",
-      "leafy-green nutrient kit"
-    ],
-    "status": "done",
-    "notes": "Root-crop gap closed (site had no root crops). Failure + hidden door angle: all leaves no bulb from heat, weak/too-long light, nitrogen-heavy feed. Middle twist = cool signals bulb, feed signals leaves. Published 2026-10-04, 5 affiliate links, 3 internal + 2 GLDB."
-  },
-  {
-    "keyword": "how to grow peppers indoors",
-    "slug": "how-to-grow-peppers-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "jalapeno seeds",
-      "oscillating clip fan",
-      "LED grow light strip",
-      "bloom fertilizer",
-      "timer plug"
-    ],
-    "status": "done",
-    "notes": "Fruiting crop gap. Failure + hidden door angle: peppers are self-pollinating but need a shake indoors; dead-still air = flowers but zero fruit. Middle twist = it was not nutrients, it was no breeze. Published 2026-10-05, 5 affiliate links, 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to grow mint indoors",
-    "slug": "how-to-grow-mint-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "mint seeds",
-      "LED grow light strip",
-      "outlet timer plug",
-      "hydroponic nutrient kit",
-      "pH test kit",
-      "net cups + clay pebbles"
-    ],
-    "status": "done",
-    "notes": "Herb cluster gap (site had basil, no mint, no curse words about flavor). High volume, Reddit gold. Failure + hidden door angle: mint is easy to keep ALIVE but hard to keep FLAVORFUL; flavor is a light problem not genetics. Middle twist = cut it hard, don't baby it. Published 2026-10-06, 8 affiliate links, 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to get rid of fungus gnats indoors",
-    "slug": "how-to-get-rid-of-fungus-gnats-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "yellow sticky traps",
-      "mosquito bits (Bti)",
-      "coarse horticultural sand",
-      "small clip fan",
-      "3% hydrogen peroxide",
-      "diatomaceous earth"
-    ],
-    "status": "done",
-    "notes": "Pest cluster gap closed (site had zero pest coverage before this). High volume, Reddit gold, no seasonality. Hidden door + failure angle: gnats are a watering problem, not a bug problem; the fix is a 4-week calendar, not a spray. Middle twist = one application kills one of four overlapping generations, label vs life cycle. Answers PAA: instant kill (none), harmful to humans (no), do they go away alone (rarely), where they come from (potting mix / fall-return plants), and hydro relevance (rare in Kratky/DWC). Published 2026-10-07, 6 affiliate links (11 instances), 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to get rid of spider mites on indoor plants",
-    "slug": "how-to-get-rid-of-spider-mites-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "insecticidal soap",
-      "neem oil concentrate",
-      "pump sprayer",
-      "thermo-hygrometer",
-      "small humidifier",
-      "yellow sticky traps"
-    ],
-    "status": "done",
-    "notes": "Second pest-cluster article (site had only fungus gnats). High volume, evergreen, no seasonality, Reddit gold (r/plantclinic, r/Hydroponics). Failure + hidden door angle: mites are arachnids not insects so bug spray fails; fix is 3-day spray calendar + humidity, not a stronger poison. Middle twist = it was never a bug problem, it was a 78F/30% humidity climate problem. Answers PAA: what kills instantly (nothing, eggs survive), do they go away alone (rarely), does neem work (slowly, eggs survive), how they get indoors (fall plants, new plants), harmful to humans (no bites, allergen skins). Published 2026-10-08, 6 affiliate links (10 instances), 3 internal + 1 GLDB."
-  },
-  {
-    "keyword": "how to get rid of aphids on indoor plants",
-    "slug": "how-to-get-rid-of-aphids-indoors",
-    "intent": "informational + commercial",
-    "products": [
-      "insecticidal soap concentrate",
-      "neem oil concentrate",
-      "1 gallon pump sprayer",
-      "bypass pruning shears",
-      "yellow sticky traps"
-    ],
-    "status": "done",
-    "notes": "Third pest-cluster article (site had fungus gnats + spider mites). High volume, evergreen, no seasonality, Reddit gold (r/IndoorGarden, r/HotPeppers, r/gardening). Failure + hidden door angle: indoor aphids give live birth without mating and daughters are born already pregnant (telescoping generations), so killing the visible ones never ends it; the fix is a water blast plus soap/oil on the undersides every 3-5 days for 3 weeks, not one spray. Middle twist = not a bug problem, a birth-rate problem / assembly line. Answers PAA: what kills instantly (nothing; the water blast only relocates), does dish soap work (yes, but burns leaves, so use formulated insecticidal soap), do they go away alone (rarely indoors), are they harmful to humans (no bites or disease), why they keep coming back (live birth plus winged alates as scouts). Includes honeydew/sooty mold/ant-farming section and winged-scout warning. Published 2026-10-09, 5 affiliate links (10 instances), 3 internal (fungus gnats, spider mites, peppers) + 1 GLDB. Hero: real sourced CC0 photo from Wikimedia Commons."
-  },
-  {
-    "keyword": "grow light electricity cost",
-    "slug": "grow-light-electricity-cost",
-    "intent": "informational",
-    "products": [
-      "Kill A Watt watt meter",
-      "mechanical outlet timer",
-      "Barrina T5 LED strip",
-      "Spider Farmer SF-1000"
-    ],
-    "status": "done",
-    "notes": "NEW topic (queue was empty). Money/cost angle no existing post covered. Answers PAA: do grow lights use a lot of electricity (no, 100W ~ $8/mo), cost per month (formula + table), LED vs HPS (200W LED replaces 400W HPS, saves $156/yr), does it raise the bill a lot. Failure + hidden door angle: the wattage on the box is a lie both directions (fake 'equivalent' up, under-rated cheap panels down), so measure real wall draw with a $15 meter. Middle twist = the box lies, your meter does not; a bill spike is usually a heater, not the light. Published 2026-10-10, 4 affiliate links (7 instances), 5 internal + 2 GLDB. Hero: real sourced photo (Alla Varta, CC BY 4.0, Wikimedia Commons)."
-  },
-  {
-    "keyword": "hydroponic growing medium",
-    "slug": "hydroponic-growing-medium",
-    "intent": "informational",
-    "products": [
-      "rockwool cubes",
-      "expanded clay pebbles",
-      "coarse perlite",
-      "coco coir",
-      "2 inch net pots"
-    ],
-    "status": "done",
-    "notes": "Queue was empty; picked from SERP gap analysis. 4-medium side-by-side test angle. Secondary: rockwool vs clay pebbles, best growing medium for hydroponics, perlite for hydroponics, coco coir hydroponics, growing medium for kratky."
-  },
-  {
-    "keyword": "how often to change hydroponic water",
-    "slug": "how-often-to-change-hydroponic-water",
-    "intent": "informational",
-    "products": [
-      "digital pH meter",
-      "EC TDS meter",
-      "aquarium air pump and air stone kit",
-      "5 gallon DWC bucket kit",
-      "3% hydrogen peroxide food grade",
-      "pH test drops"
-    ],
-    "status": "done",
-    "notes": "Queue was empty; picked from SERP gap analysis (all top results answer with a flat 'every 2 weeks'). Failure + hidden door angle: the schedule is gallons-per-plant, not a calendar; one-third top-off rule decides the change; Kratky needs zero changes. Middle twist (contradiction style): grow shops say weekly, extension sheets say 2-4 weeks, both right because they assume different water volumes; over-changing shocks plants and fights hard-water alkalinity every week. Also covers peroxide vs beneficial microbes. Published 2026-10-13, 6 affiliate links (7 instances), 10 internal + 2 GLDB. Hero: real sourced CC0 photo (Beatrice Rescazzi, Coltura idroponica, Wikimedia Commons) - no credit line owed."
-  },
-  {
-    "keyword": "ec and ppm in hydroponics",
-    "slug": "ec-and-ppm-hydroponics",
-    "intent": "informational",
-    "products": [
-      "EC TDS meter",
-      "digital pH meter",
-      "EC calibration solution",
-      "hydroponic nutrient kit",
-      "pH test drops"
-    ],
-    "status": "done",
-    "notes": "2026-10-14. Hidden door + contradiction angle. Middle twist: perfect EC 1.6 with pH 7.4 locks out iron. Hero: NASA hydroponic chamber (public domain, Wikimedia Commons)."
-  },
-  {
-    "keyword": "how to lower ph in hydroponics",
-    "slug": "how-to-lower-ph-hydroponics",
-    "intent": "informational",
-    "products": [
-      "pH down solution",
-      "digital pH meter",
-      "pH test drops"
-    ],
-    "status": "done",
-    "notes": "Troubleshooting. Pairs with ec-and-ppm-hydroponics. Angle: failure + hidden door. Alkalinity is the real villain, pH down alone does not hold. Published 2026-10-15, 5 affiliate links (8 instances), 7 internal + 1 GLDB. Hero: real sourced photo (Ildar Sagdejev, CC BY-SA 4.0, Wikimedia Commons). Middle twist: the morning top-off was refilling the alkalinity the acid had removed. Title 39 chars -> rendered 58. Meta 158."
-  },
-  {
-    "keyword": "hydroponic reservoir water temperature",
-    "slug": "hydroponic-water-temperature",
-    "intent": "informational",
-    "products": [
-      "aquarium thermometer",
-      "air pump and air stone",
-      "reservoir insulation"
-    ],
-    "status": "done",
-    "notes": "Troubleshooting. 70F dissolved oxygen cliff, root rot link. Cross-link root rot + water change articles."
-  },
-  {
-    "keyword": "dwc vs kratky",
-    "slug": "dwc-vs-kratky",
-    "intent": "commercial comparison",
-    "products": [
-      "DWC bucket kit",
-      "air pump and air stone",
-      "net cups"
-    ],
-    "status": "done",
-    "notes": "Comparison framework (X vs Y). Both already covered separately, so this is a clean internal-link hub. Published 2026-10-19 (queued run left the file + listings live but did not flip the queue/log; corrected 2026-10-20)."
-  },
-  {
-    "keyword": "tap water for hydroponics",
-    "slug": "tap-water-for-hydroponics",
-    "intent": "informational",
-    "products": [
-      "EC TDS meter",
-      "chlorine test strips",
-      "Campden tablets potassium metabisulfite",
-      "aquarium water conditioner chloramine remover",
-      "countertop reverse osmosis system",
-      "cal-mag supplement hydroponics"
-    ],
-    "status": "done",
-    "notes": "Queue was empty after DWC-vs-Kratky; picked from SERP gap analysis. Site had EC/PPM, pH, water change and water temp but zero coverage of the water source itself. Hidden door + failure angle: your tap water is the first ingredient, not the bowl, and the only number that decides if you need RO is the ppm baseline on your city's free water quality report. Middle twist (contradiction): the overnight off-gas trick works on chlorine but chloramine never off-gasses, so both internet camps are right about different cities; EPA says more than 1 in 5 Americans is on chloramine. Covers ppm budget math (baseline eats 7 to 63 percent of an 800 ppm mix), water softener sodium swap, why a carbon pitcher fails on chloramine, Campden tablet dose (1 per 20 gallons), rain water, well water, decision table by baseline. Answers PAA: can you use tap water, how long to let it sit, how to remove chloramine, what ppm is too high, does a softener hurt, is RO necessary, is bottled water ok. Published 2026-10-20, 6 affiliate links (7 instances), 7 internal unique (12 instances) + 2 GLDB, 3 inbound links added from ec-and-ppm, how-to-lower-ph and how-often-to-change. Hero: real sourced CC0 photo (Pixelmaniac pictures, water running out of a faucet, Wikimedia Commons), no credit line owed. Title 39 chars renders 58. Meta 151. All 8 self-review questions pass."
-  },
-  {
-    "keyword": "best grow tent for beginners",
-    "slug": "best-grow-tent-for-beginners",
-    "intent": "commercial",
-    "products": [
-      "2x2 grow tent",
-      "4x4 grow tent",
-      "inline duct fan and carbon filter",
-      "oscillating clip fan"
-    ],
-    "status": "done",
-    "notes": "SERP gap from the 2026-10-20 run: the site has 61 posts and zero coverage of tents or airflow, while the light and water clusters are dense. Commercial intent, big-ticket items, and a clean internal-link hub for the light, humidity and pest articles (mites and gnats both live or die on airflow)."
-  },
-  {
-    "keyword": "how to hand pollinate indoor vegetables",
-    "slug": "hand-pollinate-indoor-vegetables",
-    "intent": "informational",
-    "products": [
-      "electric toothbrush",
-      "small paintbrush",
-      "oscillating clip fan"
-    ],
-    "status": "done",
-    "notes": "Gap found while writing the peppers and strawberries articles: both mention shaking or brushing in one line and neither explains it. A dedicated guide covers tomatoes, peppers, strawberries and squash indoors, and becomes the hub the two crop articles link into. Answers PAA on whether indoor plants need pollination, how often to do it, and whether a fan is enough."
-  },
-  {
-    "keyword": "how to grow cucumbers indoors",
-    "slug": "how-to-grow-cucumbers-indoors",
-    "intent": "informational",
-    "products": [
-      "parthenocarpic cucumber seeds",
-      "trellis netting",
-      "self-watering pot"
-    ],
-    "status": "done",
-    "notes": "Natural cluster follow-up to hand-pollinate-indoor-vegetables, which already tells readers to buy a parthenocarpic variety and skip pollination. That article answers the variety question but nothing else, so this one covers the full grow: vertical space, container size (5 gallon minimum), the difference between parthenocarpic greenhouse types and field types, feeding once fruit sets, and the bitter-cucumber cause. Real gap: most indoor cucumber guides assume a garden bed and never mention that pollination can be skipped entirely. Internal links: hand-pollinate-indoor-vegetables, how-to-grow-cherry-tomatoes-indoors, grow-light-distance-chart, /grow-lights."
-  },
-  {
-    "keyword": "best cucumber varieties for indoor growing",
-    "slug": "best-cucumber-varieties-for-indoor-growing",
-    "intent": "commercial",
-    "products": [
-      "parthenocarpic cucumber seeds Diva",
-      "Beit Alpha cucumber seeds",
-      "Socrates F1 cucumber seeds"
-    ],
-    "status": "pending",
-    "notes": "Commercial follow-up to how-to-grow-cucumbers-indoors, which tells readers to buy parthenocarpic seed but never names a variety. Reader intent is 'which packet do I order'. Cover parthenocarpic vs gynoecious vs monoecious in one comparison table with seed counts and price per pack, name real varieties that show up in grower threads and catalogs (Diva, Socrates F1, Green Light, Party Time, Merlin, Beit Alpha types), bush vs vining habit for a shelf, days to first fruit, and the trap of buying a 'burpless' or 'seedless' supermarket type that is not actually parthenocarpic. Internal links: how-to-grow-cucumbers-indoors, hand-pollinate-indoor-vegetables, /grow-lights."
-  },
-  {
-    "keyword": "cucumber leaves turning yellow indoors",
-    "slug": "cucumber-leaves-turning-yellow-indoors",
-    "intent": "informational",
-    "products": [
-      "EC TDS meter",
-      "magnesium sulfate epsom salt",
-      "5 gallon fabric pot"
-    ],
-    "status": "pending",
-    "notes": "Troubleshooting cluster member alongside hydroponic-leaves-turning-yellow (which covers hydroponics generally and never mentions cucurbits). Indoor cucumber yellowing has its own order of causes: lower leaves yellowing first is normal ageing on a vining plant, while interveinal yellow on new growth is magnesium or iron, and yellow with wilting at midday is root-zone heat in a dark pot under a light. Also cover nitrogen burn vs nitrogen hunger on a heavy feeder and the 5-gallon root-bound case. Internal links: hydroponic-leaves-turning-yellow, how-to-grow-cucumbers-indoors, hydroponic-nutrient-guide."
-  },
-  {
-    "keyword": "how to prune cucumber plants indoors",
-    "slug": "how-to-prune-cucumber-plants-indoors",
-    "intent": "informational",
-    "products": [
-      "pruning shears",
-      "trellis netting",
-      "plant clips"
-    ],
-    "status": "pending",
-    "notes": "Third cluster member, the maintenance step how-to-grow-cucumbers-indoors points at but does not teach. Cover removing the first 4 to 6 side shoots on a vining type, taking lower leaves off as the vine climbs, the difference between a bush variety (leave it alone) and a vining one (prune to one leader), and how airflow on the lower canopy is the actual powdery mildew fix. Numbers: vine height 6 feet and up, leaf removal below the lowest fruit, 14 hour light schedule. Internal links: how-to-grow-cucumbers-indoors, best-grow-tent-for-beginners, grow-light-distance-chart."
-  }
+ {
+  "keyword": "why are my hydroponic leaves turning yellow",
+  "slug": "hydroponic-leaves-turning-yellow",
+  "intent": "informational",
+  "products": [
+   "pH test kit",
+   "calmag supplement",
+   "nutrient kit"
+  ],
+  "status": "done",
+  "notes": "High search volume, Reddit gold. Diagnosis-style article."
+ },
+ {
+  "keyword": "hydroponic system not working troubleshooting",
+  "slug": "hydroponic-troubleshooting-guide",
+  "intent": "informational",
+  "products": [
+   "air pump",
+   "pH meter",
+   "net cups"
+  ],
+  "status": "done",
+  "notes": "Failure story angle: 'I killed 3 batches before figuring this out'. Published 2026-09-05."
+ },
+ {
+  "keyword": "best hydroponic system for small apartment",
+  "slug": "best-hydroponic-system-for-small-apartment",
+  "intent": "commercial",
+  "products": [
+   "AeroGarden",
+   "IDOO system",
+   "small LED light"
+  ],
+  "status": "done",
+  "notes": "Niche-specific buyer intent"
+ },
+ {
+  "keyword": "how to grow kale indoors",
+  "slug": "how-to-grow-kale-indoors",
+  "intent": "informational",
+  "products": [
+   "DWC bucket",
+   "grow light",
+   "kale seeds"
+  ],
+  "status": "done",
+  "notes": "Published 2026-09-07. Failure story angle with temp twist."
+ },
+ {
+  "keyword": "hydroponic vs soil growing cost comparison",
+  "slug": "hydroponic-vs-soil-cost",
+  "intent": "commercial comparison",
+  "products": [
+   "starter kit",
+   "nutrients",
+   "LED grow light"
+  ],
+  "status": "done",
+  "notes": "Comparison article, high affiliate potential"
+ },
+ {
+  "keyword": "cheapest way to start hydroponics",
+  "slug": "cheapest-way-to-start-hydroponics",
+  "intent": "commercial",
+  "products": [
+   "mason jar",
+   "clay pebbles",
+   "seeds"
+  ],
+  "status": "done",
+  "notes": "Budget-focused, high conversion. Published 2026-09-09."
+ },
+ {
+  "keyword": "how to clean hydroponic system algae",
+  "slug": "how-to-clean-hydroponic-algae",
+  "intent": "informational",
+  "products": [
+   "hydroton",
+   "cleaning solution",
+   "light blocker"
+  ],
+  "status": "done",
+  "notes": "Problem-solving, failure story: 'I ignored algae for 2 weeks, heres what happened'. Published 2026-09-10."
+ },
+ {
+  "keyword": "grow light distance from seedlings chart",
+  "slug": "grow-light-distance-chart",
+  "intent": "informational",
+  "products": [
+   "LED grow light",
+   "lux meter",
+   "timer plug",
+   "wire shelving"
+  ],
+  "status": "done",
+  "notes": "Tool/guide style, easy to rank, shareable on Reddit"
+ },
+ {
+  "keyword": "best herbs to grow hydroponically for beginners",
+  "slug": "best-herbs-for-hydroponics-beginners",
+  "intent": "informational",
+  "products": [
+   "basil seeds",
+   "mint seeds",
+   "starter kit"
+  ],
+  "status": "done",
+  "notes": "Beginner-friendly, high affiliate opportunities. Published 2026-09-13."
+ },
+ {
+  "keyword": "hydroponic lettuce not growing causes",
+  "slug": "hydroponic-lettuce-not-growing",
+  "intent": "informational",
+  "products": [
+   "nutrient kit",
+   "pH meter",
+   "grow light"
+  ],
+  "status": "done",
+  "notes": "Problem-solving, failure story: 'My lettuce stayed tiny for 3 weeks. Here's why.'"
+ },
+ {
+  "keyword": "how to grow microgreens indoors",
+  "slug": "how-to-grow-microgreens-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "microgreen seed trays",
+   "microgreen seeds mix",
+   "LED grow light strip",
+   "spray bottle"
+  ],
+  "status": "done",
+  "notes": "High volume, fast ROI content. Affiliate: trays, seeds, lights."
+ },
+ {
+  "keyword": "kratky method for beginners",
+  "slug": "kratky-method-for-beginners",
+  "intent": "informational",
+  "products": [
+   "mason jars",
+   "net cups",
+   "hydroton clay pebbles",
+   "hydroponic nutrient kit"
+  ],
+  "status": "done",
+  "notes": "Viral Reddit topic. No pump needed. Cheap setup = high conversion."
+ },
+ {
+  "keyword": "best grow lights for microgreens",
+  "slug": "best-grow-lights-for-microgreens",
+  "intent": "commercial",
+  "products": [
+   "Barrina T5 strips",
+   "LED panel grow light",
+   "wire shelving"
+  ],
+  "status": "done",
+  "notes": "Commercial intent. Links to Barrina already on site."
+ },
+ {
+  "keyword": "how to grow basil indoors",
+  "slug": "how-to-grow-basil-indoors",
+  "intent": "informational",
+  "products": [
+   "AeroGarden",
+   "potting mix",
+   "basil seeds",
+   "grow light"
+  ],
+  "status": "done",
+  "notes": "Published 2026-09-14. 7 affiliate links, TH voice, secret basil tip."
+ },
+ {
+  "keyword": "best indoor herb garden kit",
+  "slug": "best-indoor-herb-garden-kits",
+  "intent": "commercial",
+  "products": [
+   "AeroGarden Harvest",
+   "IDOO hydroponic",
+   "Click and Grow"
+  ],
+  "status": "done",
+  "notes": "Commercial roundup. Published 2026-09-15. 7 affiliate links."
+ },
+ {
+  "keyword": "how to start seeds indoors",
+  "slug": "how-to-start-seeds-indoors",
+  "intent": "informational",
+  "products": [
+   "seed starting trays",
+   "heat mat",
+   "grow light",
+   "seed starting mix"
+  ],
+  "status": "done",
+  "notes": "Seasonal spike in spring. Evergreen + seasonal. Published 2026-09-16."
+ },
+ {
+  "keyword": "aerogarden vs diy hydroponics",
+  "slug": "aerogarden-vs-diy-hydroponics",
+  "intent": "commercial comparison",
+  "products": [
+   "AeroGarden Harvest",
+   "DWC bucket kit",
+   "nutrient kit"
+  ],
+  "status": "done",
+  "notes": "Comparison = strong commercial intent, big-ticket items."
+ },
+ {
+  "keyword": "best ph meter for hydroponics",
+  "slug": "best-ph-meter-for-hydroponics",
+  "intent": "commercial",
+  "products": [
+   "pH meter",
+   "pH test drops",
+   "pH Up/Down kit"
+  ],
+  "status": "done",
+  "notes": "Under-served topic, low competition. Buyer intent high. Published 2026-09-18."
+ },
+ {
+  "keyword": "how to grow cherry tomatoes indoors",
+  "slug": "how-to-grow-cherry-tomatoes-indoors",
+  "intent": "informational",
+  "products": [
+   "5 gallon bucket",
+   "air pump",
+   "trellis",
+   "LED grow light"
+  ],
+  "status": "done",
+  "notes": "High difficulty but high volume. Good for authority. Published 2026-09-19."
+ },
+ {
+  "keyword": "microgreens vs sprouts",
+  "slug": "microgreens-vs-sprouts",
+  "intent": "informational",
+  "products": [
+   "sprouting jar",
+   "microgreen trays",
+   "seeds"
+  ],
+  "status": "done",
+  "notes": "Beginner question, easy content, two product categories. Published 2026-09-20, comparison + safety angle."
+ },
+ {
+  "keyword": "how to grow pea shoots indoors",
+  "slug": "how-to-grow-pea-shoots",
+  "intent": "informational",
+  "products": [
+   "pea seed trays",
+   "black oil sunflower/pea seeds",
+   "grow light"
+  ],
+  "status": "done",
+  "notes": "Popular microgreen, cheap seeds, high search. Good extend of microgreens cluster."
+ },
+ {
+  "keyword": "are sprouting seeds the same as microgreen seeds",
+  "slug": "sprouting-vs-microgreen-seeds",
+  "intent": "informational",
+  "products": [
+   "sprouting seeds",
+   "microgreen seeds",
+   "trays"
+  ],
+  "status": "done",
+  "notes": "Real PAA/comment question from competitor research. High intent, easy win."
+ },
+ {
+  "keyword": "how many microgreens per tray harvest weight",
+  "slug": "microgreens-yield-per-tray",
+  "intent": "informational",
+  "products": [
+   "1020 trays",
+   "microgreen seeds",
+   "scale"
+  ],
+  "status": "done",
+  "notes": "Data-style yield guide, shareable. Uses exact numbers. Published 2026-09-23, 6 affiliate links."
+ },
+ {
+  "keyword": "how to fix leggy seedlings",
+  "slug": "how-to-fix-leggy-seedlings",
+  "intent": "informational",
+  "products": [
+   "LED grow light",
+   "outlet timer plug",
+   "watt meter"
+  ],
+  "status": "done",
+  "notes": "Troubleshooting failure story, seed-starting cluster. Reddit gold (plantclinic). Published 2026-09-24, 4 affiliate links."
+ },
+ {
+  "keyword": "how to grow strawberries indoors",
+  "slug": "how-to-grow-strawberries-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "day-neutral strawberry plants",
+   "LED grow light for fruiting",
+   "hydroponic nutrient kit",
+   "DWC hydroponic kit"
+  ],
+  "status": "done",
+  "notes": "Fruit crop gap, high volume. Angle: middle-twist (no pollination = no berries). Published 2026-09-25, 4 affiliate links, 2 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to fix root rot in hydroponics",
+  "slug": "hydroponic-root-rot-fix",
+  "intent": "informational + commercial",
+  "products": [
+   "air pump + air stone kit",
+   "hydrogen peroxide 3%",
+   "aquarium thermometer",
+   "quiet air pump"
+  ],
+  "status": "done",
+  "notes": "Troubleshooting failure story, Reddit gold. Angle: 'it's not a disease you cure, it's an environment you stop feeding'. Published 2026-09-26, 4 affiliate links, 3 internal."
+ },
+ {
+  "keyword": "how to grow cilantro indoors (stop bolting)",
+  "slug": "how-to-grow-cilantro-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "timer plug",
+   "slow bolt cilantro seeds",
+   "hydroponic nutrient kit",
+   "pH test kit"
+  ],
+  "status": "done",
+  "notes": "Cilantro bolting failure story. Angle: hidden door 12-hour light trick + slow-bolt seed. Published 2026-09-27, 4 affiliate links, 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to grow green onions indoors",
+  "slug": "how-to-grow-green-onions-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "hydroponic nutrient kit",
+   "LED grow light strip",
+   "net cups + clay pebbles",
+   "pH test kit"
+  ],
+  "status": "done",
+  "notes": "Beginner scrap-regrow crop, high search volume, Reddit gold. Angle: hidden door (plain-water hack fades after 2-3 cycles; light + nutrient keeps it going for months). Published 2026-09-28, 5 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
+ },
+ {
+  "keyword": "how to prevent mold on microgreens",
+  "slug": "how-to-prevent-mold-on-microgreens",
+  "intent": "informational + commercial",
+  "products": [
+   "box fan",
+   "food-grade hydrogen peroxide 3%",
+   "spray mist bottle",
+   "1020 microgreen trays",
+   "coconut coir",
+   "broccoli seeds"
+  ],
+  "status": "done",
+  "notes": "Troubleshooting failure + hidden door angle: most white fuzz is root hairs, not mold; real fix is airflow not spraying. Middle twist = fan beat chemistry. Published 2026-09-29, 7 affiliate links, 2 internal + 2 GLDB. Hero image pending via prompt pack."
+ },
+ {
+  "keyword": "how to grow spinach indoors",
+  "slug": "how-to-grow-spinach-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "slow bolt spinach seeds",
+   "LED grow light strip",
+   "outlet timer plug",
+   "hydroponic nutrient kit"
+  ],
+  "status": "done",
+  "notes": "Fresh crop gap. Failure + hidden door angle: treat spinach like lettuce and it bolts bitter; fix is 12-hour light not more. Middle twist = less light, not more. Published 2026-09-30, 5 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
+ },
+ {
+  "keyword": "how to grow arugula indoors",
+  "slug": "how-to-grow-arugula-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "arugula seeds (Astro)",
+   "outlet timer plug",
+   "Barrina T5 LED strip",
+   "seed starting potting mix",
+   "leafy-green nutrient kit"
+  ],
+  "status": "done",
+  "notes": "Fresh leafy-green crop gap. Failure + hidden door angle: spiciness is a stress response, cool = mild, warm = bitter/bolts. Middle twist = temperature controls flavor, not variety. Published 2026-10-01, 7 affiliate links, 3 internal + 1 GLDB. Hero image pending via prompt pack."
+ },
+ {
+  "keyword": "how to grow bok choy indoors",
+  "slug": "how-to-grow-bok-choy-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "bok choy seeds (Little Shanghai)",
+   "LED grow light strip",
+   "leafy-green hydroponic nutrient kit",
+   "pH test kit"
+  ],
+  "status": "done",
+  "notes": "Cool-weather brassica gap, completes leafy-green cluster. Failure + hidden door angle: bolts on heat not light, fix is under-70F spot + cut-and-come-again harvest = weeks of yield. Published 2026-10-02, 4 affiliate links, 2 internal + 1 GLDB. Hero image pending via prompt pack."
+ },
+ {
+  "keyword": "how long to run grow lights for indoor plants per day",
+  "slug": "how-long-to-run-grow-lights",
+  "intent": "informational",
+  "products": [
+   "mechanical outlet timer",
+   "digital outlet timer",
+   "LED grow light strip"
+  ],
+  "status": "done",
+  "notes": "Fills hours gap (site had distance chart, no hours guide). Hidden door angle: plants grow in the dark, 24/7 stunts growth. Middle twist = more hours made microgreens worse. Published 2026-10-03, 3 affiliate links, 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to grow radishes indoors",
+  "slug": "how-to-grow-radishes-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "cherry belle radish seeds",
+   "cool LED grow light strip",
+   "bloom fertilizer low nitrogen",
+   "leafy-green nutrient kit"
+  ],
+  "status": "done",
+  "notes": "Root-crop gap closed (site had no root crops). Failure + hidden door angle: all leaves no bulb from heat, weak/too-long light, nitrogen-heavy feed. Middle twist = cool signals bulb, feed signals leaves. Published 2026-10-04, 5 affiliate links, 3 internal + 2 GLDB."
+ },
+ {
+  "keyword": "how to grow peppers indoors",
+  "slug": "how-to-grow-peppers-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "jalapeno seeds",
+   "oscillating clip fan",
+   "LED grow light strip",
+   "bloom fertilizer",
+   "timer plug"
+  ],
+  "status": "done",
+  "notes": "Fruiting crop gap. Failure + hidden door angle: peppers are self-pollinating but need a shake indoors; dead-still air = flowers but zero fruit. Middle twist = it was not nutrients, it was no breeze. Published 2026-10-05, 5 affiliate links, 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to grow mint indoors",
+  "slug": "how-to-grow-mint-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "mint seeds",
+   "LED grow light strip",
+   "outlet timer plug",
+   "hydroponic nutrient kit",
+   "pH test kit",
+   "net cups + clay pebbles"
+  ],
+  "status": "done",
+  "notes": "Herb cluster gap (site had basil, no mint, no curse words about flavor). High volume, Reddit gold. Failure + hidden door angle: mint is easy to keep ALIVE but hard to keep FLAVORFUL; flavor is a light problem not genetics. Middle twist = cut it hard, don't baby it. Published 2026-10-06, 8 affiliate links, 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to get rid of fungus gnats indoors",
+  "slug": "how-to-get-rid-of-fungus-gnats-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "yellow sticky traps",
+   "mosquito bits (Bti)",
+   "coarse horticultural sand",
+   "small clip fan",
+   "3% hydrogen peroxide",
+   "diatomaceous earth"
+  ],
+  "status": "done",
+  "notes": "Pest cluster gap closed (site had zero pest coverage before this). High volume, Reddit gold, no seasonality. Hidden door + failure angle: gnats are a watering problem, not a bug problem; the fix is a 4-week calendar, not a spray. Middle twist = one application kills one of four overlapping generations, label vs life cycle. Answers PAA: instant kill (none), harmful to humans (no), do they go away alone (rarely), where they come from (potting mix / fall-return plants), and hydro relevance (rare in Kratky/DWC). Published 2026-10-07, 6 affiliate links (11 instances), 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to get rid of spider mites on indoor plants",
+  "slug": "how-to-get-rid-of-spider-mites-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "insecticidal soap",
+   "neem oil concentrate",
+   "pump sprayer",
+   "thermo-hygrometer",
+   "small humidifier",
+   "yellow sticky traps"
+  ],
+  "status": "done",
+  "notes": "Second pest-cluster article (site had only fungus gnats). High volume, evergreen, no seasonality, Reddit gold (r/plantclinic, r/Hydroponics). Failure + hidden door angle: mites are arachnids not insects so bug spray fails; fix is 3-day spray calendar + humidity, not a stronger poison. Middle twist = it was never a bug problem, it was a 78F/30% humidity climate problem. Answers PAA: what kills instantly (nothing, eggs survive), do they go away alone (rarely), does neem work (slowly, eggs survive), how they get indoors (fall plants, new plants), harmful to humans (no bites, allergen skins). Published 2026-10-08, 6 affiliate links (10 instances), 3 internal + 1 GLDB."
+ },
+ {
+  "keyword": "how to get rid of aphids on indoor plants",
+  "slug": "how-to-get-rid-of-aphids-indoors",
+  "intent": "informational + commercial",
+  "products": [
+   "insecticidal soap concentrate",
+   "neem oil concentrate",
+   "1 gallon pump sprayer",
+   "bypass pruning shears",
+   "yellow sticky traps"
+  ],
+  "status": "done",
+  "notes": "Third pest-cluster article (site had fungus gnats + spider mites). High volume, evergreen, no seasonality, Reddit gold (r/IndoorGarden, r/HotPeppers, r/gardening). Failure + hidden door angle: indoor aphids give live birth without mating and daughters are born already pregnant (telescoping generations), so killing the visible ones never ends it; the fix is a water blast plus soap/oil on the undersides every 3-5 days for 3 weeks, not one spray. Middle twist = not a bug problem, a birth-rate problem / assembly line. Answers PAA: what kills instantly (nothing; the water blast only relocates), does dish soap work (yes, but burns leaves, so use formulated insecticidal soap), do they go away alone (rarely indoors), are they harmful to humans (no bites or disease), why they keep coming back (live birth plus winged alates as scouts). Includes honeydew/sooty mold/ant-farming section and winged-scout warning. Published 2026-10-09, 5 affiliate links (10 instances), 3 internal (fungus gnats, spider mites, peppers) + 1 GLDB. Hero: real sourced CC0 photo from Wikimedia Commons."
+ },
+ {
+  "keyword": "grow light electricity cost",
+  "slug": "grow-light-electricity-cost",
+  "intent": "informational",
+  "products": [
+   "Kill A Watt watt meter",
+   "mechanical outlet timer",
+   "Barrina T5 LED strip",
+   "Spider Farmer SF-1000"
+  ],
+  "status": "done",
+  "notes": "NEW topic (queue was empty). Money/cost angle no existing post covered. Answers PAA: do grow lights use a lot of electricity (no, 100W ~ $8/mo), cost per month (formula + table), LED vs HPS (200W LED replaces 400W HPS, saves $156/yr), does it raise the bill a lot. Failure + hidden door angle: the wattage on the box is a lie both directions (fake 'equivalent' up, under-rated cheap panels down), so measure real wall draw with a $15 meter. Middle twist = the box lies, your meter does not; a bill spike is usually a heater, not the light. Published 2026-10-10, 4 affiliate links (7 instances), 5 internal + 2 GLDB. Hero: real sourced photo (Alla Varta, CC BY 4.0, Wikimedia Commons)."
+ },
+ {
+  "keyword": "hydroponic growing medium",
+  "slug": "hydroponic-growing-medium",
+  "intent": "informational",
+  "products": [
+   "rockwool cubes",
+   "expanded clay pebbles",
+   "coarse perlite",
+   "coco coir",
+   "2 inch net pots"
+  ],
+  "status": "done",
+  "notes": "Queue was empty; picked from SERP gap analysis. 4-medium side-by-side test angle. Secondary: rockwool vs clay pebbles, best growing medium for hydroponics, perlite for hydroponics, coco coir hydroponics, growing medium for kratky."
+ },
+ {
+  "keyword": "how often to change hydroponic water",
+  "slug": "how-often-to-change-hydroponic-water",
+  "intent": "informational",
+  "products": [
+   "digital pH meter",
+   "EC TDS meter",
+   "aquarium air pump and air stone kit",
+   "5 gallon DWC bucket kit",
+   "3% hydrogen peroxide food grade",
+   "pH test drops"
+  ],
+  "status": "done",
+  "notes": "Queue was empty; picked from SERP gap analysis (all top results answer with a flat 'every 2 weeks'). Failure + hidden door angle: the schedule is gallons-per-plant, not a calendar; one-third top-off rule decides the change; Kratky needs zero changes. Middle twist (contradiction style): grow shops say weekly, extension sheets say 2-4 weeks, both right because they assume different water volumes; over-changing shocks plants and fights hard-water alkalinity every week. Also covers peroxide vs beneficial microbes. Published 2026-10-13, 6 affiliate links (7 instances), 10 internal + 2 GLDB. Hero: real sourced CC0 photo (Beatrice Rescazzi, Coltura idroponica, Wikimedia Commons) - no credit line owed."
+ },
+ {
+  "keyword": "ec and ppm in hydroponics",
+  "slug": "ec-and-ppm-hydroponics",
+  "intent": "informational",
+  "products": [
+   "EC TDS meter",
+   "digital pH meter",
+   "EC calibration solution",
+   "hydroponic nutrient kit",
+   "pH test drops"
+  ],
+  "status": "done",
+  "notes": "2026-10-14. Hidden door + contradiction angle. Middle twist: perfect EC 1.6 with pH 7.4 locks out iron. Hero: NASA hydroponic chamber (public domain, Wikimedia Commons)."
+ },
+ {
+  "keyword": "how to lower ph in hydroponics",
+  "slug": "how-to-lower-ph-hydroponics",
+  "intent": "informational",
+  "products": [
+   "pH down solution",
+   "digital pH meter",
+   "pH test drops"
+  ],
+  "status": "done",
+  "notes": "Troubleshooting. Pairs with ec-and-ppm-hydroponics. Angle: failure + hidden door. Alkalinity is the real villain, pH down alone does not hold. Published 2026-10-15, 5 affiliate links (8 instances), 7 internal + 1 GLDB. Hero: real sourced photo (Ildar Sagdejev, CC BY-SA 4.0, Wikimedia Commons). Middle twist: the morning top-off was refilling the alkalinity the acid had removed. Title 39 chars -> rendered 58. Meta 158."
+ },
+ {
+  "keyword": "hydroponic reservoir water temperature",
+  "slug": "hydroponic-water-temperature",
+  "intent": "informational",
+  "products": [
+   "aquarium thermometer",
+   "air pump and air stone",
+   "reservoir insulation"
+  ],
+  "status": "done",
+  "notes": "Troubleshooting. 70F dissolved oxygen cliff, root rot link. Cross-link root rot + water change articles."
+ },
+ {
+  "keyword": "dwc vs kratky",
+  "slug": "dwc-vs-kratky",
+  "intent": "commercial comparison",
+  "products": [
+   "DWC bucket kit",
+   "air pump and air stone",
+   "net cups"
+  ],
+  "status": "done",
+  "notes": "Comparison framework (X vs Y). Both already covered separately, so this is a clean internal-link hub. Published 2026-10-19 (queued run left the file + listings live but did not flip the queue/log; corrected 2026-10-20)."
+ },
+ {
+  "keyword": "tap water for hydroponics",
+  "slug": "tap-water-for-hydroponics",
+  "intent": "informational",
+  "products": [
+   "EC TDS meter",
+   "chlorine test strips",
+   "Campden tablets potassium metabisulfite",
+   "aquarium water conditioner chloramine remover",
+   "countertop reverse osmosis system",
+   "cal-mag supplement hydroponics"
+  ],
+  "status": "done",
+  "notes": "Queue was empty after DWC-vs-Kratky; picked from SERP gap analysis. Site had EC/PPM, pH, water change and water temp but zero coverage of the water source itself. Hidden door + failure angle: your tap water is the first ingredient, not the bowl, and the only number that decides if you need RO is the ppm baseline on your city's free water quality report. Middle twist (contradiction): the overnight off-gas trick works on chlorine but chloramine never off-gasses, so both internet camps are right about different cities; EPA says more than 1 in 5 Americans is on chloramine. Covers ppm budget math (baseline eats 7 to 63 percent of an 800 ppm mix), water softener sodium swap, why a carbon pitcher fails on chloramine, Campden tablet dose (1 per 20 gallons), rain water, well water, decision table by baseline. Answers PAA: can you use tap water, how long to let it sit, how to remove chloramine, what ppm is too high, does a softener hurt, is RO necessary, is bottled water ok. Published 2026-10-20, 6 affiliate links (7 instances), 7 internal unique (12 instances) + 2 GLDB, 3 inbound links added from ec-and-ppm, how-to-lower-ph and how-often-to-change. Hero: real sourced CC0 photo (Pixelmaniac pictures, water running out of a faucet, Wikimedia Commons), no credit line owed. Title 39 chars renders 58. Meta 151. All 8 self-review questions pass."
+ },
+ {
+  "keyword": "best grow tent for beginners",
+  "slug": "best-grow-tent-for-beginners",
+  "intent": "commercial",
+  "products": [
+   "2x2 grow tent",
+   "4x4 grow tent",
+   "inline duct fan and carbon filter",
+   "oscillating clip fan"
+  ],
+  "status": "done",
+  "notes": "SERP gap from the 2026-10-20 run: the site has 61 posts and zero coverage of tents or airflow, while the light and water clusters are dense. Commercial intent, big-ticket items, and a clean internal-link hub for the light, humidity and pest articles (mites and gnats both live or die on airflow)."
+ },
+ {
+  "keyword": "how to hand pollinate indoor vegetables",
+  "slug": "hand-pollinate-indoor-vegetables",
+  "intent": "informational",
+  "products": [
+   "electric toothbrush",
+   "small paintbrush",
+   "oscillating clip fan"
+  ],
+  "status": "done",
+  "notes": "Gap found while writing the peppers and strawberries articles: both mention shaking or brushing in one line and neither explains it. A dedicated guide covers tomatoes, peppers, strawberries and squash indoors, and becomes the hub the two crop articles link into. Answers PAA on whether indoor plants need pollination, how often to do it, and whether a fan is enough."
+ },
+ {
+  "keyword": "how to grow cucumbers indoors",
+  "slug": "how-to-grow-cucumbers-indoors",
+  "intent": "informational",
+  "products": [
+   "parthenocarpic cucumber seeds",
+   "trellis netting",
+   "self-watering pot"
+  ],
+  "status": "done",
+  "notes": "Natural cluster follow-up to hand-pollinate-indoor-vegetables, which already tells readers to buy a parthenocarpic variety and skip pollination. That article answers the variety question but nothing else, so this one covers the full grow: vertical space, container size (5 gallon minimum), the difference between parthenocarpic greenhouse types and field types, feeding once fruit sets, and the bitter-cucumber cause. Real gap: most indoor cucumber guides assume a garden bed and never mention that pollination can be skipped entirely. Internal links: hand-pollinate-indoor-vegetables, how-to-grow-cherry-tomatoes-indoors, grow-light-distance-chart, /grow-lights."
+ },
+ {
+  "keyword": "best cucumber varieties for indoor growing",
+  "slug": "best-cucumber-varieties-for-indoor-growing",
+  "intent": "commercial",
+  "products": [
+   "parthenocarpic cucumber seeds Diva",
+   "Beit Alpha cucumber seeds",
+   "Socrates F1 cucumber seeds"
+  ],
+  "status": "done",
+  "notes": "Commercial follow-up to how-to-grow-cucumbers-indoors, which tells readers to buy parthenocarpic seed but never names a variety. Reader intent is 'which packet do I order'. Cover parthenocarpic vs gynoecious vs monoecious in one comparison table with seed counts and price per pack, name real varieties that show up in grower threads and catalogs (Diva, Socrates F1, Green Light, Party Time, Merlin, Beit Alpha types), bush vs vining habit for a shelf, days to first fruit, and the trap of buying a 'burpless' or 'seedless' supermarket type that is not actually parthenocarpic. Internal links: how-to-grow-cucumbers-indoors, hand-pollinate-indoor-vegetables, /grow-lights."
+ },
+ {
+  "keyword": "cucumber leaves turning yellow indoors",
+  "slug": "cucumber-leaves-turning-yellow-indoors",
+  "intent": "informational",
+  "products": [
+   "EC TDS meter",
+   "magnesium sulfate epsom salt",
+   "5 gallon fabric pot"
+  ],
+  "status": "pending",
+  "notes": "Troubleshooting cluster member alongside hydroponic-leaves-turning-yellow (which covers hydroponics generally and never mentions cucurbits). Indoor cucumber yellowing has its own order of causes: lower leaves yellowing first is normal ageing on a vining plant, while interveinal yellow on new growth is magnesium or iron, and yellow with wilting at midday is root-zone heat in a dark pot under a light. Also cover nitrogen burn vs nitrogen hunger on a heavy feeder and the 5-gallon root-bound case. Internal links: hydroponic-leaves-turning-yellow, how-to-grow-cucumbers-indoors, hydroponic-nutrient-guide."
+ },
+ {
+  "keyword": "how to prune cucumber plants indoors",
+  "slug": "how-to-prune-cucumber-plants-indoors",
+  "intent": "informational",
+  "products": [
+   "pruning shears",
+   "trellis netting",
+   "plant clips"
+  ],
+  "status": "pending",
+  "notes": "Third cluster member, the maintenance step how-to-grow-cucumbers-indoors points at but does not teach. Cover removing the first 4 to 6 side shoots on a vining type, taking lower leaves off as the vine climbs, the difference between a bush variety (leave it alone) and a vining one (prune to one leader), and how airflow on the lower canopy is the actual powdery mildew fix. Numbers: vine height 6 feet and up, leaf removal below the lowest fruit, 14 hour light schedule. Internal links: how-to-grow-cucumbers-indoors, best-grow-tent-for-beginners, grow-light-distance-chart."
+ }
 ]
