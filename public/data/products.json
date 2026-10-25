@@ -59,7 +59,7 @@
     {
       "id": "aerogarden-harvest",
       "name": "AeroGarden Harvest",
-      "price": 71.99,
+      "price": 79.99,
       "watts": 20,
       "coverage": "Countertop",
       "chips": "LED",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-24"
+  "updated": "2026-10-25"
 }
