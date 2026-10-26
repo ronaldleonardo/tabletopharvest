@@ -676,7 +676,31 @@
       "trellis netting",
       "plant clips"
     ],
+    "status": "done",
+    "notes": "Third cluster member, the maintenance step how-to-grow-cucumbers-indoors points at but does not teach. Cover removing the first 4 to 6 side shoots on a vining type, taking lower leaves off as the vine climbs, the difference between a bush variety (leave it alone) and a vining one (prune to one leader), and how airflow on the lower canopy is the actual powdery mildew fix. Numbers: vine height 6 feet and up, leaf removal below the lowest fruit, 14 hour light schedule. Internal links: how-to-grow-cucumbers-indoors, best-grow-tent-for-beginners, grow-light-distance-chart. Published 2026-10-26. Reframed from the brief after research: OSU says cucumber yield tracks leaf area, so the article teaches fruit removal and topping, not sucker stripping. Middle twist = the 12-leaf strip that cost 25 cucumbers."
+  },
+  {
+    "keyword": "how often to water cucumber plants indoors",
+    "slug": "how-often-to-water-cucumbers-indoors",
+    "intent": "informational",
+    "products": [
+      "moisture meter",
+      "5 gallon fabric pot",
+      "self watering pot"
+    ],
     "status": "pending",
-    "notes": "Third cluster member, the maintenance step how-to-grow-cucumbers-indoors points at but does not teach. Cover removing the first 4 to 6 side shoots on a vining type, taking lower leaves off as the vine climbs, the difference between a bush variety (leave it alone) and a vining one (prune to one leader), and how airflow on the lower canopy is the actual powdery mildew fix. Numbers: vine height 6 feet and up, leaf removal below the lowest fruit, 14 hour light schedule. Internal links: how-to-grow-cucumbers-indoors, best-grow-tent-for-beginners, grow-light-distance-chart."
+    "notes": "Fourth cucumber cluster member. Angle: cucumber drinks 1 to 2 gallons a day when fruiting (UAF), so a calendar schedule fails; pot weight and a moisture meter beat a timer. Links: how-to-grow-cucumbers-indoors, cucumber-leaves-turning-yellow-indoors, how-to-prune-cucumber-plants-indoors, hydroponic-water-temperature."
+  },
+  {
+    "keyword": "best lettuce varieties for indoor growing",
+    "slug": "best-lettuce-varieties-for-indoors",
+    "intent": "commercial",
+    "products": [
+      "lettuce seeds",
+      "lettuce seed mix",
+      "grow light"
+    ],
+    "status": "pending",
+    "notes": "Lettuce cluster counterpart to best-cucumber-varieties. Cut-and-come-again vs head, bolt resistance indoors, 45 to 60 day windows. Links: grow-lettuce-indoors-year-round, how-to-grow-arugula-indoors, grow-light-distance-chart."
   }
 ]
