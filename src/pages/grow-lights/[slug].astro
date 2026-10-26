@@ -36,6 +36,20 @@ const productData = {
   price: light.price,
   url: link,
 };
+
+// Sibling lights in the same category. Fixes the internal-link gap where all 30
+// product pages had exactly one inbound link (the /grow-lights hub).
+const group = lights.filter(l => l.best === light.best);
+const groupIdx = group.findIndex(l => l.id === light.id);
+const rotatedGroup = [...group.slice(groupIdx + 1), ...group.slice(0, Math.max(groupIdx, 0))].filter(l => l.id !== light.id);
+const siblings = rotatedGroup.slice(0, 3);
+const allSorted = [...lights].sort((a, b) => a.id.localeCompare(b.id));
+const allIdx = allSorted.findIndex(l => l.id === light.id);
+const globalRotation = [...allSorted.slice(allIdx + 1), ...allSorted.slice(0, Math.max(allIdx, 0))];
+const fallbackSiblings = globalRotation
+  .filter(l => l.id !== light.id && !siblings.some(s => s.id === l.id))
+  .slice(0, Math.max(0, 3 - siblings.length));
+const compareLights = [...siblings, ...fallbackSiblings];
 ---
 
 <BaseLayout
@@ -84,6 +98,21 @@ const productData = {
 
       <p class="gl-affiliate-note">We earn a commission if you click and buy through links on this site at no extra cost to you.</p>
     </div>
+
+    {compareLights.length > 0 && (
+      <div class="gl-compare">
+        <p class="gl-compare-title">Compare before you buy</p>
+        <ul>
+          {compareLights.map(s => (
+            <li>
+              <a href={`/grow-lights/${s.id}`}>{s.name}</a>
+              <span>${s.price} · {s.watts}W · {s.best === light.best ? 'same category' : 'also rated ' + s.rating}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="gl-compare-note">Full specs for all 30 lights on the <a href="/grow-lights">grow light database</a>.</p>
+      </div>
+    )}
 
     <div class="gl-interlink">
       <p><strong>New to indoor growing?</strong> Read our <a href="/posts/hydroponics-for-beginners">complete beginner guide</a> or browse our <a href="/posts">growing guides and reviews</a>.</p>
@@ -177,6 +206,28 @@ const productData = {
       color: var(--text-dim);
     }
     .gl-interlink a { color: var(--green-600); font-weight: 600; }
+    .gl-compare {
+      margin: 1.5rem auto;
+      padding: 1rem 1.25rem;
+      background: var(--bg-card);
+      border: var(--border-light);
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+    .gl-compare-title {
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+    .gl-compare ul { list-style: none; display: grid; gap: 0.35rem; }
+    .gl-compare li { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .gl-compare a { color: var(--green-600); font-weight: 600; text-decoration: none; }
+    .gl-compare a:hover { text-decoration: underline; }
+    .gl-compare li span { color: var(--text-dim); font-size: 0.8rem; }
+    .gl-compare-note { margin-top: 0.6rem; font-size: 0.78rem; color: var(--text-dim); }
 
     @media (max-width: 600px) {
       .gl-slug-specs { grid-template-columns: 1fr; }
