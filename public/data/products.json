@@ -213,7 +213,7 @@
     {
       "id": "mars-hydro-ts-600",
       "name": "Mars Hydro TS-600",
-      "price": 65,
+      "price": 59.99,
       "watts": 100,
       "coverage": "2x2 ft",
       "chips": "LED",
@@ -227,7 +227,7 @@
     {
       "id": "viparspectra-xs1000",
       "name": "VIPARSPECTRA XS1000",
-      "price": 99.99,
+      "price": 69.93,
       "watts": 100,
       "coverage": "2x2 ft",
       "chips": "Samsung LM301H",
@@ -241,7 +241,7 @@
     {
       "id": "viparspectra-p2000",
       "name": "VIPARSPECTRA P2000",
-      "price": 129.97,
+      "price": 131.99,
       "watts": 200,
       "coverage": "2.5x2.5 flower / 3.5x3.5 veg",
       "chips": "Samsung LED",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }
