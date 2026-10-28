@@ -702,5 +702,17 @@
     ],
     "status": "done",
     "notes": "Lettuce cluster counterpart to best-cucumber-varieties. Cut-and-come-again vs head, bolt resistance indoors, 45 to 60 day windows. Links: grow-lettuce-indoors-year-round, how-to-grow-arugula-indoors, grow-light-distance-chart. Published 2026-10-28. 6 affiliate links, 4 internal + 1 GLDB, hero image_generate+sharp."
+  },
+  {
+    "keyword": "how much light does lettuce need indoors",
+    "slug": "how-much-light-does-lettuce-need",
+    "intent": "informational",
+    "products": [
+      "grow light",
+      "light meter",
+      "outlet timer"
+    ],
+    "status": "pending",
+    "notes": "DLI cluster. 12 to 16 mol/m2/day target; 14h photoperiod beats 18h (bolt trigger). Convert DLI to lux/PPFD for cheap meters, distance chart math, lettuce bleaches before it stretches. Links: best-lettuce-varieties-for-indoors, grow-light-distance-chart, grow-lettuce-indoors-year-round + /grow-lights. Angle: simplicity (more light is not better)."
   }
 ]
