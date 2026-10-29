@@ -712,7 +712,20 @@
       "light meter",
       "outlet timer"
     ],
+    "status": "done",
+    "notes": "DLI cluster. 12 to 16 mol/m2/day target; 14h photoperiod beats 18h (bolt trigger). Convert DLI to lux/PPFD for cheap meters, distance chart math, lettuce bleaches before it stretches. Links: best-lettuce-varieties-for-indoors, grow-light-distance-chart, grow-lettuce-indoors-year-round + /grow-lights. Angle: simplicity (more light is not better). Published 2026-10-29. Simplicity angle (more light is not better). Middle twist: the hours and intensity camps are both right and both unusable alone; 300 PPFD x 20h = 21.6 DLI tipburned the tray. DLI formula + table (14-17 target, 17 ceiling), MSU Runkle 12-14 floor, Frontiers 2025 airflow 1 m/s cut tipburn 39 to 7 percent. Answers PAA: hours (14), too much light (yes), 24h (no), leggy (below 100 PPFD), meter needed (no). 5 affiliate links (6 instances), 6 internal + 1 GLDB. Hero: image_generate gemini-3-pro-image, sharp 1344x768 jpg 105KB."
+  },
+  {
+    "keyword": "hydroponic lettuce tip burn",
+    "slug": "hydroponic-lettuce-tip-burn",
+    "intent": "informational + commercial",
+    "products": [
+      "oscillating clip fan",
+      "EC TDS meter",
+      "thermo hygrometer",
+      "small humidifier"
+    ],
     "status": "pending",
-    "notes": "DLI cluster. 12 to 16 mol/m2/day target; 14h photoperiod beats 18h (bolt trigger). Convert DLI to lux/PPFD for cheap meters, distance chart math, lettuce bleaches before it stretches. Links: best-lettuce-varieties-for-indoors, grow-light-distance-chart, grow-lettuce-indoors-year-round + /grow-lights. Angle: simplicity (more light is not better)."
+    "notes": "Gap follow-up from how-much-light-does-lettuce-need, which flags tipburn but does not diagnose it. Troubleshooting + hidden door angle: tipburn is a calcium DELIVERY failure, not a calcium shortage, so the cal-mag bottle everyone buys does nothing. Middle twist (contradiction): every guide says it is calcium, and every grower who adds calcium still gets it, because it is an airflow and transpiration problem in the inner leaves. Numbers to verify: Frontiers 2025 vertical airflow 1 m/s cut tipburn from 39 percent of leaves to 7 percent; high EC worsens transport; DLI above 17 raises risk. Answers PAA: why tips turn brown, does cal-mag fix it, is it a disease, can you eat it. Links: how-much-light-does-lettuce-need, best-lettuce-varieties-for-indoors, grow-lettuce-indoors-year-round + /grow-lights."
   }
 ]
