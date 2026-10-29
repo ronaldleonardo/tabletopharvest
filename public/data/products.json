@@ -311,7 +311,7 @@
     {
       "id": "mars-hydro-fc-4800",
       "name": "Mars Hydro FC-4800",
-      "price": 329.99,
+      "price": 339.99,
       "watts": 480,
       "coverage": "4x4 ft",
       "chips": "Samsung LM301B",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }
