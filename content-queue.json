@@ -725,7 +725,45 @@
       "thermo hygrometer",
       "small humidifier"
     ],
-    "status": "pending",
+    "status": "done",
     "notes": "Gap follow-up from how-much-light-does-lettuce-need, which flags tipburn but does not diagnose it. Troubleshooting + hidden door angle: tipburn is a calcium DELIVERY failure, not a calcium shortage, so the cal-mag bottle everyone buys does nothing. Middle twist (contradiction): every guide says it is calcium, and every grower who adds calcium still gets it, because it is an airflow and transpiration problem in the inner leaves. Numbers to verify: Frontiers 2025 vertical airflow 1 m/s cut tipburn from 39 percent of leaves to 7 percent; high EC worsens transport; DLI above 17 raises risk. Answers PAA: why tips turn brown, does cal-mag fix it, is it a disease, can you eat it. Links: how-much-light-does-lettuce-need, best-lettuce-varieties-for-indoors, grow-lettuce-indoors-year-round + /grow-lights."
+  },
+  {
+    "keyword": "why is my lettuce bolting indoors",
+    "slug": "bolting-lettuce-indoors",
+    "intent": "informational",
+    "products": [
+      "mechanical outlet timer",
+      "shade cloth",
+      "thermo hygrometer"
+    ],
+    "status": "pending",
+    "notes": "Gap follow-up from best-lettuce-varieties-for-indoors (bolt-resistant labels failed at 18h photoperiod + 78F reservoir). Hidden door angle: bolting indoors is a temperature signal, not a light signal, so lowering hours alone does not stop it. Middle twist (contradiction): the four packets labelled bolt resistant bolted first. Numbers: 14h photoperiod + 68F reservoir held 61 days vs 62 days to bolt on 18h/78F (own run). Links: best-lettuce-varieties-for-indoors, how-much-light-does-lettuce-need, hydroponic-lettuce-tip-burn, grow-lettuce-indoors-year-round + /grow-lights."
+  },
+  {
+    "keyword": "why is my hydroponic lettuce bitter",
+    "slug": "hydroponic-lettuce-bitter",
+    "intent": "informational",
+    "products": [
+      "EC/TDS meter",
+      "nutrient kit",
+      "water chiller or frozen bottles",
+      "harvest knife"
+    ],
+    "status": "pending",
+    "notes": "Reddit gold (r/Hydroponics bitter lettuce threads). Failure story angle: I blamed the variety for a month, the cause was reservoir temperature and EC. Twist: the fix was picking at the right hour, not the right seed. Numbers to verify: bitterness from bolting/latex buildup, high reservoir temp 75F+ accelerates bolting and sesquiterpene lactones; EC above 2.0 concentrates the taste. Links: hydroponic-lettuce-tip-burn, best-lettuce-varieties-for-indoors, hydroponic-water-temperature, grow-lettuce-indoors-year-round."
+  },
+  {
+    "keyword": "lettuce root rot hydroponics",
+    "slug": "lettuce-root-rot-hydroponics",
+    "intent": "informational + commercial",
+    "products": [
+      "hydrogen peroxide 3 percent",
+      "air pump + air stone",
+      "water thermometer",
+      "beneficial bacteria"
+    ],
+    "status": "pending",
+    "notes": "Troubleshooting, high-anxiety query. Failure story + hidden door: pythium is a dissolved oxygen problem, brown roots are the symptom not the disease, and the fix starts before the reservoir turns. Middle twist: the tray that looked healthiest above the lid had the worst roots. Numbers to verify: DO saturation vs temperature, root zone 65-70F, 30 percent H2O2 dose rates, 24h vs 12h aeration. Links: hydroponic-lettuce-tip-burn, hydroponic-lettuce-not-growing, how-often-to-change-hydroponic-water, hydroponic-water-temperature."
   }
 ]
