@@ -737,8 +737,8 @@
       "shade cloth",
       "thermo hygrometer"
     ],
-    "status": "pending",
-    "notes": "Gap follow-up from best-lettuce-varieties-for-indoors (bolt-resistant labels failed at 18h photoperiod + 78F reservoir). Hidden door angle: bolting indoors is a temperature signal, not a light signal, so lowering hours alone does not stop it. Middle twist (contradiction): the four packets labelled bolt resistant bolted first. Numbers: 14h photoperiod + 68F reservoir held 61 days vs 62 days to bolt on 18h/78F (own run). Links: best-lettuce-varieties-for-indoors, how-much-light-does-lettuce-need, hydroponic-lettuce-tip-burn, grow-lettuce-indoors-year-round + /grow-lights."
+    "status": "done",
+    "notes": "Gap follow-up from best-lettuce-varieties-for-indoors (bolt-resistant labels failed at 18h photoperiod + 78F reservoir). Hidden door angle: bolting indoors is a temperature signal, not a light signal, so lowering hours alone does not stop it. Middle twist (contradiction): the four packets labelled bolt resistant bolted first. Numbers: 14h photoperiod + 68F reservoir held 61 days vs 62 days to bolt"
   },
   {
     "keyword": "why is my hydroponic lettuce bitter",
@@ -765,5 +765,29 @@
     ],
     "status": "pending",
     "notes": "Troubleshooting, high-anxiety query. Failure story + hidden door: pythium is a dissolved oxygen problem, brown roots are the symptom not the disease, and the fix starts before the reservoir turns. Middle twist: the tray that looked healthiest above the lid had the worst roots. Numbers to verify: DO saturation vs temperature, root zone 65-70F, 30 percent H2O2 dose rates, 24h vs 12h aeration. Links: hydroponic-lettuce-tip-burn, hydroponic-lettuce-not-growing, how-often-to-change-hydroponic-water, hydroponic-water-temperature."
+  },
+  {
+    "keyword": "how to harvest lettuce so it keeps growing",
+    "slug": "how-to-harvest-lettuce-so-it-keeps-growing",
+    "intent": "informational",
+    "products": [
+      "harvest knife",
+      "salad spinner",
+      "seed starting tray"
+    ],
+    "status": "pending",
+    "notes": "High volume informational, natural internal link to best-lettuce-varieties."
+  },
+  {
+    "keyword": "best grow light for lettuce indoors",
+    "slug": "best-grow-light-for-lettuce-indoors",
+    "intent": "commercial",
+    "products": [
+      "Barrina T5 bar",
+      "dimmable LED panel",
+      "outlet timer"
+    ],
+    "status": "pending",
+    "notes": "Commercial intent, links into /grow-lights database. Distinct from how-much-light-does-lettuce-need (DLI, not product)."
   }
 ]
