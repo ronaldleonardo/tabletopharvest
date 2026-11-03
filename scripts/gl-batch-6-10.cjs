@@ -1,0 +1,62 @@
+// Batch SERP scrape via CDP Chrome :9222 with USD cookie enforcement.
+const http = require('http');
+function httpReq(method, path, timeoutMs = 20000) {
+  return new Promise((resolve, reject) => {
+    const req = http.request({ host: 'localhost', port: 9222, method, path, timeout: timeoutMs }, (res) => {
+      let d = ''; res.on('data', (c) => (d += c)); res.on('end', () => resolve(d));
+    });
+    req.on('timeout', () => req.destroy(new Error('timeout')));
+    req.on('error', reject); req.end();
+  });
+}
+const PRODUCTS = [
+  { id: 'hlg-100-rspec', q: 'HLG+100+RSpec+LED+grow+light', m: 'hlg.*100.*rspec|rspec.*100', x: 'reflective|tent|driver|v2 4000k|4000k' },
+  { id: 'spider-farmer-sf-2000', q: 'Spider+Farmer+SF-2000+LED+grow+light', m: 'spider.?farmer.*sf-?2000|sf-?2000.*spider', x: 'tent|kits?|reflective|inline|filter' },
+  { id: 'mars-hydro-fc-3000', q: 'Mars+Hydro+FC-3000+LED+grow+light', m: 'mars.?hydro.*fc-?3000|fc-?3000.*mars', x: 'tent|kits?|reflective|inline|filter|fc-?3000e' },
+  { id: 'ac-infinity-ionbeam', q: 'AC+Infinity+IONBEAM+S16+LED+grow+light', m: 'ionbeam.*s16|s16.*ionbeam|ionbeam', x: 'tent|kits?|reflective|fan|filter|controller' },
+  { id: 'viparspectra-p600', q: 'VIPARSPECTRA+P600+LED+grow+light', m: 'viparspectra.*p-?600|p-?600.*vipar', x: 'tent|kits?|reflective|inline|filter' },
+];
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+async function main() {
+  const tab = JSON.parse(await httpReq('PUT', '/json/new?about:blank'));
+  const ws = new WebSocket(tab.webSocketDebuggerUrl);
+  let msgId = 0; const pending = new Map();
+  ws.onmessage = (e) => { const m = JSON.parse(e.data); if (m.id && pending.has(m.id)) { pending.get(m.id)(m); pending.delete(m.id); } };
+  await new Promise((r) => (ws.onopen = r));
+  const send = (method, params = {}) => new Promise((res) => { const mid = ++msgId; pending.set(mid, res); ws.send(JSON.stringify({ id: mid, method, params })); });
+
+  // establish USD locale
+  await send('Page.navigate', { url: 'https://www.amazon.com/' });
+  await sleep(4000);
+  await send('Runtime.evaluate', { expression: "document.cookie='i18n-prefs=USD; domain=.amazon.com; path=/; max-age=31536000'; document.cookie='lc-main=en_US; domain=.amazon.com; path=/; max-age=31536000';" });
+  await send('Page.navigate', { url: 'https://www.amazon.com/?language=en_US&currency=USD' });
+  await sleep(4000);
+
+  for (const p of PRODUCTS) {
+    const url = 'https://www.amazon.com/s?k=' + p.q + '&language=en_US&currency=USD';
+    await send('Page.navigate', { url });
+    await sleep(5000);
+    let state = { n: 0, err: false };
+    for (let i = 0; i < 12; i++) {
+      const r = await send('Runtime.evaluate', { expression: `(() => { try { const n=Array.from(document.querySelectorAll('div[data-asin]')).filter(e=>e.getAttribute('data-asin')).length; const err=!!document.querySelector('img[alt*="Dogs of Amazon"]'); return JSON.stringify({n,err}); } catch(e){ return JSON.stringify({n:0,err:false}); } })()`, returnByValue: true });
+      const raw = r.result && r.result.value; state = raw ? JSON.parse(raw) : state;
+      if (state.err || state.n > 2) break;
+      await sleep(1500);
+    }
+    if (state.err || state.n === 0) { console.log('BLOCKED\t' + p.id); await sleep(2000); continue; }
+    const r2 = await send('Runtime.evaluate', { expression: `(() => { const seen={}; const out=[]; document.querySelectorAll('div[data-asin]').forEach(el=>{ const asin=el.getAttribute('data-asin'); if(!asin||seen[asin])return; seen[asin]=true; let title=''; const h2=el.querySelector('h2'); if(h2)title=(h2.getAttribute('aria-label')||h2.innerText||'').replace(/\\s+/g,' ').trim(); let price=''; const off=el.querySelector('span.a-price > span.a-offscreen'); if(off)price=off.innerText.trim(); if(!price){ const w=el.querySelector('span.a-price-whole'); const f=el.querySelector('span.a-price-fraction'); if(w)price='$'+w.innerText.replace(/[.,]/g,'')+'.'+(f?f.innerText:'00'); } const sponsored=!!el.querySelector('.puis-sponsored-label-text, span.puis-sponsored-label-text'); if(title.length>=6||price)out.push({asin,title:title.slice(0,160),price,sponsored}); }); return JSON.stringify(out); })()`, returnByValue: true });
+    let results = []; try { results = JSON.parse(r2.result.value); } catch (e) {}
+    const mre = new RegExp(p.m, 'i'), xre = p.x ? new RegExp(p.x, 'i') : null;
+    const ranked = results.map((x, i) => Object.assign({}, x, { pos: i }));
+    const matched = ranked.filter((x) => mre.test(x.title) && (!xre || !xre.test(x.title)));
+    const brandish = ranked.filter((x) => !matched.includes(x));
+    if (matched.length === 0) {
+      console.log('NOMATCH\t' + p.id + '\ttotal=' + results.length + '\t' + JSON.stringify(brandish.slice(0, 4).map(b => ({ asin: b.asin, pr: b.price, sp: b.sponsored, tt: b.title.slice(0, 70) }))));
+    } else {
+      for (const m of matched.slice(0, 4)) console.log('HIT\t' + p.id + '\t' + JSON.stringify({ pos: m.pos, asin: m.asin, price: m.price, sponsored: m.sponsored, title: m.title.slice(0, 100) }));
+    }
+    await sleep(2500);
+  }
+  ws.close(); process.exit(0);
+}
+main().catch((e) => { console.error('FATAL', String(e)); process.exit(1); });

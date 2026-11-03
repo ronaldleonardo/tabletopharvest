@@ -750,8 +750,8 @@
       "water chiller or frozen bottles",
       "harvest knife"
     ],
-    "status": "pending",
-    "notes": "Reddit gold (r/Hydroponics bitter lettuce threads). Failure story angle: I blamed the variety for a month, the cause was reservoir temperature and EC. Twist: the fix was picking at the right hour, not the right seed. Numbers to verify: bitterness from bolting/latex buildup, high reservoir temp 75F+ accelerates bolting and sesquiterpene lactones; EC above 2.0 concentrates the taste. Links: hydroponic-lettuce-tip-burn, best-lettuce-varieties-for-indoors, hydroponic-water-temperature, grow-lettuce-indoors-year-round."
+    "status": "done",
+    "notes": "Reddit gold (r/Hydroponics bitter lettuce threads). Failure story angle: I blamed the variety for a month, the cause was reservoir temperature and EC. Twist: the fix was picking at the right hour, not the right seed. Numbers to verify: bitterness from bolting/latex buildup, high reservoir temp 75F+ accelerates bolting and sesquiterpene lactones; EC above 2.0 concentrates the taste. Links: hydroponic-lettuce-tip-burn, best-lettuce-varieties-for-indoors, hydroponic-water-temperature, grow-lettuce-indoors-year-round. Published 2026-11-03."
   },
   {
     "keyword": "lettuce root rot hydroponics",
@@ -789,5 +789,29 @@
     ],
     "status": "pending",
     "notes": "Commercial intent, links into /grow-lights database. Distinct from how-much-light-does-lettuce-need (DLI, not product)."
+  },
+  {
+    "keyword": "does flushing hydroponics before harvest make lettuce taste better",
+    "slug": "flushing-hydroponics-before-harvest",
+    "intent": "informational",
+    "products": [
+      "EC/TDS meter",
+      "plain pH adjuster",
+      "leafy greens nutrient kit"
+    ],
+    "status": "pending",
+    "notes": "Direct follow-on to hydroponic-lettuce-bitter. The 3-day flush is the most repeated Reddit fix. Check what flushing actually changes (EC drop, tissue nitrate) vs what it cannot change (lactucin already in the leaf). Links: hydroponic-lettuce-bitter, ec-and-ppm-hydroponics, how-often-to-change-hydroponic-water, best-lettuce-varieties-for-indoors."
+  },
+  {
+    "keyword": "how to store hydroponic lettuce after harvest",
+    "slug": "how-to-store-hydroponic-lettuce",
+    "intent": "informational",
+    "products": [
+      "salad spinner",
+      "produce keeper container",
+      "reusable ice packs"
+    ],
+    "status": "pending",
+    "notes": "High volume post-harvest query, low competition from the hydro blogs. Angles: cold chain, rinse before or after storage, does washing speed decay, why home lettuce keeps 4 days vs store 10. Links: hydroponic-lettuce-bitter, best-lettuce-varieties-for-indoors, how-to-harvest-lettuce-so-it-keeps-growing."
   }
 ]
