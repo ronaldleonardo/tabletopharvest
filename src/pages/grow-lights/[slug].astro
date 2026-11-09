@@ -2,6 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { lights, tag, categories } from '../../lib/growlight-data.mjs';
 
+// Meta description must stay under 160 chars or Google chops the snippet mid-word.
+function clampDesc(s, max = 158) {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max + 1);
+  const sp = cut.lastIndexOf(' ');
+  return (sp > 40 ? cut.slice(0, sp) : cut.slice(0, max)).replace(/[,;:.\s]+$/, '');
+}
+
 export async function getStaticPaths() {
   return lights.map(light => ({
     params: { slug: light.id },
@@ -54,7 +62,7 @@ const compareLights = [...siblings, ...fallbackSiblings];
 
 <BaseLayout
   title={`${light.name} LED Grow Light`}
-  description={`${light.name} LED grow light review: ${light.watts}W, covers ${light.coverage}, ${light.chips} chips, ${light.rating} stars. Compare specs, price $${light.price}, and buy on Amazon.`}
+  description={clampDesc(`${light.name} LED grow light review: ${light.watts}W, covers ${light.coverage}, ${light.chips} chips, ${light.rating} stars. Compare specs, price $${light.price}, and buy on Amazon.`)}
   canonical={`/grow-lights/${light.id}`}
   article={true}
   product={productData}
