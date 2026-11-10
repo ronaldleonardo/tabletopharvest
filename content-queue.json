@@ -763,8 +763,8 @@
       "water thermometer",
       "beneficial bacteria"
     ],
-    "status": "pending",
-    "notes": "Troubleshooting, high-anxiety query. Failure story + hidden door: pythium is a dissolved oxygen problem, brown roots are the symptom not the disease, and the fix starts before the reservoir turns. Middle twist: the tray that looked healthiest above the lid had the worst roots. Numbers to verify: DO saturation vs temperature, root zone 65-70F, 30 percent H2O2 dose rates, 24h vs 12h aeration. Links: hydroponic-lettuce-tip-burn, hydroponic-lettuce-not-growing, how-often-to-change-hydroponic-water, hydroponic-water-temperature."
+    "status": "done",
+    "notes": "Troubleshooting, high-anxiety query. Failure story + hidden door: pythium is a dissolved oxygen problem, brown roots are the symptom not the disease, and the fix starts before the reservoir turns. Middle twist: the tray that looked healthiest above the lid had the worst roots. Numbers to verify: DO saturation vs temperature, root zone 65-70F, 30 percent H2O2 dose rates, 24h vs 12h aeration. Links: hydroponic-lettuce-tip-burn, hydroponic-lettuce-not-growing, how-often-to-change-hydroponic-water, hydroponic-water-temperature. Published 2026-11-10."
   },
   {
     "keyword": "how to harvest lettuce so it keeps growing",
@@ -813,5 +813,29 @@
     ],
     "status": "pending",
     "notes": "High volume post-harvest query, low competition from the hydro blogs. Angles: cold chain, rinse before or after storage, does washing speed decay, why home lettuce keeps 4 days vs store 10. Links: hydroponic-lettuce-bitter, best-lettuce-varieties-for-indoors, how-to-harvest-lettuce-so-it-keeps-growing."
+  },
+  {
+    "keyword": "how to sterilize hydroponic system between crops",
+    "slug": "sterilize-hydroponic-system-between-crops",
+    "intent": "informational + commercial",
+    "products": [
+      "hydrogen peroxide 3 percent",
+      "hypochlorous acid",
+      "scrub brush"
+    ],
+    "status": "pending",
+    "notes": "Sanitation follow-up to the root rot article. High intent for repeat growers."
+  },
+  {
+    "keyword": "best air pump for hydroponics small system",
+    "slug": "best-air-pump-for-hydroponics",
+    "intent": "commercial",
+    "products": [
+      "dual outlet air pump",
+      "air stone",
+      "check valve"
+    ],
+    "status": "pending",
+    "notes": "Oxygen-delivery buyer intent. Links back to root rot + water temperature."
   }
 ]
