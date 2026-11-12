@@ -227,7 +227,7 @@
     {
       "id": "viparspectra-xs1000",
       "name": "VIPARSPECTRA XS1000",
-      "price": 69.93,
+      "price": 79.99,
       "watts": 100,
       "coverage": "2x2 ft",
       "chips": "Samsung LM301H",
@@ -452,5 +452,5 @@
     }
   ],
   "tag": "tabletopharve-20",
-  "updated": "2026-11-10"
+  "updated": "2026-11-11"
 }
