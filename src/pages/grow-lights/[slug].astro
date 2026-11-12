@@ -58,6 +58,16 @@ const fallbackSiblings = globalRotation
   .filter(l => l.id !== light.id && !siblings.some(s => s.id === l.id))
   .slice(0, Math.max(0, 3 - siblings.length));
 const compareLights = [...siblings, ...fallbackSiblings];
+// Head-to-head write-ups. Linking the category pages that already carry impressions
+// gives the new comparison URLs a crawl path that does not depend on the sitemap.
+const VS_PAGES = {
+  "spider-farmer-sf-1000": { slug: "spider-farmer-sf-1000-vs-mars-hydro-ts-1000", label: "Spider Farmer SF-1000 vs Mars Hydro TS-1000" },
+  "mars-hydro-ts-1000": { slug: "spider-farmer-sf-1000-vs-mars-hydro-ts-1000", label: "Spider Farmer SF-1000 vs Mars Hydro TS-1000" },
+  "viparspectra-p2000": { slug: "viparspectra-p2000-vs-spider-farmer-sf-2000", label: "VIPARSPECTRA P2000 vs Spider Farmer SF-2000" },
+  "spider-farmer-sf-2000": { slug: "viparspectra-p2000-vs-spider-farmer-sf-2000", label: "VIPARSPECTRA P2000 vs Spider Farmer SF-2000" },
+};
+const vsPage = VS_PAGES[light.id] ?? null;
+
 ---
 
 <BaseLayout
@@ -242,4 +252,7 @@ const compareLights = [...siblings, ...fallbackSiblings];
       .gl-slug-card h1 { font-size: 1.3rem; }
     }
   </style>
+{vsPage && (
+  <p class="gl-link">Two of these head to head: <a href={`/posts/${vsPage.slug}`}>{vsPage.label}</a> - real watts, real coverage, and which one fits your tent.</p>
+)}
 </BaseLayout>
