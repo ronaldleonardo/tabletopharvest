@@ -1,17 +1,21 @@
 // serve.mjs  (c) 2026 Ronald  - minimal static server for Astro (format: file) output
 // with canonical-URL cleanup that Cloudflare Tunnel alone does not provide:
-//   1. trailing-slash  -> no-slash  (301, matches emitted canonical)
-//   2. http            -> https     (301, when the original scheme is visible at origin)
-// Run: PORT=8084 node serve.mjs   (serves ./dist)
+//   1. http  -> https   (301, when the original scheme is visible at origin)
+//   2. www   -> apex    (301, so Google only ever sees one host)
+//   3. /foo/ -> /foo    (301, matches the emitted canonical)
+//   4. /foo.html -> /foo (301, the raw build file is never a public URL)
+// Run: PORT=8083 APEX=tabletoppicks.com node serve.mjs   (serves ./dist)
 import http from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
-import { extname, join, normalize, resolve, sep } from 'node:path';
+import { extname, join, normalize, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), 'dist');
+const HERE = dirname(fileURLToPath(import.meta.url));
+const ROOT = resolve(process.env.DIST || join(HERE, 'dist'));
 const PORT = Number(process.env.PORT || process.argv[2] || 8080);
 const HOST = process.env.HOST || '0.0.0.0';
+const APEX = (process.env.APEX || '').toLowerCase();
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -62,26 +66,43 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://x');
   let path = url.pathname;
 
-  // 1. Force https when origin can see the original scheme (Cloudflare sets x-forwarded-proto).
+  // 1. Force https when the origin can see the original scheme (Cloudflare sets x-forwarded-proto).
   const proto = req.headers['x-forwarded-proto'] || '';
+  const rawHost = (req.headers.host || '').split(',')[0].trim();
   if (proto === 'http') {
-    res.writeHead(301, { Location: `https://${req.headers.host}${url.pathname}${url.search}` });
+    res.writeHead(301, { Location: `https://${rawHost}${path}${url.search}` });
     return res.end();
   }
 
-  // 2. Normalize trailing slash (skip root) to the no-slash canonical form.
+  // 2. Collapse www to the apex host so a single canonical host is indexed.
+  if (APEX && rawHost.toLowerCase() === `www.${APEX}`) {
+    res.writeHead(301, { Location: `https://${APEX}${path}${url.search}` });
+    return res.end();
+  }
+
+  // 3. Normalize trailing slash (skip root) to the no-slash canonical form.
   if (path.length > 1 && path.endsWith('/')) {
-    res.writeHead(301, { Location: path.slice(0, -1) + url.search });
+    res.writeHead(301, { Location: path.replace(/\/+$/, '') + url.search });
     return res.end();
   }
 
-  // 3. Serve file.
+  // 4. Hide the raw build filename: /game/uno.html and /game/uno are the same page,
+  //    and only one of them should ever be reachable.
+  if (path.toLowerCase().endsWith('.html')) {
+    let clean = path.slice(0, -5);
+    if (clean.endsWith('/index')) clean = clean.slice(0, -6) || '/';
+    if (clean !== path) {
+      res.writeHead(301, { Location: clean + url.search });
+      return res.end();
+    }
+  }
+
   let rel = safePath(path);
   if (rel === null) {
     res.writeHead(400, { 'Content-Type': 'text/plain' }); return res.end('Bad Request');
   }
-  if (rel === '') rel = 'index.html';
-  let file = await anyFile(join(ROOT, rel));
+  if (rel === '' || rel === '/') rel = 'index.html';
+  let file = await anyFile(join(ROOT, rel.replace(/^\//, '')));
   if (!file) {
     file = await anyFile(join(ROOT, '404'));
     if (!file) {
@@ -100,5 +121,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`serve.mjs: serving ${ROOT} on http://${HOST}:${PORT}`);
+  console.log(`serve.mjs: ${ROOT} on http://${HOST}:${PORT} (apex=${APEX || '-'})`);
 });
