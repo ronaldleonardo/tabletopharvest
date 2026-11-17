@@ -3,7 +3,7 @@
   {
    "id": "spider-farmer-sf-1000",
    "name": "Spider Farmer SF-1000",
-   "price": 70,
+   "price": 69.99,
    "watts": 100,
    "coverage": "2x2 ft",
    "chips": "Samsung LM301B",
@@ -12,12 +12,14 @@
    "rating": 4.6,
    "reviews": 5800,
    "best": "overall",
-   "search": "Spider+Farmer+SF-1000+LED+grow+light"
+   "search": "Spider+Farmer+SF-1000+LED+grow+light",
+   "asin": "B07TS82HWB",
+   "updated": "2026-11-17"
   },
   {
    "id": "mars-hydro-ts-1000",
    "name": "Mars Hydro TS-1000",
-   "price": 89.99,
+   "price": 85.49,
    "watts": 150,
    "coverage": "2x2 flower / 3x3 veg",
    "chips": "Samsung LM301B",
@@ -26,12 +28,14 @@
    "rating": 4.6,
    "reviews": 3600,
    "best": "value",
-   "search": "Mars+Hydro+TS-1000+LED+grow+light"
+   "search": "Mars+Hydro+TS-1000+LED+grow+light",
+   "asin": "B07RSRX1RS",
+   "updated": "2026-11-17"
   },
   {
    "id": "viparspectra-xs1500",
    "name": "Viparspectra XS1500 Pro",
-   "price": 89.99,
+   "price": 99.99,
    "watts": 150,
    "coverage": "2x2 flower / 3x3 veg",
    "chips": "Samsung LM301H",
@@ -40,12 +44,14 @@
    "rating": 4.5,
    "reviews": 1800,
    "best": "runner-up",
-   "search": "Viparspectra+XS1500+Pro+LED+grow+light"
+   "search": "Viparspectra+XS1500+Pro+LED+grow+light",
+   "asin": "B0BNVFMJ5J",
+   "updated": "2026-11-17"
   },
   {
    "id": "barrina-t5-4pack",
    "name": "Barrina T5 4-Pack",
-   "price": 28.79,
+   "price": 27.83,
    "watts": 40,
    "coverage": "2x4 ft shelf",
    "chips": "LED Strip",
@@ -54,7 +60,9 @@
    "rating": 4.6,
    "reviews": 8900,
    "best": "budget",
-   "search": "Barrina+T5+4-Pack+LED+grow+light"
+   "search": "Barrina+T5+4-Pack+LED+grow+light",
+   "asin": "B0BKPF8D8G",
+   "updated": "2026-11-17"
   },
   {
    "id": "aerogarden-harvest",
@@ -68,7 +76,9 @@
    "rating": 4.4,
    "reviews": 15000,
    "best": "starter",
-   "search": "AeroGarden+Harvest+LED+grow+light"
+   "search": "AeroGarden+Harvest+LED+grow+light",
+   "asin": "B07CKK8Z78",
+   "updated": "2026-11-17"
   },
   {
    "id": "hlg-100-rspec",
@@ -452,5 +462,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-16"
+ "updated": "2026-11-17"
 }
