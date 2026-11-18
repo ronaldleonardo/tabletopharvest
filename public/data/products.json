@@ -97,7 +97,7 @@
   {
    "id": "spider-farmer-sf-2000",
    "name": "Spider Farmer SF-2000",
-   "price": 145.99,
+   "price": 159.99,
    "watts": 200,
    "coverage": "3x3 ft",
    "chips": "Samsung LM301B",
@@ -106,12 +106,15 @@
    "rating": 4.7,
    "reviews": 4100,
    "best": "upgrade",
-   "search": "Spider+Farmer+SF-2000+LED+grow+light"
+   "search": "Spider+Farmer+SF-2000+LED+grow+light",
+   "asin": "B07TVD1Y3K",
+   "priceUpdated": "2026-11-18",
+   "priceDate": "2026-11-18"
   },
   {
    "id": "mars-hydro-fc-3000",
    "name": "Mars Hydro FC-3000",
-   "price": 200,
+   "price": 199.99,
    "watts": 300,
    "coverage": "3x3 ft",
    "chips": "Samsung LM301B",
@@ -120,12 +123,15 @@
    "rating": 4.6,
    "reviews": 1900,
    "best": "large",
-   "search": "Mars+Hydro+FC-3000+LED+grow+light"
+   "search": "Mars+Hydro+FC-3000+LED+grow+light",
+   "asin": "B08BLGQKMY",
+   "priceUpdated": "2026-11-18",
+   "priceDate": "2026-11-18"
   },
   {
    "id": "ac-infinity-ionbeam",
    "name": "AC Infinity IONBEAM S16",
-   "price": 90,
+   "price": 89.99,
    "watts": 42,
    "coverage": "2x2 ft supplemental",
    "chips": "Samsung LM301H EVO",
@@ -134,7 +140,10 @@
    "rating": 4.5,
    "reviews": 1600,
    "best": "mid-range",
-   "search": "AC+Infinity+IONBEAM+S16+LED+grow+light"
+   "search": "AC+Infinity+IONBEAM+S16+LED+grow+light",
+   "asin": "B0C67BVDVH",
+   "priceUpdated": "2026-11-18",
+   "priceDate": "2026-11-18"
   },
   {
    "id": "viparspectra-p600",
@@ -148,12 +157,15 @@
    "rating": 4.4,
    "reviews": 5200,
    "best": "entry",
-   "search": "VIPARSPECTRA+P600+LED+grow+light"
+   "search": "VIPARSPECTRA+P600+LED+grow+light",
+   "asin": "B089NXK3Q2",
+   "priceUpdated": "2026-11-18",
+   "priceDate": "2026-11-18"
   },
   {
    "id": "growers-choice-roi-e720",
    "name": "Growers Choice ROI-E720",
-   "price": 720,
+   "price": 720.0,
    "watts": 720,
    "coverage": "5x5 ft",
    "chips": "Samsung LM301H",
@@ -162,7 +174,10 @@
    "rating": 4.8,
    "reviews": 1200,
    "best": "commercial",
-   "search": "Growers+Choice+ROI-E720+LED+grow+light"
+   "search": "Growers+Choice+ROI-E720+LED+grow+light",
+   "asin": "B0CBL3ZC2K",
+   "priceUpdated": "2026-11-18",
+   "priceDate": "2026-11-18"
   },
   {
    "id": "phlizon-cree-cob",
@@ -462,5 +477,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-17"
+ "updated": "2026-11-18"
 }
