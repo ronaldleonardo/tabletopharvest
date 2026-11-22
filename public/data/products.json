@@ -247,12 +247,14 @@
    "rating": 4.3,
    "reviews": 8500,
    "best": "budget",
-   "search": "Mars+Hydro+TS-600+LED+grow+light"
+   "search": "Mars+Hydro+TS-600+LED+grow+light",
+   "asin": "B07VL8FZS1",
+   "updated": "2026-11-22"
   },
   {
    "id": "viparspectra-xs1000",
    "name": "VIPARSPECTRA XS1000",
-   "price": 79.99,
+   "price": 99.99,
    "watts": 100,
    "coverage": "2x2 ft",
    "chips": "Samsung LM301H",
@@ -261,12 +263,14 @@
    "rating": 4.4,
    "reviews": 3200,
    "best": "entry",
-   "search": "VIPARSPECTRA+XS1000+LED+grow+light"
+   "search": "VIPARSPECTRA+XS1000+LED+grow+light",
+   "asin": "B08CK426V5",
+   "updated": "2026-11-22"
   },
   {
    "id": "viparspectra-p2000",
    "name": "VIPARSPECTRA P2000",
-   "price": 131.99,
+   "price": 154.99,
    "watts": 200,
    "coverage": "2.5x2.5 flower / 3.5x3.5 veg",
    "chips": "Samsung LED",
@@ -275,7 +279,9 @@
    "rating": 4.5,
    "reviews": 2800,
    "best": "upgrade",
-   "search": "VIPARSPECTRA+P2000+LED+grow+light"
+   "search": "VIPARSPECTRA+P2000+LED+grow+light",
+   "asin": "B085W3LY4Q",
+   "updated": "2026-11-22"
   },
   {
    "id": "spider-farmer-sf-3000",
@@ -317,7 +323,9 @@
    "rating": 4.7,
    "reviews": 800,
    "best": "value",
-   "search": "AC+Infinity+IONFRAME+EVO3+LED+grow+light"
+   "search": "AC+Infinity+IONFRAME+EVO3+LED+grow+light",
+   "asin": "B0C4M37X6F",
+   "updated": "2026-11-22"
   },
   {
    "id": "ac-infinity-ionframe-evo8",
@@ -331,7 +339,9 @@
    "rating": 4.8,
    "reviews": 600,
    "best": "large",
-   "search": "AC+Infinity+IONFRAME+EVO8+LED+grow+light"
+   "search": "AC+Infinity+IONFRAME+EVO8+LED+grow+light",
+   "asin": "B0C4M4PBGG",
+   "updated": "2026-11-22"
   },
   {
    "id": "mars-hydro-fc-4800",
@@ -477,5 +487,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-18"
+ "updated": "2026-11-22"
 }
