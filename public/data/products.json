@@ -346,7 +346,7 @@
   {
    "id": "mars-hydro-fc-4800",
    "name": "Mars Hydro FC-4800",
-   "price": 339.99,
+   "price": 271.99,
    "watts": 480,
    "coverage": "4x4 ft",
    "chips": "Samsung LM301B",
@@ -355,7 +355,9 @@
    "rating": 4.6,
    "reviews": 1200,
    "best": "upgrade",
-   "search": "Mars+Hydro+FC-4800+LED+grow+light"
+   "search": "Mars+Hydro+FC-4800+LED+grow+light",
+   "asin": "B08BLGRZX7",
+   "updated": "2026-11-23"
   },
   {
    "id": "hlg-300l-rspec",
@@ -487,5 +489,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-22"
+ "updated": "2026-11-23"
 }
