@@ -14,12 +14,12 @@
    "best": "overall",
    "search": "Spider+Farmer+SF-1000+LED+grow+light",
    "asin": "B07TS82HWB",
-   "updated": "2026-11-17"
+   "updated": "2026-11-24"
   },
   {
    "id": "mars-hydro-ts-1000",
    "name": "Mars Hydro TS-1000",
-   "price": 85.49,
+   "price": 76.49,
    "watts": 150,
    "coverage": "2x2 flower / 3x3 veg",
    "chips": "Samsung LM301B",
@@ -30,7 +30,8 @@
    "best": "value",
    "search": "Mars+Hydro+TS-1000+LED+grow+light",
    "asin": "B07RSRX1RS",
-   "updated": "2026-11-17"
+   "updated": "2026-11-24",
+   "note": "Amazon deal price, 15% off typical $89.99; may revert after Nov 30"
   },
   {
    "id": "viparspectra-xs1500",
@@ -489,5 +490,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-23"
+ "updated": "2026-11-24"
 }
