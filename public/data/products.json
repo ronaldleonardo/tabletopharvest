@@ -47,12 +47,14 @@
    "best": "runner-up",
    "search": "Viparspectra+XS1500+Pro+LED+grow+light",
    "asin": "B0BNVFMJ5J",
-   "updated": "2026-11-17"
+   "updated": "2026-11-25",
+   "priceUpdated": "2026-11-25",
+   "priceDate": "2026-11-25"
   },
   {
    "id": "barrina-t5-4pack",
    "name": "Barrina T5 4-Pack",
-   "price": 27.83,
+   "price": 26.34,
    "watts": 40,
    "coverage": "2x4 ft shelf",
    "chips": "LED Strip",
@@ -63,12 +65,14 @@
    "best": "budget",
    "search": "Barrina+T5+4-Pack+LED+grow+light",
    "asin": "B0BKPF8D8G",
-   "updated": "2026-11-17"
+   "updated": "2026-11-25",
+   "priceUpdated": "2026-11-25",
+   "priceDate": "2026-11-25"
   },
   {
    "id": "aerogarden-harvest",
    "name": "AeroGarden Harvest",
-   "price": 79.99,
+   "price": 59.99,
    "watts": 20,
    "coverage": "Countertop",
    "chips": "LED",
@@ -79,7 +83,9 @@
    "best": "starter",
    "search": "AeroGarden+Harvest+LED+grow+light",
    "asin": "B07CKK8Z78",
-   "updated": "2026-11-17"
+   "updated": "2026-11-25",
+   "priceUpdated": "2026-11-25",
+   "priceDate": "2026-11-25"
   },
   {
    "id": "hlg-100-rspec",
@@ -93,7 +99,11 @@
    "rating": 4.7,
    "reviews": 2100,
    "best": "quality",
-   "search": "HLG+100+RSpec+LED+grow+light"
+   "search": "HLG+100+RSpec+LED+grow+light",
+   "asin": "B07C59J8L2",
+   "available": false,
+   "updated": "2026-11-25",
+   "priceNote": "Currently unavailable on Amazon US as of 2026-11-25"
   },
   {
    "id": "spider-farmer-sf-2000",
@@ -109,8 +119,9 @@
    "best": "upgrade",
    "search": "Spider+Farmer+SF-2000+LED+grow+light",
    "asin": "B07TVD1Y3K",
-   "priceUpdated": "2026-11-18",
-   "priceDate": "2026-11-18"
+   "priceUpdated": "2026-11-25",
+   "priceDate": "2026-11-25",
+   "updated": "2026-11-25"
   },
   {
    "id": "mars-hydro-fc-3000",
@@ -490,5 +501,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-24"
+ "updated": "2026-11-25"
 }
