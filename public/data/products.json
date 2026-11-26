@@ -137,8 +137,9 @@
    "best": "large",
    "search": "Mars+Hydro+FC-3000+LED+grow+light",
    "asin": "B08BLGQKMY",
-   "priceUpdated": "2026-11-18",
-   "priceDate": "2026-11-18"
+   "priceUpdated": "2026-11-26",
+   "priceDate": "2026-11-26",
+   "updated": "2026-11-26"
   },
   {
    "id": "ac-infinity-ionbeam",
@@ -154,8 +155,9 @@
    "best": "mid-range",
    "search": "AC+Infinity+IONBEAM+S16+LED+grow+light",
    "asin": "B0C67BVDVH",
-   "priceUpdated": "2026-11-18",
-   "priceDate": "2026-11-18"
+   "priceUpdated": "2026-11-26",
+   "priceDate": "2026-11-26",
+   "updated": "2026-11-26"
   },
   {
    "id": "viparspectra-p600",
@@ -171,8 +173,11 @@
    "best": "entry",
    "search": "VIPARSPECTRA+P600+LED+grow+light",
    "asin": "B089NXK3Q2",
-   "priceUpdated": "2026-11-18",
-   "priceDate": "2026-11-18"
+   "priceUpdated": "2026-11-26",
+   "priceDate": "2026-11-26",
+   "updated": "2026-11-26",
+   "available": false,
+   "priceNote": "Currently unavailable on Amazon US as of 2026-11-26"
   },
   {
    "id": "growers-choice-roi-e720",
@@ -188,8 +193,9 @@
    "best": "commercial",
    "search": "Growers+Choice+ROI-E720+LED+grow+light",
    "asin": "B0CBL3ZC2K",
-   "priceUpdated": "2026-11-18",
-   "priceDate": "2026-11-18"
+   "priceUpdated": "2026-11-26",
+   "priceDate": "2026-11-26",
+   "updated": "2026-11-26"
   },
   {
    "id": "phlizon-cree-cob",
@@ -203,7 +209,11 @@
    "rating": 4.2,
    "reviews": 3600,
    "best": "cheap",
-   "search": "Phlizon+CREE+COB+2000W+LED+grow+light"
+   "search": "Phlizon+CREE+COB+2000W+LED+grow+light",
+   "updated": "2026-11-26",
+   "priceUpdated": "2026-11-26",
+   "priceDate": "2026-11-26",
+   "priceNote": "No buyable Amazon US listing found as of 2026-11-26 (ASIN unknown)"
   },
   {
    "id": "unit-farm-uf-2000",
@@ -501,5 +511,5 @@
   }
  ],
  "tag": "tabletopharve-20",
- "updated": "2026-11-25"
+ "updated": "2026-11-26"
 }
