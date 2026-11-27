@@ -227,7 +227,13 @@
    "rating": 4.4,
    "reviews": 1100,
    "best": "value-alt",
-   "search": "Unit+Farm+UF-2000+LED+grow+light"
+   "search": "Unit+Farm+UF-2000+LED+grow+light",
+   "asin": "B08JCQ6SGD",
+   "available": false,
+   "priceNote": "Currently unavailable on Amazon US as of 2026-11-27",
+   "updated": "2026-11-27",
+   "priceUpdated": "2026-11-27",
+   "priceDate": "2026-11-27"
   },
   {
    "id": "maxsisun-pb-2000",
@@ -241,7 +247,12 @@
    "rating": 4.5,
    "reviews": 2100,
    "best": "power",
-   "search": "Maxsisun+PB-2000+LED+grow+light"
+   "search": "Maxsisun+PB-2000+LED+grow+light",
+   "available": false,
+   "priceNote": "No buyable Amazon US listing found as of 2026-11-27 (ASIN unknown)",
+   "updated": "2026-11-27",
+   "priceUpdated": "2026-11-27",
+   "priceDate": "2026-11-27"
   },
   {
    "id": "vivosun-vs1000",
@@ -255,7 +266,13 @@
    "rating": 4.4,
    "reviews": 1400,
    "best": "economy",
-   "search": "Vivosun+VS1000+LED+grow+light"
+   "search": "Vivosun+VS1000+LED+grow+light",
+   "asin": "B09F2MG2L8",
+   "available": false,
+   "priceNote": "Amazon US listing (VS1000E) currently unavailable as of 2026-11-27",
+   "updated": "2026-11-27",
+   "priceUpdated": "2026-11-27",
+   "priceDate": "2026-11-27"
   },
   {
    "id": "mars-hydro-ts-600",
@@ -271,7 +288,9 @@
    "best": "budget",
    "search": "Mars+Hydro+TS-600+LED+grow+light",
    "asin": "B07VL8FZS1",
-   "updated": "2026-11-22"
+   "updated": "2026-11-27",
+   "priceUpdated": "2026-11-27",
+   "priceDate": "2026-11-27"
   },
   {
    "id": "viparspectra-xs1000",
@@ -287,7 +306,9 @@
    "best": "entry",
    "search": "VIPARSPECTRA+XS1000+LED+grow+light",
    "asin": "B08CK426V5",
-   "updated": "2026-11-22"
+   "updated": "2026-11-27",
+   "priceUpdated": "2026-11-27",
+   "priceDate": "2026-11-27"
   },
   {
    "id": "viparspectra-p2000",
